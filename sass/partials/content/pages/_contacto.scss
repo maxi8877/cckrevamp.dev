@@ -1,0 +1,78 @@
+//_________________________________
+//agenda
+//_________________________________
+.section-contacto {
+  font-family: 'geogrotesque';
+  h1 {
+    font-weight: 300;
+    font-size: 30px;
+  }
+  h2 {
+    font-weight: 200;
+  }
+  .contact-info {
+    >ul {
+      padding: 0;
+      margin: 0;
+      >li:nth-child(1) {
+        display: inline-block;
+        padding: 12px;
+      }
+      >li:nth-child(2) {
+        display: inline-block;
+        padding: 12px;
+      }
+      p {
+        font-weight: 300;
+        line-height: 20px;
+      }
+    }
+  }
+  .contact-form {
+    border: 0!important;
+    fieldset {
+      outline: none;
+      border: 0!important;
+    }
+    fieldset:nth-child(1) {
+      input,
+      select {
+        width: 100%;
+        margin: 0 0 20px;
+        height: 30px;
+        border-radius: 4px;
+        background-color: #eee;
+        border: 0;
+        padding: 3px;
+      }
+    }
+    fieldset:nth-child(2) {
+      textarea {
+        width: 100%;
+        min-height: 120px;
+        margin: 0 0 10px;
+        border-radius: 4px;
+        background-color: #eee;
+        border: 0;
+      }
+      input {
+        width: 100%;
+        margin: 0 0 20px;
+        height: 30px;
+        border-radius: 4px;
+        background-color: #eee;
+        border: 0;
+        padding: 3px;
+      }
+    }
+  }
+  @include breakpoint($smallmax-screens) {
+
+  }
+  @include breakpoint($almost-screens) {
+
+  }
+  @include breakpoint($medium-screens) {
+    
+  }
+}

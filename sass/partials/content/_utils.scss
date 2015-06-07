@@ -1,0 +1,282 @@
+.flex-video {
+	position: relative;
+	padding-bottom: 56.25%;
+	/* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.flex-video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.article-twitter h3 {
+	font-size: 18px;
+	margin: 0;
+}
+button {
+	background-color: #00b0f6;
+	color: #fff;
+	border: 0;
+	padding: 10px;
+	margin-top: 10px;
+	font-size: 14px;
+	font-family: 'geogrotesque';
+}
+button:hover {
+	background-color: #606063;
+	color: #fff;
+}
+.button {
+	background-color: #00b0f6;
+	color: #fff;
+	border: 0;
+	padding: 10px;
+	margin-top: 10px;
+	font-size: 14px;
+	text-decoration: none;
+	font-family: 'geogrotesque';
+}
+.button:hover {
+	background-color: #606063;
+	color: #fff;
+}
+.button:visited {
+	color: #fff;
+}
+hr {
+	opacity: 0.3!important;
+}
+.text-center {
+	text-align: center;
+}
+.social-float {
+	display: none;
+	position: fixed;
+	bottom: 50px;
+	left: 20px;
+	width: 20px;
+	padding: 10px;
+	ul {
+		margin: 0;
+		padding: 0;
+		>li {
+			display: inline-block;
+			padding: 10px;
+			min-width: 40px;
+			background-color: #737373;
+			text-align: center;
+			margin: 0 0 5px;
+			position: relative;
+			min-height: 40px;
+			a {
+				color: #fff;
+				//text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+				font-size: 18px;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				padding: 12px;
+				top: 0;
+				left: 0;
+			}
+			a:hover {
+				color: #6ed2eb;
+			}
+		}
+	}
+	@include breakpoint($xlarge-screens) {
+		display: block;
+	}
+	@include breakpoint($xxlarge-screens) {
+		position: fixed;
+		bottom: 50px;
+		left: 20px;
+		width: 20px;
+		padding: 10px;
+		ul {
+			margin: 0;
+			padding: 0;
+			>li {
+				display: inline-block;
+				padding: 10px;
+				min-width: 50px!important;
+				background-color: #737373;
+				text-align: center;
+				margin: 0 0 5px;
+				position: relative;
+				min-height: 50px;
+				a {
+					color: #fff;
+					//text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+					font-size: 25px;
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					padding: 13px;
+					top: 0;
+					left: 0;
+				}
+				a:hover {
+					color: #6ed2eb;
+				}
+			}
+		}
+	}
+}
+#calendar table {
+	width: 100%;
+}
+.lang {
+	margin-left: 10px;
+	ul {
+		padding: 0;
+		margin: 0;
+		>li {
+			display: inline-block;
+		}
+		li:nth-child(1) {
+			font-family: 'geogrotesque';
+			font-weight: 300;
+			font-size: 14px;
+			/* margin-top: -8px; */
+			position: relative;
+			top: -2px;
+		}
+		li:nth-child(2) {
+			background: url("../img/es.png") no-repeat;
+			width: 25px;
+			height: 14px;
+			background-size: contain;
+			background-position: 0 0;
+		}
+	}
+}
+.icons-image {
+	width: 40px;
+	height: 40px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+	background-size: cover;
+}
+.icons-media {
+	background: url("../img/icons/media.jpg") no-repeat;
+}
+.icons-videos {
+	background: url("../img/icons/videos.jpg") no-repeat;
+}
+.icons-gallery {
+	background: url("../img/icons/gallery.jpg") no-repeat;
+}
+.icons-tickets {
+	background: url("../img/icons/tickets.jpg") no-repeat;
+}
+#debug {
+	display: block;
+	background-color: #b5bab5;
+	color: #000;
+	min-height: 100px;
+	font-size: 12px;
+	padding: 20px;
+}
+.preloader {
+	width: 100%;
+	text-align: center;
+	background-color: #fff;
+}
+/* .tag-artesvisuales {
+	background-color: #f9a831!important;
+}
+.tag-escenicas {
+	background-color: #ea148c!important;
+}
+.tag-musica {
+	background-color: #8b56a0!important;
+}
+.tag-tuvoz {
+	background-color: #b0cf43!important;
+}
+.tag-cine {
+	background-color: #e34156!important;
+}
+.tag-educacion {
+	background-color: #0058a5!important;
+}
+.tag-ninos {
+	background-color: #27a387!important;
+} */
+.search-box {
+	i:hover {
+		cursor: pointer;
+	}
+	.search-input {
+		input {
+			//	display:none;
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			right: 61%;
+			z-index: 1;
+			width: 0;
+			font-family: 'geogrotesque';
+		}
+	}
+}
+.share-icons-inside {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	i {
+		font-size: 20px;
+		color: #fff;
+		padding: 0 5px;
+	}
+}
+.sidebar-widget {
+	&.section-1 {
+		h4 {
+			margin-bottom: 0;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			li {
+				display: inline-block;
+				h2 {
+					font-size: 16px;
+				}
+				figure {
+					margin: 0;
+					padding: 0;
+				}
+			}
+		}
+	}
+	&.section-2 {
+		h4 {
+			margin-bottom: 0;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			li {
+				display: inline-block;
+				h2 {
+					font-size: 16px;
+				}
+				figure {
+					margin: 0;
+					padding: 0;
+				}
+			}
+		}
+	}
+	&.salas-sidebar {
+		ul {
+
+		}
+	}
+}

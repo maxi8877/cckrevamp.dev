@@ -1,0 +1,66 @@
+section#header {
+  @include breakpoint($smallmax-screens) {
+    .in-frame {
+      >ul {
+        >li {
+          height: 0;
+        }
+        >li:nth-child(1) {
+          display: block;
+          background-size: 35%;
+          background-position: left 0;
+          a {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+        >li:nth-child(2) {
+          display: none;
+        }
+        >li:nth-child(3) {
+          nav ul {
+            display: none;
+          }
+          li {
+
+          }
+          nav {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            .menu-toggle {
+              //    display: none;
+            }
+          }
+        }
+        >li:nth-child(4) {
+          display: none!important;
+        }
+      }
+    }
+  }
+}
+.hidden-menu {
+  @include breakpoint($smallmax-screens) {
+    #header {
+      border-bottom: 0 solid transparent;
+      .in-frame {
+        >ul {
+          >li {
+            height: 0;
+            //show
+          }
+          >li:nth-child(1) {
+            background: url("../img/logo-b.png") no-repeat;
+            background-position: center 0;
+            background-size: 90%;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

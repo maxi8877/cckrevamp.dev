@@ -1,0 +1,47 @@
+section#header {
+  @include breakpoint($medium-screens) {
+    .in-frame {
+    //  padding: 10px 30px 0!important;
+      >ul {
+        >li:nth-child(1) {
+        }
+        .logo {
+          background-size:contain;
+          background-position:left -30px;
+
+        }
+        .logos-container{
+        }
+      }
+    }
+  }
+}
+.hidden-menu {
+  @include breakpoint($medium-screens) {
+    border-bottom: 0 solid transparent!important;
+    height: 53px;
+    display: block;
+    #header {
+      .in-frame {
+        padding:0!important;
+        height: 41px;
+        >ul {
+          >li {
+            height: 40px;
+            display: block!important;
+          }
+          .logo {
+            background-size:90%;
+            background-position:10px 10px;
+
+
+          }
+          .logos-container{
+            display:none!important;
+
+          }
+        }
+      }
+    }
+  }
+}

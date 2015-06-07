@@ -1,0 +1,125 @@
+section#footer {
+  min-width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #f3f3f3;
+  margin-top:20px;
+  padding:0 0 100px 0;
+  .in-frame {
+    padding: 40px 0 0;
+    color: #fff;
+    font-size: 12px;
+    >ul {
+      //  border-top: 1px solid #fff;
+      padding: 20px 10px 0;
+      margin: 0;
+      >li {
+        display: inline-block;
+        h3 {
+          width: 100%;
+          color: #000;
+        }
+        li {
+          a {
+            font-family: 'geogrotesque';
+          }
+        }
+        ul {
+          padding: 0;
+          margin: 0;
+          li {
+            display: inline-block;
+            width: 100%;
+            padding: 5px 0;
+            //  padding:5px 0;
+            //  line-height: 23px;
+            a {
+              font-size: 12px;
+              color: #000;
+              text-decoration: none;
+              //padding: 2px 0;
+              text-transform: uppercase;
+              font-family: 'geogrotesque';
+            }
+            a:hover {
+              background-color: #fff;
+              color: #2b4bc7;
+              box-shadow: 1px 0 0 #fff, -1px 0 0 #fff;
+            }
+          }
+        }
+      }
+      >li:nth-child(6) {
+        clear: both;
+        margin: 20px 0;
+        ul {
+          >li {
+            a {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+      >li:nth-child(7) {
+        display: block;
+        margin: 20px 0;
+        text-align: left;
+        >ul {
+          li:nth-child(2) {
+          //  background: url("../img/ministerios.png") no-repeat;
+            background-position: center 30px;
+            background-size: 100%;
+            width: 80%;
+            height: 100px;
+          }
+
+        }
+      }
+    }
+  }
+  @include breakpoint($medium-screens) {
+    .in-frame {
+      padding: 40px 0 0;
+      color: #000;
+      font-size: 12px;
+      >ul {
+        //  border-top: 1px solid #fff;
+        padding: 20px 10px 0;
+        margin: 0;
+        >li {
+          display: inline-block;
+          h3 {
+            width: 100%;
+            font-size: 18px;
+            text-transform:uppercase;
+
+          }
+          ul {
+            padding: 0;
+            margin: 0;
+            li {
+              display: inline-block;
+              width: 100%;
+              padding: 5px 0;
+              //line-height: 23px;
+              a {
+                font-size: 13px;
+                color: #000;
+                text-decoration: none;
+                //padding: 2px;
+                text-transform: uppercase;
+                font-family: 'geogrotesque';
+                list-style: 2px;
+              }
+              a:hover {
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 2px;
+                color: #fff;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

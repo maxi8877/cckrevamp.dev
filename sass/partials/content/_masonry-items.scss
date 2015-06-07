@@ -1,0 +1,228 @@
+section#content {
+  .in-frame {
+    >ul {
+      z-index: 1;
+      .masonry-full {
+        width: 100%;
+      }
+      .masonry-half {
+        width: 100%;
+      }
+      .masonry-quarter {
+        width: 100%;
+      }
+      .masonry-calendar {
+        width: 100%;
+      }
+      .grid-sizer {
+        width: 0;
+      }
+    }
+    @include breakpoint($medium-screens) {
+      >ul {
+        .masonry-full {
+          width: 100%;
+        }
+        .masonry-half {
+          width: 50%;
+        }
+        .masonry-quarter {
+          width: 50%;
+        }
+        .masonry-calendar {
+          width: 50%;
+        }
+        .grid-sizer {
+          width: 0;
+        }
+      }
+    }
+    @include breakpoint($almost-screens) {
+      >ul {
+        .masonry-full {
+          width: 100%;
+        }
+        .masonry-half {
+          width: 50%;
+        }
+        .masonry-quarter {
+          width: 50%;
+        }
+        .masonry-calendar {
+          width: 50%;
+        }
+        .grid-sizer {
+          width: 0;
+        }
+      }
+    }
+    @include breakpoint($large-screens) {
+      >ul {
+        .masonry-full {
+          width: 100%;
+        }
+        .masonry-half {
+          width: 50%;
+        }
+        .masonry-quarter {
+          width: 25%;
+        }
+        .masonry-calendar {
+          width: 25%;
+        }
+        .grid-sizer {
+          width: 0;
+        }
+      }
+    }
+  }
+}
+.masonry-third {
+
+  //background: #ddd;
+}
+.inner-content {
+  #masonry-container {
+    top:100px;
+    padding-bottom:100px;
+    .item {
+
+      //position: relative;
+      padding: 0 1% ;
+      z-index: 1;
+      margin-bottom: 20px;
+      footer{
+        border-bottom: 1px solid #ddd;
+
+      }
+    }
+
+    .item:after {
+      position: absolute;
+      content: '';
+      width: 98%;
+      height: 100%;
+      //border: 1px solid #eee;
+      top: 0;
+      left: 0;
+      margin: 0 auto;
+      right: 0;
+      //background: #fff;
+      z-index: -1;
+    }
+
+    .masonry-full {
+      width: 100%;
+    }
+    .masonry-half {
+      width: 100%;
+    }
+    .masonry-third {
+      width: 100%;
+    }
+    .masonry-quarter {
+      width: 100%;
+    }
+    .masonry-calendar {
+      width: 100%;
+    }
+    .grid-sizer {
+      width: 0;
+    }
+    .grid-gutter {
+      width: 0;
+    }
+    @include breakpoint($medium-screens) {
+      .masonry-full {
+        width: 100%;
+      }
+      .masonry-half {
+        width: 50%;
+      }
+      .masonry-third {
+        width: 50%;
+      }
+      .masonry-quarter {
+        width: 50%;
+      }
+      .masonry-calendar {
+        width: 50%;
+      }
+      .grid-sizer {
+        width: 0;
+      }
+      .grid-gutter {
+        width: 0;
+      }
+      @include breakpoint($almost-screens) {
+        .masonry-full {
+          width: 100%;
+        }
+        .masonry-half {
+          width: 49%;
+        }
+        .masonry-third {
+          width: 50%;
+        }
+        .masonry-quarter {
+          width: 50%;
+        }
+        .masonry-calendar {
+          width: 50%;
+        }
+        .grid-gutter {
+          width: 0;
+        }
+      }
+      @include breakpoint($large-screens) {
+        .masonry-full {
+          width: 100%;
+        }
+        .masonry-half {
+          width: 50%;
+        }
+        .grid-sizer,
+        .masonry-third {
+          width: 33.333%;
+        }
+        .masonry-quarter {
+          width: 25%;
+        }
+        .masonry-calendar {
+          width: 33.3333%;
+        }
+
+        // .grid-sizer {
+        // //  width: 0;
+        // }
+        .grid-sizer {
+
+          //  width: 350px;
+        }
+        .grid-gutter {
+          width: 0;
+        }
+      }
+    }
+  }
+}
+
+.masonry-calendar{
+  .calendar-header {
+    font-family: 'geogrotesque';
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+    .calendar-header-month {
+      font-weight: 200;
+    }
+    i {
+      font-size: 19px;
+      position: relative;
+      top: -3px;
+      font-weight: 100;
+      color: #707070;
+      margin: 0 10px;
+    }
+}
+}

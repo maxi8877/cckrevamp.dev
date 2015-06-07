@@ -1,0 +1,28 @@
+@import "variables/variables-site";
+@import "normalize";
+//@import url(http://fonts.googleapis.com/css?family=Dosis);
+@import "fonts";
+
+//@import "bootswatch-scss/yeti/variables";
+//@import "bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
+
+//@import "bootswatch-scss/yeti/bootswatch";
+@import "../bower_components/breakpoint-sass/stylesheets/breakpoint";
+@import 'partials/partials';
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap";
+
+@import '../assets/fonts/font-awesome/scss/font-awesome';
+
+.inner-content > article > figure > img,
+.article-twitter,.article-evento-type-2{
+  img{
+    min-width:100%!important;
+  }
+}
+
+#content #masonry-container li{
+  opacity:0;
+}
+.gmnoprint {
+  display: none;
+}

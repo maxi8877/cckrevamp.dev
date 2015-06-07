@@ -1,0 +1,97 @@
+.right-corner {
+  .calendar-widget {
+    display: block;
+    width: 140px;
+    font-family: 'geogrotesque';
+    background-color: #00b0f6;
+    float: left;
+    position: absolute;
+    left: 20%;
+    top: 20px;
+    padding: 5px 10px;
+    i {
+      color: #fff;
+      font-size: 30px;
+      float: left;
+      width: 40%;
+      text-align: center;
+      margin-top: 11px;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      width: 60%;
+      float: left;
+      >li {
+        display: inline-block;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+      }
+      li:nth-child(1) {
+        font-size: 30px;
+      }
+      li:nth-child(2) {
+        font-size: 20px;
+      }
+    }
+  }
+  input#searchinchannel {
+    margin-top: 40px;
+    height: 31px;
+    position: absolute;
+    padding: 0 0 0 5px;
+    width: 173px;
+    right: 57px;
+    font-family: 'geogrotesque';
+  }
+  i.fa-search {
+    position: absolute;
+    top: 47px;
+    right: 67px;
+  }
+}
+.category-listings {
+  display: none;
+  position: relative;
+
+  //height: 50px;
+  width: 100%;
+  float: left;
+  ul {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline;
+      width: auto;
+      background-color: #ddd;
+
+      //float: left;
+      //margin-right: 5px;
+      //  text-align: center;
+      height: 30px;
+      padding-top: 4px;
+      a {
+        font-family: 'geogrotesque';
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+        padding-left: 2px;
+
+        //padding: 10px;
+      }
+    }
+    .tag-musica,
+    .tag-muestraspermanentes,
+    .tag-tuvoz {
+      a {
+        padding-left: 7px!important;
+      }
+    }
+  }
+  @include breakpoint($medium-screens) {
+    height:40px;
+    display: block;
+  }
+}

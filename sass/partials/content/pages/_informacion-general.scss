@@ -1,0 +1,36 @@
+//_________________________________
+//Dias Y Horarios
+//_________________________________
+.informacion-general {
+  article {
+    h1 {
+      background-color: #00b0f6;
+      display: block;
+      float: left;
+      font-size: 18px;
+      color: #fff;
+      padding: 5px;
+      margin: 15px 0 25px;
+    }
+    p {
+
+      clear: both;
+      line-height: 25px;
+      color: #606063;
+      font-family: 'geogrotesque';
+      font-weight: 300;
+    }
+    h3 {
+      margin-top: 40px;
+    }
+    @include breakpoint($smallmax-screens) {
+
+    }
+    @include breakpoint($almost-screens) {
+
+    }
+    @include breakpoint($medium-screens) {
+
+    }
+  }
+}

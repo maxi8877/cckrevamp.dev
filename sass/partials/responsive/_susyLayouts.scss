@@ -1,0 +1,967 @@
+@include border-box-sizing;
+$gridSizeMine: 1148px;
+$fullwidth: 1400px;
+$susy: (gutters: .25);
+.in-frame {
+  @include container($gridSizeMine center fluid);
+}
+.in-frame {
+  @include container($gridSizeMine center fluid);
+  .template-sidebar {
+    @include span(12 of 12 last);
+  }
+  .template-sidebar-right {
+    @include span(12 of 12 );
+  }
+  .template-full {
+    @include span(12 of 12 last);
+  }
+  #secondary {
+    clear: both;
+    @include span(12 of 12 last);
+  }
+  @include breakpoint($almost-screens) {
+    .template-sidebar {
+      @include span(17 of 24 last);
+    }
+    .template-sidebar-right {
+      @include span(17 of 24 );
+    }
+    .template-full {
+      @include span(12 of 12 last);
+    }
+    #secondary {
+      clear: none;
+      @include span(7 of 24 );
+    }
+    #secondary.right {
+      clear: none;
+      @include span(7 of 24 last );
+    }
+    .inner-content {
+      @include container(100% center fluid);
+      article.article-half:nth-child(even) {
+        @include span(6 of 12 last);
+
+        //float:left;
+      }
+      article.article-half:nth-child(odd) {
+        @include span(6 of 12 first );
+      }
+    }
+  }
+}
+.in-frame {
+  &.online {
+    @include container(960px center fluid);
+    .section-ver-escuchar {
+      .relacionados-grid {
+        >ul {
+          @include container(100% center fluid);
+          >li {
+            @include span(12 of 12 last );
+          }
+        }
+      }
+    }
+    @include breakpoint($medium-screens) {
+      .section-ver-escuchar {
+        @include container(960px center fluid);
+        .relacionados-grid {
+          >ul {
+            @include container(100% center fluid);
+            >li {
+              @include gallery(4 of 12 );
+            }
+          }
+        }
+        .recent-posts-grid-bottom {
+          >ul {
+            @include container(100% center fluid);
+            >li {
+              @include gallery(4 of 12 );
+            }
+          }
+        }
+      }
+    }
+  }
+}
+section.static {
+  .in-frame {
+    @include container($gridSizeMine center fluid);
+    .salas-container {
+      @include container(100% center fluid);
+      >li {
+        @include span(12 of 12 last);
+      }
+      >li:nth-child(1),
+      >li:nth-child(2),
+      >li:nth-child(3),
+      >li:nth-child(4),
+      >li:nth-child(5),
+      >li:nth-child(6),
+      >li:nth-child(7) {
+        @include span(12 of 12 last);
+        figure {
+          overflow: hidden;
+        }
+        ul {
+          >li {
+            @include container(100% center fluid);
+          }
+        }
+      }
+    }
+    @include breakpoint($smallmax-screens) {
+      .salas-container {
+        @include container(100% center fluid);
+        >li {
+          @include span(12 of 12 last);
+          figure {
+            max-height: 800px!important;
+          }
+        }
+        >li:nth-child(4) {
+          @include span(6 of 12 );
+        }
+        >li:nth-child(5) {
+          @include span(6 of 12 last);
+        }
+        >li:nth-child(6) {
+          @include span(6 of 12 );
+        }
+        >li:nth-child(7) {
+          @include span(6 of 12 last);
+        }
+      }
+    }
+    @include breakpoint($medium-screens) {
+      .salas-container {
+        @include container(100% center fluid);
+        >li {
+
+        }
+        >li:nth-child(1) {
+          @include span(12 of 12 last);
+        }
+        >li:nth-child(2) {
+          @include span( 12 of 12 last);
+        }
+        >li:nth-child(3) {
+          @include span(8 of 12 );
+        }
+        >li:nth-child(4) {
+          @include span(4 of 12 last);
+        }
+        >li:nth-child(5) {
+          @include span(4 of 12 );
+        }
+        >li:nth-child(6) {
+          @include span(4 of 12 );
+        }
+        >li:nth-child(7) {
+          @include span(4 of 12 last);
+        }
+      }
+    }
+  }
+}
+.inner-content {
+  &.horarios {
+    @include container(100% center fluid);
+    .horarios-columna-1,
+    .horarios-columna-2,
+    .horarios-columna-3 {
+      @include span(12 of 12 );
+    }
+    @include breakpoint($medium-screens) {
+      .horarios-columna-1,
+      .horarios-columna-2 {
+        @include span(4 of 12 );
+      }
+      .horarios-columna-3 {
+        @include span(4 of 12 last );
+      }
+    }
+  }
+}
+
+//ver-2
+//$susy: (gutters: 0.25);
+section.static {
+  .in-frame {
+    @include container($gridSizeMine 0 center fluid);
+    @include breakpoint($medium-screens) {
+      .salas-container {
+        >li:nth-child(1) {
+          @include container(100% center fluid);
+          >article {
+            >ul {
+              >li:nth-child(1) {
+                @include span(8 of 12 );
+              }
+              >li:nth-child(2) {
+                @include span(4 of 12 last );
+              }
+            }
+          }
+        }
+        >li:nth-child(2) {
+          @include span(8 of 12 );
+          >article {
+            >ul {
+              >li:nth-child(1) {
+                @include span(6 of 12 last );
+              }
+              >li:nth-child(2) {
+                @include span(6 of 12 );
+              }
+            }
+          }
+        }
+        >li:nth-child(3) {
+          @include span(8 of 12 );
+          >article {
+            >ul {
+              >li:nth-child(1) {
+                @include span(12 of 12 last );
+              }
+              >li:nth-child(2) {
+                @include span(12 of 12 last );
+              }
+            }
+          }
+        }
+        >li:nth-child(4) {
+          @include span(4 of 12 );
+          >article {
+            >ul {
+              >li:nth-child(1) {
+                @include span(12 of 12 last );
+              }
+              >li:nth-child(2) {
+                @include span(12 of 12 last );
+              }
+            }
+          }
+        }
+        >li:nth-child(5) {
+          @include span(4 of 12 );
+          >article {
+            >ul {
+              >li:nth-child(1) {
+                @include span(12 of 12 last );
+              }
+              >li:nth-child(2) {
+                @include span(12 of 12 last );
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+$susy: (gutters: .05);
+
+// section.online {
+//   .in-frame {
+//     .category-listings {
+//       >ul {
+//         @include container(100% center fluid);
+//         >li {
+//           @include gallery(1 of 6);
+//         }
+//         >li:nth-child(6) {
+//           @include span(1 of 6 last);
+//         }
+//       }
+//     }
+//   }
+// }
+//
+.category-listings {
+  >ul {
+    @include container(99% center fluid);
+    >li {
+      @include gallery(1 of 6);
+    }
+    >li:nth-child(6) {
+      @include span(1 of 6 last);
+    }
+  }
+}
+$susy: (gutters: .25);
+section#infinite-loader {
+  .in-frame {
+    @include container(960px center fluid);
+  }
+}
+section#header {
+  .in-frame {
+    >ul {
+      >li:nth-child(1) {
+        @include span(12 of 12 last);
+      }
+      >li:nth-child(2) {
+        @include span(12 of 12 last);
+      }
+    }
+  }
+  @include breakpoint($medium-screens) {
+    .in-frame {
+      >ul {
+        >li:nth-child(1) {
+          @include span(3 of 12 );
+        }
+        >li:nth-child(2) {
+          @include span(9 of 12 last );
+        }
+      }
+    }
+  }
+}
+$susy: (gutters: 0);
+section#footer,
+section#footer.columnas-footer-4 {
+  width: 100%!important;
+  .in-frame {
+    @include container($gridSizeMine center fluid);
+    >ul {
+      >li {
+        @include span(12 of 12 last)
+      }
+    }
+  }
+  @include breakpoint($large-screens) {
+    @include container($gridSizeMine center fluid);
+    .in-frame {
+      >ul {
+        >li:nth-child(1) {
+          @include span(3 of 12)
+        }
+        >li:nth-child(2) {
+          @include span(3 of 12)
+        }
+        >li:nth-child(3) {
+          @include span(3 of 12)
+        }
+        >li:nth-child(4) {
+          @include span(3 of 12)
+        }
+        >li:nth-last-child(1) {
+          @include span(3 of 12 last)
+        }
+      }
+    }
+  }
+}
+section#footer.columnas-footer-5 {
+  width: 100%!important;
+  .in-frame {
+    @include container($gridSizeMine center fluid);
+    >ul {
+      >li {
+        @include span(12 of 12 last)
+      }
+    }
+  }
+  @include breakpoint($large-screens) {
+    @include container($gridSizeMine center fluid);
+    .in-frame {
+      >ul {
+        >li:nth-child(1) {
+          @include span(2 of 10)
+        }
+        >li:nth-child(2) {
+          @include span(2 of 10)
+        }
+        >li:nth-child(3) {
+          @include span(2 of 10)
+        }
+        >li:nth-child(4) {
+          @include span(2 of 10)
+        }
+        >li:nth-child(5) {
+          @include span(2 of 10)
+        }
+        >li:nth-last-child(1) {
+          @include span(2 of 10 last)
+        }
+      }
+    }
+  }
+}
+section#footer.columnas-footer-6 {
+  width: 100%!important;
+  .in-frame {
+    @include container($gridSizeMine center fluid);
+    >ul {
+      >li {
+        @include span(12 of 12 last)
+      }
+    }
+  }
+  @include breakpoint($large-screens) {
+    @include container($gridSizeMine center fluid);
+    .in-frame {
+      >ul {
+        >li:nth-child(1) {
+          @include span(2 of 12)
+        }
+        >li:nth-child(2) {
+          @include span(2 of 12)
+        }
+        >li:nth-child(3) {
+          @include span(2 of 12)
+        }
+        >li:nth-child(4) {
+          @include span(2 of 12)
+        }
+        >li:nth-child(5) {
+          @include span(2 of 12)
+        }
+        >li:nth-child(6) {
+          @include span(2 of 12)
+        }
+        >li:nth-last-child(1) {
+          @include span(2 of 12 last)
+        }
+      }
+    }
+  }
+}
+section#content {
+  article {
+    @include container(100% center fluid);
+    .texto-inferior {
+      @include span(9 of 12)
+    }
+    .compartir {
+      @include span(3 of 12 last)
+    }
+    @include breakpoint($medium-screens) {
+      .texto-inferior {
+        @include span(9 of 12)
+      }
+      .compartir {
+        @include span(3 of 12 last)
+      }
+    }
+  }
+}
+section#content {
+  .in-frame {
+    @include container(100% center fluid);
+    @include breakpoint($smallmax-screens) {
+      @include container(481px center fluid);
+    }
+    @include breakpoint($medium-screens) {
+      @include container(641px center fluid);
+    }
+    @include breakpoint($almost-screens) {
+      @include container(840px center fluid);
+    }
+    @include breakpoint($large-screens) {
+      @include container(1100px center fluid);
+    }
+  }
+}
+$susy: (gutters: 0);
+@media only screen and (min-width: 0px) {
+  .large {
+    display: none;
+  }
+  .almost {
+    display: none;
+  }
+  .medium {
+    display: none;
+  }
+  .smallmax {
+    display: none;
+  }
+  .small {
+    display: block;
+  }
+}
+@include breakpoint($smallmax-screens) {
+  .large {
+    display: none;
+  }
+  .almost {
+    display: none;
+  }
+  .medium {
+    display: none;
+  }
+  .smallmax {
+    display: block;
+  }
+  .small {
+    display: none;
+  }
+}
+@include breakpoint($medium-screens) {
+  .large {
+    display: none;
+  }
+  .almost {
+    display: none;
+  }
+  .medium {
+    display: block;
+  }
+  .smallmax {
+    display: none;
+  }
+  .small {
+    display: none;
+  }
+}
+@include breakpoint($almost-screens) {
+  /* Style adjustments for viewports that meet the condition */
+  .large {
+    display: none;
+  }
+  .almost {
+    display: block;
+  }
+  .medium {
+    display: none;
+  }
+  .smallmax {
+    display: none;
+  }
+  .small {
+    display: none;
+  }
+}
+@include breakpoint($large-screens) {
+  /* Style adjustments for viewports that meet the condition */
+  .large {
+    display: block;
+  }
+  .almost {
+    display: none;
+  }
+  .medium {
+    display: none;
+  }
+  .smallmax {
+    display: none;
+  }
+  .small {
+    display: none;
+  }
+}
+.hiddden-menu {
+  .in-frame {
+
+  }
+}
+section#content-inside {
+  .content-header {
+    @include container($gridSizeMine center fluid);
+    >ul>li:nth-child(1),
+    main {
+      @include span(12 of 12);
+    }
+    >ul>li:nth-child(2),
+    aside {
+      @include span(12 of 12 last);
+    }
+  }
+  @include breakpoint($medium-screens) {
+    .content-header {
+      @include container($gridSizeMine center fluid);
+      >ul>li:nth-child(1),
+      main {
+        @include span(8 of 12);
+      }
+      >ul>li:nth-child(2),
+      aside {
+
+        //display:none;
+        @include span(4 of 12 last);
+      }
+    }
+  }
+}
+.como-llegar-info {
+  @include container(100% center fluid);
+  >div {
+    @include span(12 of 12 last);
+  }
+  @include breakpoint($medium-screens) {
+    >div {
+      @include span(4 of 12);
+    }
+    >div:nth-child(3) {
+      @include span(4 of 12 last);
+    }
+  }
+}
+.horarios-container {
+  @include container(100% fluid);
+  >li {
+    @include span(12 of 12 last);
+  }
+  @include breakpoint($medium-screens) {
+    >li:nth-child(1) {
+      @include span(4 of 12);
+      >ul {
+        >li {
+          @include span(12 of 12 last);
+        }
+      }
+    }
+    >li:nth-child(2) {
+      @include span(4 of 12 );
+      >ul {
+        >li {
+          @include span(12 of 12 last);
+        }
+      }
+    }
+  }
+}
+.informacion-general-iconos {
+  @include container(100% fluid);
+  >li {
+    @include gallery(6 of 12 );
+  }
+}
+
+
+.inner-content {
+  article {
+
+  }
+}
+.informacion-salas {
+  >li:nth-child(1) {
+    @include span(12 of 12 last);
+    >ul {
+      >li {
+        @include span(12 of 12 last);
+      }
+    }
+  }
+  >li:nth-child(2) {
+    @include span(12 of 12 last);
+  }
+  @include container(100% center fluid);
+  @include breakpoint($medium-screens) {
+    >li:nth-child(1) {
+      @include span(8 of 12);
+      >ul {
+        li:nth-child(1) {
+          @include span(6 of 12 );
+        }
+        li:nth-child(2) {
+          @include span(6 of 12 last);
+        }
+      }
+    }
+    >li:nth-child(2) {
+      @include span(4 of 12 last);
+    }
+  }
+}
+.envivo-media-list {
+  @include container(100% center fluid);
+  >li {
+    >ul {
+      @include container(100% center fluid);
+      >li {
+        @include span(12 of 12 last );
+      }
+    }
+  }
+  @include breakpoint($medium-screens) {
+    >li {
+      >ul {
+        @include container(100% center fluid);
+        >li:nth-child(1) {
+          @include span(2 of 12 );
+        }
+        >li:nth-child(2) {
+          @include span(8 of 12 );
+        }
+        >li:nth-child(3) {
+          @include span(2 of 12 last);
+        }
+      }
+    }
+  }
+}
+.actividades {
+  @include container(100% center fluid);
+  @include breakpoint($medium-screens) {
+    >ul {
+      li:nth-child(1) {
+        @include span(12 of 12 last);
+        >ul {
+          @include container(100% center fluid);
+          >li:nth-child(1) {
+            @include span(4 of 12 );
+          }
+          >li:nth-child(2) {
+            @include span(8 of 12 last);
+          }
+        }
+      }
+      li:nth-child(2) {
+        @include span(12 of 12 last);
+        >ul {
+          @include container(100% center fluid);
+          >li:nth-child(1) {
+            @include span(8 of 12 );
+          }
+          >li:nth-child(2) {
+            @include span(4 of 12 last);
+          }
+        }
+      }
+      li:nth-child(3) {
+        @include span(12 of 12 last);
+        >ul {
+          @include container(100% center fluid);
+          >li:nth-child(1) {
+            @include span(4 of 12 );
+          }
+          >li:nth-child(2) {
+            @include span(8 of 12 last);
+          }
+        }
+      }
+    }
+  }
+}
+.article-prensa-static {
+  @include container(100% center fluid);
+  >ul {
+    >li:nth-child(1) {
+      @include span(12 of 12 last);
+    }
+    >li:nth-child(2) {
+      @include span(12 of 12 last);
+      >ul {
+        >li {
+          min-width: 100%;
+          >ul {
+            @include container(100% center fluid);
+            >li:nth-child(1) {
+              @include span(2 of 12 );
+            }
+            >li:nth-child(2) {
+              @include span(10 of 12 last);
+            }
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint($medium-screens) {
+    >ul {
+      >li:nth-child(1) {
+        @include span(4 of 12 );
+      }
+      >li:nth-child(2) {
+        @include span(7 of 12 last);
+        >ul {
+          >li {
+            min-width: 100%;
+            >ul {
+              @include container(100% center fluid);
+              >li:nth-child(1) {
+                @include span(2 of 12 );
+              }
+              >li:nth-child(2) {
+                @include span(10 of 12 last);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.article-prensa-2-static {
+  @include container(100% center fluid);
+  >ul {
+    >li:nth-child(1) {
+      @include span(12 of 12 last);
+    }
+    >li:nth-child(2) {
+      @include span(12 of 12 last);
+    }
+  }
+  @include breakpoint($medium-screens) {
+    >ul {
+      >li:nth-child(1) {
+        @include span(3 of 12 );
+      }
+      >li:nth-child(2) {
+        @include span(9 of 12 last);
+        .item {
+          figure {
+            @include span(4 of 12 );
+          }
+          p {
+            @include span(8 of 12 last );
+          }
+          footer {
+
+          }
+        }
+      }
+    }
+  }
+}
+.section-prensa-2-static {
+  @include container(100% center fluid);
+  aside {
+    main {
+      @include span(12 of 12 last);
+    }
+  }
+  @include breakpoint($medium-screens) {
+    aside {
+      @include span(3 of 12 );
+    }
+    main {
+      @include span(9 of 12 last);
+      .item {
+        figure {
+          @include span(4 of 12 );
+        }
+        p {
+          @include span(8 of 12 last );
+        }
+        footer {
+
+        }
+      }
+    }
+  }
+}
+.section-contacto {
+  .contact-info {
+    @include container(100% center fluid);
+    >ul {
+      >li:nth-child(1) {
+        @include span(12 of 12 last);
+      }
+      >li:nth-child(2) {
+        @include span(12 of 12 last);
+      }
+    }
+  }
+  .contact-form {
+    @include container(100% center fluid);
+    fieldset:nth-child(1) {
+      @include span(12 of 12 last );
+    }
+    fieldset:nth-child(2) {
+      @include span(12 of 12 last );
+    }
+  }
+  @include breakpoint($medium-screens) {
+    .contact-info {
+      @include container(100% center fluid);
+      >ul {
+        >li:nth-child(1) {
+          @include span(5 of 12 );
+        }
+        >li:nth-child(2) {
+          @include span(5 of 12 );
+        }
+      }
+    }
+    .contact-form {
+      @include container(100% center fluid);
+      fieldset:nth-child(1) {
+        @include span(5 of 12 );
+      }
+      fieldset:nth-child(2) {
+        @include span(5 of 12 );
+      }
+    }
+  }
+}
+.article-sitemap-static {
+  >ul {
+    @include container(100% center fluid);
+    li {
+
+    }
+    >li {
+      @include span(12 of 12 last);
+      >ul {
+        @include container(100% center fluid);
+        >li:nth-child(1) {
+          @include span(12 of 12 last );
+        }
+        >li:nth-child(2) {
+          @include span(12 of 12 last);
+        }
+      }
+    }
+  }
+  @include breakpoint($medium-screens) {
+    >ul {
+      @include container(100% center fluid);
+      li {
+
+      }
+      >li {
+        @include span(12 of 12 last);
+        >ul {
+          @include container(100% center fluid);
+          >li:nth-child(1) {
+            @include span(2 of 12 );
+          }
+          >li:nth-child(2) {
+            @include span(10 of 12 last);
+          }
+        }
+      }
+    }
+  }
+}
+$susy: (gutters: .1, columns: 8 4, output:isolate);
+@include breakpoint($smallmax-screens) {
+  .salas-container-2 {
+    >li:nth-child(1),
+    >li:nth-child(3) {
+      >ul {
+        @include container(100% center fluid);
+        >li:nth-child(1) {
+          @include span(1 first);
+        }
+        >li:nth-child(2) {
+          @include span(1 at 2 last);
+        }
+      }
+    }
+  }
+}
+$susy: (gutters: .1, columns: 4 8, output:isolate);
+@include breakpoint($smallmax-screens) {
+  .salas-container-2 {
+    >li:nth-child(2) {
+      >ul {
+        @include container(100% center fluid);
+        >li:nth-child(1) {
+          @include span(1 first);
+        }
+        >li:nth-child(2) {
+          @include span(1 at 2 last);
+        }
+      }
+    }
+  }
+}

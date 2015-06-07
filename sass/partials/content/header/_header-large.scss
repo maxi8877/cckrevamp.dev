@@ -1,0 +1,66 @@
+section#header {
+  @include breakpoint($large-screens) {
+    display: block;
+    #header {
+      .in-frame {
+        >ul {
+          >li {
+            height: 80px;
+            display: block!important;
+            margin-right: 20px;
+            a {
+
+            }
+          }
+          .logo {
+            display: block;
+            position: relative;
+            background: url("../img/logo_c.png") repeat;
+            background-position: 8px -40px;
+
+            height: 90px;
+          }
+          .logo:hover {
+            display: block;
+            position: relative;
+            background: url("../img/logo_b.png") repeat;
+
+            height: 90px;
+          }
+          .logos-container {
+
+          }
+        }
+      }
+    }
+  }
+}
+.hidden-menu {
+  height: 41px!important;
+  @include breakpoint($large-screens) {
+    display: block;
+    margin: 0!important;
+    padding: 0!important;
+    #header {
+      position: absolute;
+      top: 0;
+      margin: 0!important;
+      padding: 0!important;
+      border-bottom: 0 solid transparent!important;
+      .in-frame {
+        padding: 0!important;
+        >ul {
+          >li {
+            display: block!important;
+          }
+          .logo {
+
+          }
+          .logos-container {
+
+          }
+        }
+      }
+    }
+  }
+}

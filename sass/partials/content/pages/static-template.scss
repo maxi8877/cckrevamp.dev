@@ -1,0 +1,247 @@
+section.static.horarios {
+  .in-frame {
+    .content-header {
+      >ul {
+        padding: 0!important;
+        margin: 0;
+        >li {
+          display: inline-block;
+        }
+        >li:nth-child(1) {
+          h1 {
+
+          }
+          p {
+
+          }
+        }
+        li:nth-child(2) {
+
+        }
+      }
+    }
+    #secondary {
+
+    }
+  }
+  .inner-content {
+    padding: 15px 15px 15px 15px;
+
+
+
+
+
+
+    .clearfix{
+    clear:both;
+    height: 40px;
+    float:left;
+    }
+  }
+  @include breakpoint($smallmax-screens) {
+    .in-frame {
+      .content-header {
+        >ul {
+          >li {
+
+          }
+          >li:nth-child(1) {
+            h1 {
+
+            }
+            p {
+
+            }
+          }
+          li:nth-child(2) {
+            .calendar-widget {
+              i {
+
+              }
+              ul {
+                >li {
+
+                }
+                li:nth-child(1) {
+
+                }
+                li:nth-child(2) {
+
+                }
+              }
+            }
+          }
+        }
+      }
+      #secondary {
+        .calendar-header {
+          .calendar-header-month {
+
+          }
+          i {
+
+          }
+        }
+        .sidebar-menu {
+
+        }
+      }
+    }
+    .inner-content {
+      article {
+        header {
+          h4 {
+
+          }
+          h1 {
+            strong {
+
+            }
+          }
+          h3.sala {
+
+          }
+          h3 {
+
+          }
+        }
+        p {
+
+        }
+        figure {
+          img {
+
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint($almost-screens) {
+    .in-frame {
+      .content-header {
+        position: relative;
+        >ul {
+          >li {
+
+          }
+          >li:nth-child(1) {
+            h1 {
+
+            }
+            p {
+
+            }
+          }
+          li:nth-child(2) {
+
+          }
+        }
+      }
+      #secondary {
+        .calendar-header {
+          .calendar-header-month {
+
+          }
+          i {
+
+          }
+        }
+        .sidebar-menu {
+
+        }
+      }
+    }
+    .inner-content {
+      padding: 10px 15px 20px;
+      position: relative;
+      article {
+
+      }
+    }
+    .inner-content:after {
+
+    }
+  }
+  @include breakpoint($large-screens) {
+    .in-frame {
+      .content-header {
+        >ul {
+          >li {
+
+          }
+          >li:nth-child(1) {
+            h1 {
+
+            }
+            p {
+
+            }
+          }
+          li:nth-child(2) {
+            .calendar-widget {
+              i {
+
+              }
+              ul {
+                >li {
+
+                }
+                li:nth-child(1) {
+
+                }
+                li:nth-child(2) {
+
+                }
+              }
+            }
+          }
+        }
+      }
+      #secondary {
+        .calendar-header {
+          .calendar-header-month {
+
+          }
+          i {
+
+          }
+        }
+        .sidebar-menu {
+
+        }
+      }
+    }
+    .inner-content {
+      padding: 10px 40px 50px 40px;
+      article {
+        header {
+          h4 {
+
+          }
+          h1 {
+            strong {
+
+            }
+          }
+          h3.sala {
+
+          }
+          h3 {
+
+          }
+        }
+        p {
+
+        }
+        figure {
+          img {
+
+          }
+        }
+      }
+    }
+    .inner-content:before {
+
+    }
+  }
+}

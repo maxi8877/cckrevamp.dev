@@ -1,0 +1,50 @@
+section#header:hover {
+  .logo{
+    background:url("../img/logo-c.pnp");
+  }
+}
+section#header {
+  @include breakpoint($smallmax-screens) {
+    .in-frame {
+      >ul {
+        >li {
+          height: 0;
+        }
+        .logo {
+          background-size:200px;
+          background-position:left -40px;
+          height:100px;
+          position:relative;
+
+          a {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+        .logos-container {
+
+        }
+      }
+    }
+  }
+}
+.hidden-menu {
+  @include breakpoint($smallmax-screens) {
+    #header {
+      border-bottom: 0 solid transparent;
+      .in-frame {
+        >ul {
+          >li {
+            height: 0;
+          }
+          >li:nth-child(1) {
+
+          }
+        }
+      }
+    }
+  }
+}

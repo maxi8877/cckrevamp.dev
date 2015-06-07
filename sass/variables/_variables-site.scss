@@ -1,0 +1,27 @@
+@import "colors";
+@import "typography";
+
+
+$susy: (
+flow: ltr,
+math: fluid,
+output: float,
+gutter-position: after,
+container: 100%,
+container-position: center,
+columns: 12,
+gutters: .25,
+column-width: false,
+global-box-sizing: content-box,
+
+
+);
+//Breakpoints
+$small-screens: max-width 480px;
+$smallmax2-screens: min-width 400px;
+$smallmax-screens: min-width 481px;
+$medium-screens: min-width 641px;
+$almost-screens: min-width 840px;
+$large-screens: min-width 1100px;
+$xlarge-screens: min-width 1250px;
+$xxlarge-screens: min-width 1600px;

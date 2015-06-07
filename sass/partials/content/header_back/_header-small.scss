@@ -1,0 +1,148 @@
+section#header {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  color: #fff;
+  background-color: #000;
+  border-bottom: 3px solid #fff;
+  .in-frame {
+    position: relative;
+    padding: 30px 10px 0;
+    >ul {
+      padding: 0;
+      margin: 0;
+      >li {
+        display: inline-block;
+        //height: 100px;
+      }
+      >li:nth-child(1) {
+        display: block;
+        position: relative;
+        background: url("../img/logo.png") no-repeat;
+        background-position: top center;
+        background-size: 50%;
+        height: 80px;
+      }
+      >li:nth-child(2) {
+        display: none;
+        position: relative;
+        background: url("../img/presidencia.png") no-repeat;
+        background-position: center center;
+        background-size: 70%;
+        height: 0;
+      }
+      >li:nth-child(3) {
+        .menu-toggle {
+          text-align: right;
+          font-size: 30px;
+          width: 15%;
+          top: 10px;
+          right: 10px;
+          float: right;
+          position: absolute;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        nav {
+          height: 0;
+        }
+        nav ul {
+          display: none;
+        }
+      }
+      >li:nth-child(4) {
+        display: none;
+      }
+    }
+  }
+}
+.hidden-menu {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+  height: 41px;
+  display: none;
+  border-bottom: 1px solid #000;
+  #header {
+    background-color: #fff;
+    height: 41px;
+    border-bottom: 1px solid #000;
+    .in-frame {
+      padding: 0;
+      >ul {
+        >li {
+          height: 0;
+          //show
+        }
+        >li:nth-child(1) {
+          background: url("../img/iso-b.png") no-repeat!important;
+          background-position: center 0;
+          background-size: 40%!important;
+          display: none;
+        }
+        >li:nth-child(2) {
+          //background: url("../img/presidencia-b.png") no-repeat;
+          background: none;
+          background-position: center 0;
+        }
+        >li:nth-child(4) {
+          height: 0;
+          >ul {
+            top: 31px;
+            li {
+
+            }
+            >li:nth-child(1) {
+              color: #000;
+          
+
+            }
+            >li:nth-child(2) {
+              color: #000;
+              /* background: url("../img/lang-b.png") no-repeat;
+              background-position: center 0; */
+            }
+          }
+        }
+      }
+    }
+  }
+}
+section#header {
+  .toggled {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 526px;
+    color: #000;
+    li {
+      clear: both;
+      a {
+        color: #000;
+      }
+    }
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

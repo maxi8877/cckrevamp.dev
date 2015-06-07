@@ -1,0 +1,35 @@
+//_________________________________
+//Dias Y Horarios
+//_________________________________
+.horarios {
+  article {
+    >h1 {
+      color: #00b0f6;
+    }
+    .horarios-block {
+      border-bottom:1px solid #eee;
+      margin-bottom:20px;
+      padding-bottom:20px;
+      h2 {
+        font-weight: 300;
+        font-size: 22px;
+      }
+      p {
+        font-family: 'geogrotesque';
+        font-size: 17px;
+        line-height: 20px;
+        font-weight: 200;
+        color: #606063;
+      }
+    }
+    @include breakpoint($smallmax-screens) {
+
+    }
+    @include breakpoint($almost-screens) {
+
+    }
+    @include breakpoint($medium-screens) {
+
+    }
+  }
+}

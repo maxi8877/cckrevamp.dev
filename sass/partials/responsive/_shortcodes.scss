@@ -1,0 +1,136 @@
+/*
+  --------------------------------------------------------------
+  Shortcodes
+  --------------------------------------------------------------
+  */
+$susy: (gutters: .25, columns: 12);
+.main,
+.row-content {
+  @include container(100% center fluid);
+}
+.row-content {
+  clear: both;
+}
+$susy: (gutters: .25, columns: 12);
+.sh-half-column,
+.sh-third-column,
+.sh-quarter-column,
+.sh-two-thirds-column,
+.sh-three-quarters-column {
+  @include span(12 of 12 last .25 fluid);
+}
+.sh-half-column,
+.sh-third-column,
+.sh-quarter-column,
+.sh-three-quarters-column,
+.sh-one-column,
+.sh-two-column,
+.sh-three-column,
+.sh-four-column,
+.sh-five-column,
+.sh-six-column,
+.sh-seven-column,
+.sh-eight-column,
+.sh-nine-column,
+.sh-ten-column,
+.sh-eleven-column,
+.sh-twelve-column {
+  @include span(12 of 12 last .25 fluid);
+}
+@include breakpoint($medium-screens) {
+  .sh-one-column {
+    @include span(1 of 12 .25 fluid);
+  }
+  .sh-one-column.last {
+    @include span(1 of 12 .25 fluid last);
+  }
+  .sh-two-column {
+    @include span(2 of 12 .25 fluid);
+  }
+  .sh-two-column.last {
+    @include span(2 of 12 .25 fluid last);
+  }
+  .sh-half-column,
+  .sh-six-column {
+    @include span(6 of 12 .25 fluid);
+  }
+  .sh-half-column.last,
+  .sh-six-column.last {
+    @include span(6 of 12 .25 fluid last);
+  }
+  .sh-third-column,
+  .sh-four-column {
+    @include span(4 of 12 .25 fluid);
+  }
+  .sh-third-column.last,
+  .sh-four-column.last {
+    @include span(4 of 12 .25 fluid last);
+  }
+  .sh-quarter-column,
+  .sh-three-column {
+    @include span(3 of 12 .25 fluid);
+  }
+  .sh-quarter-column.last,
+  .sh-three-column.last {
+    @include span(3 of 12 .25 fluid last);
+  }
+  .sh-seven-column {
+    @include span(7 of 12 .25 fluid);
+  }
+  .sh-seven-column.last {
+    @include span(7 of 12 .25 fluid last);
+  }
+  .sh-eight-column,
+  .sh-two-thirds-column {
+    @include span(8 of 12 .25 fluid);
+  }
+  .sh-eight-column.last,
+  .sh-two-thirds-column.last {
+    @include span(8 of 12 .25 fluid last);
+  }
+  .sh-three-quarters-column,
+  .sh-nine-column {
+    @include span(9 of 12 .25 fluid);
+  }
+  .sh-three-quarters-column.last,
+  .sh-nine-column.last {
+    @include span(9 of 12 .25 fluid last);
+  }
+  .sh-ten-column {
+    @include span(10 of 12 .25 fluid);
+  }
+  .sh-ten-column.last {
+    @include span(10 of 12 .25 fluid last);
+  }
+  .sh-eleven-column {
+    @include span(11 of 12 .25 fluid);
+  }
+  .sh-eleven-column.last {
+    @include span(11 of 12 .25 fluid last);
+  }
+  .sh-twelve-column.last {
+    @include span(12 of 12 last);
+  }
+  .sh-gallery {
+    padding: 0 2% 10px;
+    h3 {
+      font-weight: 600;
+      font-size: 17px;
+      border-bottom: 1px solid #b5b0b0;
+    }
+  }
+  .sh-gallery-half {
+    >li {
+      @include gallery(1 of 2);
+    }
+  }
+  .sh-gallery-third {
+    @include gallery(4 of 12);
+  }
+  .sh-gallery-quarter {
+    @include gallery(3 of 12);
+  }
+  .sh-gallery-sixth {
+    @include gallery(2 of 12);
+  }
+}

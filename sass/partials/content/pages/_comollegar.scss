@@ -1,0 +1,79 @@
+//_________________________________
+//Como llegar
+//_________________________________
+.section-como-llegar{
+  article {
+    header {
+      margin-top: -20px;
+      h1 {
+        float: left;
+        width: 60%;
+        margin: 10px 0;
+      }
+      h3 {
+        float: left;
+        width: 60%;
+        margin: 10px 0;
+      }
+      .descargar-mapa {
+        float: right;
+        padding: 20px 0;
+      }
+    }
+    .mapa {
+      float: left;
+      width: 100%;
+      .map_canvas {
+        width: auto;
+      }
+    }
+    .como-llegar-info {
+      margin: 0;
+      padding: 0;
+      >div {
+        font-family: 'geogrotesque';
+        padding: 10px 20px;
+        display: inline-block;
+        h1 {
+          clear: none;
+          float: left;
+          display: block;
+          img {
+            max-height: 40px;
+          }
+        }
+        h2 {
+          clear: none;
+          float: left;
+          display: block;
+          margin: 25px 0 0 10px;
+          color: #00adef;
+          font-weight: 400;
+        }
+        p {
+          clear: both;
+          font-size: 18px;
+          font-weight: 200;
+          strong {
+            font-weight: 400;
+          }
+        }
+      }
+      div:nth-child(1) {
+        p {
+          line-height: 30px;
+        }
+      }
+    }
+
+    @include breakpoint($smallmax-screens) {
+
+    }
+    @include breakpoint($almost-screens) {
+
+    }
+    @include breakpoint($medium-screens) {
+
+    }
+  }
+}
