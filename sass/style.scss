@@ -7,12 +7,13 @@
 //@import "bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
 
 //@import "bootswatch-scss/yeti/bootswatch";
+@import 'mixings/mixings-master';
+
 @import "../bower_components/breakpoint-sass/stylesheets/breakpoint";
 @import 'partials/partials';
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
 
 @import '../assets/fonts/font-awesome/scss/font-awesome';
-
 .inner-content > article > figure > img,
 .article-twitter,.article-evento-type-2{
   img{

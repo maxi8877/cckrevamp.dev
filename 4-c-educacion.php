@@ -2,7 +2,7 @@
 
 <section id="inside-header">
 </section>
-<section id="content-inside" class="online">
+<section id="content-inside">
   <div class="in-frame">
     <div class="content-header">
       <ul>
@@ -29,7 +29,7 @@
       .inner-content .muestraspermanentes
       .inner-content .tuvoz
       -->
-    <div class="inner-content educacion">
+      <div class="inner-content section-ver-escuchar educacion">
       <div class="category-listings">
         <ul>
           <li class="tag-artesvisuales">
@@ -108,38 +108,6 @@
       </article>
       <div class="header-container-2">
         <h6 class="recent-posts-title">RECIENTES</h6>
-      </div>
-      <div class="recent-posts-grid recent-posts-grid-top">
-        <ul>
-          <li>
-            <header>
-              <span>Todo lo que esta mi Lado</span>
-            </header>
-            <img src="assets/img/online-inside/first.jpg" />
-            <i class="fa fa-youtube-play"></i>
-            <a href="verescuchar-in.php"></a>
-          </li>
-          <li>
-            <ul>
-              <li>
-                <header>
-                  <span>Así se baila el Tango</span>
-                </header>
-                <img src="assets/img/online-inside/tango.jpg" />
-                <i class="fa fa-youtube-play"></i>
-                <a href="verescuchar-in.php"></a>
-              </li>
-              <li>
-                <header>
-                  <span>Sophie Calle</span>
-                </header>
-                <img src="assets/img/online-inside/3.jpg" />
-                <i class="fa fa-youtube-play"></i>
-                <a href="verescuchar-in.php"></a>
-              </li>
-            </ul>
-          </li>
-        </ul>
       </div>
       <div class="recent-posts-grid recent-posts-grid-bottom">
         <ul>

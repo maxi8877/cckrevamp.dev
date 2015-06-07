@@ -4,9 +4,9 @@
     width: 140px;
     font-family: 'geogrotesque';
     background-color: #00b0f6;
-    float: left;
+    float: right;
     position: absolute;
-    left: 20%;
+    right: 25px;
     top: 20px;
     padding: 5px 10px;
     i {
@@ -72,12 +72,20 @@
       //  text-align: center;
       height: 30px;
       padding-top: 4px;
+      position:relative;
+
       a {
         font-family: 'geogrotesque';
         color: #fff;
         text-decoration: none;
         font-size: 13px;
-        padding-left: 2px;
+        padding: 6px 0 0 28px ;
+        width: 100%;
+        height:100%;
+        position:absolute;
+        top:0px;
+        left:0;
+
 
         //padding: 10px;
       }
@@ -86,7 +94,7 @@
     .tag-muestraspermanentes,
     .tag-tuvoz {
       a {
-        padding-left: 7px!important;
+        padding-left: 30px!important;
       }
     }
   }

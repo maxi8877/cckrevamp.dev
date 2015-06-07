@@ -2,7 +2,7 @@
 
 <section id="inside-header">
 </section>
-<section id="content-inside" class="static ">
+<section id="content-inside">
   <div class="in-frame">
     <div class="content-header">
       <ul>

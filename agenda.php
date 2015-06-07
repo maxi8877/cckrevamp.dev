@@ -2,32 +2,34 @@
 
 <section id="inside-header">
 </section>
-<section id="content-inside" class="agenda">
+<section id="content-inside">
   <div class="in-frame">
     <div class="content-header">
-      <main>
-        <div class="header-title-container">
-          <h1>
-            <a href="#">Programación /</a>
-            <span class="light">Agenda</span>
-          </h1>
-        </div>
-      </main>
-      <aside class="right-corner">
-        <div class="calendar-widget">
-          <i class="fa fa-calendar-o"></i>
-          <ul>
-            <li class="calendar-day">
-              20
-            </li>
-            <li class="calendar-month">
-              Mayo
-            </li>
-          </ul>
-        </div>
-      </aside>
+      <ul>
+        <li>
+          <div class="header-title-container">
+            <h1>
+              <a href="#">Programación /</a>
+              <span class="light">Agenda</span>
+            </h1>
+          </div>
+        </li>
+        </li>
+        <li class="right-corner">
+          <div class="calendar-widget">
+            <i class="fa fa-calendar-o"></i>
+            <ul>
+              <li class="calendar-day">
+                20
+              </li>
+              <li class="calendar-month">
+                Mayo
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
     </div>
-
     <div class="inner-content template-sidebar-full section-agenda">
       <div class="category-listings">
         <ul>
@@ -58,81 +60,78 @@
 
 
 
-        <a href="agenda-in.php">
-          <header>
-            <h4>
-              <strong class='tag-artesvisuales'>ARTES VISUALES</strong> Del 15 de Junio al 1 de Julio</h4>
-            <h1>
-              <strong>Sophie Calle,</strong> Cuídese mucho
-            </h1>
-          </header>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-            pretium quis</p>
-          <figure>
-            <img src="assets/img/eventos/sophie-inside.jpg" />
-            <figcaption>
+          <a href="agenda-in.php">
+            <header>
+              <h4>
+                <strong class='tag-artesvisuales'>ARTES VISUALES</strong> Del 15 de Junio al 1 de Julio</h4>
+              <h1>
+                <strong>Sophie Calle,</strong> Cuídese mucho
+              </h1>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+              pretium quis</p>
+            <figure>
+              <img src="assets/img/eventos/sophie-inside.jpg" />
+              <figcaption>
+                <div class="share-icons-inside">
+                  <a href="#"><i class="fa fa-calendar-o"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+              </figcaption>
+            </figure>
+            <footer>
+            </footer>
+          </a>
+        </article>
+        <article class="item article-agenda masonry-third">
+          <a href="agenda-in.php">
+            <header>
+              <h4>
+                <strong class='tag-escenicas'>artes escénicas</strong> Del 15 de Junio al 1 de Julio</h4>
+              <h1>
+                Así se baila el tango
+              </h1>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+              pretium quis</p>
+            <figure>
+              <img src="assets/img/eventos/tango-inside.jpg" />
               <div class="share-icons-inside">
                 <a href="#"><i class="fa fa-calendar-o"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
                 <a href="#"><i class="fa fa-facebook"></i></a>
               </div>
-            </figcaption>
-          </figure>
-          <footer>
-          </footer>
-        </a>
-      </article>
+            </figure>
+            <footer>
+            </footer>
+          </a>
+        </article>
+        <article class="item article-agenda masonry-third">
+          <a href="agenda-in.php">
+            <header>
+              <h4>
+                <strong class='tag-musica'>Música</strong> Del 15 de Junio al 1 de Julio</h4>
+              <h1>
+                Sueña que duerme en el fondo del mar
+              </h1>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+              pretium quis</p>
+            <figure>
+              <img src="assets/img/eventos/duerme-inside.jpg" />
+              <div class="share-icons-inside">
+                <a href="#"><i class="fa fa-calendar-o"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </div>
+            </figure>
+            <footer>
+            </footer>
+          </a>
+        </article>
 
-
-      
-      <article class="item article-agenda masonry-third">
-        <a href="agenda-in.php">
-          <header>
-            <h4>
-              <strong class='tag-escenicas'>artes escénicas</strong> Del 15 de Junio al 1 de Julio</h4>
-            <h1>
-              Así se baila el tango
-            </h1>
-          </header>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-            pretium quis</p>
-          <figure>
-            <img src="assets/img/eventos/tango-inside.jpg" />
-            <div class="share-icons-inside">
-              <a href="#"><i class="fa fa-calendar-o"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-facebook"></i></a>
-            </div>
-          </figure>
-          <footer>
-          </footer>
-        </a>
-      </article>
-      <article class="item article-agenda masonry-third">
-        <a href="agenda-in.php">
-          <header>
-            <h4>
-              <strong class='tag-musica'>Música</strong> Del 15 de Junio al 1 de Julio</h4>
-            <h1>
-              Sueña que duerme en el fondo del mar
-            </h1>
-          </header>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-            pretium quis</p>
-          <figure>
-            <img src="assets/img/eventos/duerme-inside.jpg" />
-            <div class="share-icons-inside">
-              <a href="#"><i class="fa fa-calendar-o"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-facebook"></i></a>
-            </div>
-          </figure>
-          <footer>
-          </footer>
-        </a>
-      </article>
-
-    </div>
+      </div>
     </div>
   </div>
 </section>

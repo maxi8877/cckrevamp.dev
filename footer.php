@@ -16,7 +16,7 @@
         <h3>PROGRAMACIÓN</h3>
         <ul>
           <li><a href="agenda.php">En agenda</a></li>
-          <li><a href="agenda.php">Muestras</a></li>
+          <li><a href="exposiciones.php">Exposiciones</a></li>
         </ul>
 
       </li>
@@ -26,6 +26,7 @@
         <ul>
           <li><a href="envivo.php">En Vivo</a></li>
           <li><a href="verescuchar.php">Video</a></li>
+          <li><a href="fotos.php">Fotos</a></li>
         </ul>
       </li>
 
@@ -35,7 +36,7 @@
           <li><a href="historia.php">Historia</a></li>
           <li><a href="salas.php">Salas</a></li>
           <li><a href="contacto.php">Contacto</a></li>
-          <li><a href="prensa-2.php">Prensa</a></li>
+          <li><a href="prensa.php">Prensa</a></li>
           <li><a href="social.php">Redes</a></li>
           <li><a href="sitemap.php">Mapa del Sitio</a></li>
         </ul>

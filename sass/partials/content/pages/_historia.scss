@@ -1,0 +1,27 @@
+//_________________________________
+//agenda
+//_________________________________
+.section-historia {
+  article{
+      h1 {
+        background-color: #00b0f6;
+        display: block;
+        float: left;
+        font-size: 18px;
+        color: #fff;
+        padding: 5px;
+        margin: 15px 0 25px;
+    
+    }
+  }
+
+  @include breakpoint($smallmax-screens) {
+
+  }
+  @include breakpoint($almost-screens) {
+
+  }
+  @include breakpoint($medium-screens) {
+
+  }
+}

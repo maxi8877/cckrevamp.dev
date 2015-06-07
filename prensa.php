@@ -1,131 +1,62 @@
 <?php include( 'header.php'); ?>
 
 
-  <section id="inside-header">
-  </section>
-  <section id="content-inside" class="static">
-    <div class="in-frame">
-      <div class="content-header">
-        <ul>
-          <li>
-            <div class="header-title-container">
-              <h1>
-                <a href="#">El Centro / </a>
-                <span class="light">Prensa</span>
-              </h1>
-              <p>
-              </p>
-            </div>
-          </li>
-          <li class="right-corner">
-          </li>
-        </ul>
-      </div>
-      <div class="inner-content template-full">
-        <article class="article-prensa-static">
-          <ul>
-            <li>
+<section id="inside-header">
+</section>
+<section id="content-inside">
+  <div class="in-frame">
+    <div class="content-header">
+      <ul>
+        <li>
+          <div class="header-title-container">
+            <h1>
+              <a href="#">El Centro /</a>
+              <span class="light">Prensa</span>
+            </h1>
+            <p>
+            </p>
+          </div>
+        </li>
+        <li class="right-corner">
+        </li>
+      </ul>
+    </div>
+    <div class="inner-content template-full section-prensas">
 
-               <ul>
-                <li>
-                  <h2>Recursos Descargables</h2>
-                  <ul>
-                    <li>
-                      <a href="#">DOCUMENTO DE PRENSA</a>
-                    </li>
-                    <li>
-                      <a href="#">RECURSOS DE GRAFICOS CCK</a>
-                    </li>
-                    <li>
-                      <a href="#">IMAGENES DE ALTA RESOLUCIÓN</a>
-                    </li>
-                  </ul>
-                  <hr>
-                </li>
-                <li>
-                  <h2> Contacto de Prensa </h2>
-                  <p>
-                    Ana María Gutierrez
-                    <br> Bouchard 2535 of. 3. CABA
-                    <br> prensa@cckirchner.com.ar
-                  </p>
-                  <hr>
-                </li>
-                <li>
-                  <p>Todas las imágenes son propiedad de sus dueños y son cedidas con fines demostrativos e informativos, esta prohibida la xoxoxoxoxoxo xo oxoxox oxoxox oxoxoxox xoxoxox oxoxo xoxoxoxo xoxox</p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <h2>Centro Cultural Kirchner en los medios:</h2>
-              <ul>
-                <li>
-                  <ul>
-                    <li>
-                      20/04
-                    </li>
-                    <li>
-                      <a href="#">Noticia título xoxooxoxxoxoxoxoxoxoxoxo-Medio</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <li>
-                      20/04
-                    </li>
-                    <li>
-                      <a href="#">Noticia xoxooxoxxoxoxoxxoxoxoxoxoxoxoxoxoxo-Medio</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <li>
-                      20/04
-                    </li>
-                    <li>
-                      <a href="#">Noticia título xoxooxoxxoxoxoxoxoxoxoxo-Medio</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <li>
-                      20/04
-                    </li>
-                    <li>
-                      <a href="#">Noticia título xoxooxoxxoxoxoxxoxoxoxoxoxoxoxoxoxo-Medio</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <li>
-                      20/04
-                    </li>
-                    <li>
-                      <a href="#">Noticia título xoxooxoxxoxoxoxoxoxoxoxo-Medio</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <li>
-                      20/04
-                    </li>
-                    <li>
-                      <a href="#">Noticia título xoxooxoxxoxoxoxxoxoxoxoxoxoxoxoxoxo-Medio</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
+      <div id="masonry-container">
+        <div class="grid-sizer"></div>
+        <div class="grid-gutter"></div>
+        <?php for ($i=0;$i<10;$i++):?>
+          <?php// $content = file_get_contents('http://loripsum.net/api/1/short/plaintext');?>
+        <article class="item article-muestras masonry-third">
+          <a href="prensa-in.php">
+            <header>
+              <h4>
+                <strong>Noticias</strong> 1 de Julio</h4>
+              <h1>
+                Espacios del Correo Oficial de la República Argentina
+              </h1>
+            </header>
+            <p>La Presidenta de la Nación, Cristina Fernández de Kirchner, encabezó el acto de puesta en funcionamiento del "Centro Cultural Kirchner".</p>
+
+            <figure>
+              <img src="https://placehold.it/640x480" />
+              <figcaption>
+                <!-- <div class="share-icons-inside">
+                  <a href="#"><i class="fa fa-calendar-o"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </div> -->
+              </figcaption>
+            </figure>
+            <footer>
+            </footer>
+          </a>
         </article>
+      <?php endfor; ?>
+
       </div>
     </div>
-  </section>
   </div>
-
-  <?php include( 'footer.php'); ?>
+</section>
+<?php include( 'footer.php'); ?>

@@ -9,8 +9,8 @@
         <li>
           <div class="header-title-container">
             <h1>
-              <a href="2.html">Programación /</a>
-              <span class="light"><a href="muestras.php">Muestras</a></span>
+              <a href="#">Programación /</a>
+              <span class="light"><a href="exposiciones.php">Exposiciones</a></span>
             </h1>
             <p>
             </p>
@@ -39,7 +39,7 @@
         </footer>
       </article>
     </div>
-    <div id="secondary" class="right">
+    <div id="secondary" class="right sticky-sidebar">
       <div class="agenda-in-sidebar">
         <div class="agenda-in-info-event sidebar-panel sidebar-muestras">
           <p>Fecha de estreno: xoxoxoxo</p>

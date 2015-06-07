@@ -3,7 +3,7 @@
 
 <section id="inside-header">
 </section>
-<section id="content-inside" class="static">
+<section id="content-inside">
   <div class="in-frame">
     <div class="content-header">
       <ul>
@@ -21,7 +21,7 @@
         </li>
       </ul>
     </div>
-    <div id="secondary" class="right">
+    <div id="secondary" class="right sticky-sidebar">
       <div class="sidebar-widget salas-sidebar">
         <ul>
           <li><a href="#">La Cúpula</a></li>

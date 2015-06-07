@@ -14,6 +14,7 @@ $(document).ready(function() {
     $('body #debug').append('<div id="debugsize" class="debugsize ' + sizes[s] + '">' + sizes[s] + '</div>');
   });
   start();
+  stickySidebarOptions();
   widthG = $(window).width();
   $(window).resize(function() {
     if ($(window).width() != widthG) {
@@ -21,10 +22,14 @@ $(document).ready(function() {
         'opacity': 0
       });
       start();
+      stickySidebarOptions();
+
       widthG = $(window).width();
       resizeG = true;
+
     }
     resizeG = false;
+
   });
 
   $(document).mouseup(function(e) {
@@ -37,8 +42,23 @@ $(document).ready(function() {
       });
     }
   });
+  //
+  // jQuery('.inner-content,.sticky-sidebar').theiaStickySidebar({
+  //     // Settings
+  //     additionalMarginTop: 0,
+  //    updateSidebarHeight:false,
+  //   });
 
-
+  // $(".sticky-sidebar").stick_in_parent({
+  //   offset_top: 100,
+  //   recalc_every: 1,
+  // });
+  $('.sticky-sidebar').fixTo('.inner-content', {
+    //  className : 'my-class-name',
+    //  zIndex: 10,
+      //mind: '#header',
+      top: 100
+  });
   //if home
   if ($('.home').length) {
     var mySwiper = new Swiper('.swiper-container', {
@@ -77,7 +97,7 @@ $(document).ready(function() {
 
   }
   //if verEscuchar
-  if($('.section-ver-escuchar').length){
+  if ($('.section-ver-escuchar').length) {
     $('#content-inside .in-frame').addClass('online');
 
   }
@@ -101,7 +121,15 @@ $(document).ready(function() {
     }
   }
 
-
+  if ($('.fotos-container').length) {
+    $('.fotos-container article').hoverdir({
+      speed: 300, // Times in ms
+      easing: 'ease',
+      hoverDelay: 500, // Times in ms
+      inverse: false,
+      hoverElem: 'div'
+    });
+  }
   //if agenda in
   if ($('.agenda-in').length) {
     // var swiper = new Swiper('.swiper-container', {
@@ -314,13 +342,13 @@ function mazoncck() {
         columnWidth = 275;
 
       }
-      percentPos=  false;
-      gut= 0;
+      percentPos = false;
+      gut = 0;
 
-    }else{
+    } else {
       columnWidth = '.grid-sizer';
-      percentPos=  true;
-      gut='.grid-gutter';
+      percentPos = true;
+      gut = '.grid-gutter';
 
     }
     var $container = $('#masonry-container');
@@ -329,7 +357,7 @@ function mazoncck() {
       itemSelector: '.item',
       transitionDuration: 200,
       percentPosition: percentPos,
-      gutter:gut,
+      gutter: gut,
     });
     fadeInItems($('#masonry-container >.item'));
   });
@@ -624,5 +652,17 @@ function initializeGmap(zoomx) {
     title: "Subte Linea E - Estación Bolivar",
     zIndex: 9
   });
+
+}
+
+function stickySidebarOptions() {
+
+  var currSize = sizeOrder(sizeDetector());
+  if (currSize > 3) {
+    $('#secondary').addClass('sticky-sidebar');
+  } else {
+    $('#secondary').removeClass('sticky-sidebar');
+
+  }
 
 }

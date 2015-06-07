@@ -11,7 +11,7 @@
           <div class="header-title-container">
             <h1>
               <a href="#">Programación /</a>
-              <span class="light">Muestras</span>
+              <span class="light">Exposiciones</span>
             </h1>
             <p>
             </p>
@@ -55,7 +55,7 @@
 
         </article>
         <article class="item article-muestras masonry-third">
-          <a href="muestras-in-milo.php">
+          <a href="exposiciones-in.php">
             <header>
               <h4>
                 <strong class='tag-artesvisuales'>ARTES VISUALES</strong> Del 15 de Junio al 1 de Julio</h4>
@@ -169,7 +169,7 @@
           </a>
         </article>
         <article class="item article-muestras masonry-third">
-          <a href="muestras-in-milo.php">
+          <a href="exposiciones-in.php">
             <header>
               <h4>
                 <strong class='tag-artesvisuales'>ARTES VISUALES</strong> Del 15 de Junio al 1 de Julio</h4>
@@ -194,7 +194,7 @@
           </a>
         </article>
         <article class="item article-muestras masonry-third">
-          <a href="muestras-in-milo.php">
+          <a href="exposiciones-in.php">
             <header>
               <h4>
                 <strong class='tag-artesvisuales'>ARTES VISUALES</strong> Del 15 de Junio al 1 de Julio</h4>

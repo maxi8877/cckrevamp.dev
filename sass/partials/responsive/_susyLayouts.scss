@@ -1,473 +1,10 @@
 @include border-box-sizing;
-$gridSizeMine: 1148px;
+$gridSizeDefault: 1148px;
 $fullwidth: 1400px;
-$susy: (gutters: .25);
-.in-frame {
-  @include container($gridSizeMine center fluid);
-}
-.in-frame {
-  @include container($gridSizeMine center fluid);
-  .template-sidebar {
-    @include span(12 of 12 last);
-  }
-  .template-sidebar-right {
-    @include span(12 of 12 );
-  }
-  .template-full {
-    @include span(12 of 12 last);
-  }
-  #secondary {
-    clear: both;
-    @include span(12 of 12 last);
-  }
-  @include breakpoint($almost-screens) {
-    .template-sidebar {
-      @include span(17 of 24 last);
-    }
-    .template-sidebar-right {
-      @include span(17 of 24 );
-    }
-    .template-full {
-      @include span(12 of 12 last);
-    }
-    #secondary {
-      clear: none;
-      @include span(7 of 24 );
-    }
-    #secondary.right {
-      clear: none;
-      @include span(7 of 24 last );
-    }
-    .inner-content {
-      @include container(100% center fluid);
-      article.article-half:nth-child(even) {
-        @include span(6 of 12 last);
 
-        //float:left;
-      }
-      article.article-half:nth-child(odd) {
-        @include span(6 of 12 first );
-      }
-    }
-  }
-}
-.in-frame {
-  &.online {
-    @include container(960px center fluid);
-    .section-ver-escuchar {
-      .relacionados-grid {
-        >ul {
-          @include container(100% center fluid);
-          >li {
-            @include span(12 of 12 last );
-          }
-        }
-      }
-    }
-    @include breakpoint($medium-screens) {
-      .section-ver-escuchar {
-        @include container(960px center fluid);
-        .relacionados-grid {
-          >ul {
-            @include container(100% center fluid);
-            >li {
-              @include gallery(4 of 12 );
-            }
-          }
-        }
-        .recent-posts-grid-bottom {
-          >ul {
-            @include container(100% center fluid);
-            >li {
-              @include gallery(4 of 12 );
-            }
-          }
-        }
-      }
-    }
-  }
-}
-section.static {
-  .in-frame {
-    @include container($gridSizeMine center fluid);
-    .salas-container {
-      @include container(100% center fluid);
-      >li {
-        @include span(12 of 12 last);
-      }
-      >li:nth-child(1),
-      >li:nth-child(2),
-      >li:nth-child(3),
-      >li:nth-child(4),
-      >li:nth-child(5),
-      >li:nth-child(6),
-      >li:nth-child(7) {
-        @include span(12 of 12 last);
-        figure {
-          overflow: hidden;
-        }
-        ul {
-          >li {
-            @include container(100% center fluid);
-          }
-        }
-      }
-    }
-    @include breakpoint($smallmax-screens) {
-      .salas-container {
-        @include container(100% center fluid);
-        >li {
-          @include span(12 of 12 last);
-          figure {
-            max-height: 800px!important;
-          }
-        }
-        >li:nth-child(4) {
-          @include span(6 of 12 );
-        }
-        >li:nth-child(5) {
-          @include span(6 of 12 last);
-        }
-        >li:nth-child(6) {
-          @include span(6 of 12 );
-        }
-        >li:nth-child(7) {
-          @include span(6 of 12 last);
-        }
-      }
-    }
-    @include breakpoint($medium-screens) {
-      .salas-container {
-        @include container(100% center fluid);
-        >li {
-
-        }
-        >li:nth-child(1) {
-          @include span(12 of 12 last);
-        }
-        >li:nth-child(2) {
-          @include span( 12 of 12 last);
-        }
-        >li:nth-child(3) {
-          @include span(8 of 12 );
-        }
-        >li:nth-child(4) {
-          @include span(4 of 12 last);
-        }
-        >li:nth-child(5) {
-          @include span(4 of 12 );
-        }
-        >li:nth-child(6) {
-          @include span(4 of 12 );
-        }
-        >li:nth-child(7) {
-          @include span(4 of 12 last);
-        }
-      }
-    }
-  }
-}
-.inner-content {
-  &.horarios {
-    @include container(100% center fluid);
-    .horarios-columna-1,
-    .horarios-columna-2,
-    .horarios-columna-3 {
-      @include span(12 of 12 );
-    }
-    @include breakpoint($medium-screens) {
-      .horarios-columna-1,
-      .horarios-columna-2 {
-        @include span(4 of 12 );
-      }
-      .horarios-columna-3 {
-        @include span(4 of 12 last );
-      }
-    }
-  }
-}
-
-//ver-2
-//$susy: (gutters: 0.25);
-section.static {
-  .in-frame {
-    @include container($gridSizeMine 0 center fluid);
-    @include breakpoint($medium-screens) {
-      .salas-container {
-        >li:nth-child(1) {
-          @include container(100% center fluid);
-          >article {
-            >ul {
-              >li:nth-child(1) {
-                @include span(8 of 12 );
-              }
-              >li:nth-child(2) {
-                @include span(4 of 12 last );
-              }
-            }
-          }
-        }
-        >li:nth-child(2) {
-          @include span(8 of 12 );
-          >article {
-            >ul {
-              >li:nth-child(1) {
-                @include span(6 of 12 last );
-              }
-              >li:nth-child(2) {
-                @include span(6 of 12 );
-              }
-            }
-          }
-        }
-        >li:nth-child(3) {
-          @include span(8 of 12 );
-          >article {
-            >ul {
-              >li:nth-child(1) {
-                @include span(12 of 12 last );
-              }
-              >li:nth-child(2) {
-                @include span(12 of 12 last );
-              }
-            }
-          }
-        }
-        >li:nth-child(4) {
-          @include span(4 of 12 );
-          >article {
-            >ul {
-              >li:nth-child(1) {
-                @include span(12 of 12 last );
-              }
-              >li:nth-child(2) {
-                @include span(12 of 12 last );
-              }
-            }
-          }
-        }
-        >li:nth-child(5) {
-          @include span(4 of 12 );
-          >article {
-            >ul {
-              >li:nth-child(1) {
-                @include span(12 of 12 last );
-              }
-              >li:nth-child(2) {
-                @include span(12 of 12 last );
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-$susy: (gutters: .05);
-
-// section.online {
-//   .in-frame {
-//     .category-listings {
-//       >ul {
-//         @include container(100% center fluid);
-//         >li {
-//           @include gallery(1 of 6);
-//         }
-//         >li:nth-child(6) {
-//           @include span(1 of 6 last);
-//         }
-//       }
-//     }
-//   }
-// }
-//
-.category-listings {
-  >ul {
-    @include container(99% center fluid);
-    >li {
-      @include gallery(1 of 6);
-    }
-    >li:nth-child(6) {
-      @include span(1 of 6 last);
-    }
-  }
-}
-$susy: (gutters: .25);
-section#infinite-loader {
-  .in-frame {
-    @include container(960px center fluid);
-  }
-}
-section#header {
-  .in-frame {
-    >ul {
-      >li:nth-child(1) {
-        @include span(12 of 12 last);
-      }
-      >li:nth-child(2) {
-        @include span(12 of 12 last);
-      }
-    }
-  }
-  @include breakpoint($medium-screens) {
-    .in-frame {
-      >ul {
-        >li:nth-child(1) {
-          @include span(3 of 12 );
-        }
-        >li:nth-child(2) {
-          @include span(9 of 12 last );
-        }
-      }
-    }
-  }
-}
-$susy: (gutters: 0);
-section#footer,
-section#footer.columnas-footer-4 {
-  width: 100%!important;
-  .in-frame {
-    @include container($gridSizeMine center fluid);
-    >ul {
-      >li {
-        @include span(12 of 12 last)
-      }
-    }
-  }
-  @include breakpoint($large-screens) {
-    @include container($gridSizeMine center fluid);
-    .in-frame {
-      >ul {
-        >li:nth-child(1) {
-          @include span(3 of 12)
-        }
-        >li:nth-child(2) {
-          @include span(3 of 12)
-        }
-        >li:nth-child(3) {
-          @include span(3 of 12)
-        }
-        >li:nth-child(4) {
-          @include span(3 of 12)
-        }
-        >li:nth-last-child(1) {
-          @include span(3 of 12 last)
-        }
-      }
-    }
-  }
-}
-section#footer.columnas-footer-5 {
-  width: 100%!important;
-  .in-frame {
-    @include container($gridSizeMine center fluid);
-    >ul {
-      >li {
-        @include span(12 of 12 last)
-      }
-    }
-  }
-  @include breakpoint($large-screens) {
-    @include container($gridSizeMine center fluid);
-    .in-frame {
-      >ul {
-        >li:nth-child(1) {
-          @include span(2 of 10)
-        }
-        >li:nth-child(2) {
-          @include span(2 of 10)
-        }
-        >li:nth-child(3) {
-          @include span(2 of 10)
-        }
-        >li:nth-child(4) {
-          @include span(2 of 10)
-        }
-        >li:nth-child(5) {
-          @include span(2 of 10)
-        }
-        >li:nth-last-child(1) {
-          @include span(2 of 10 last)
-        }
-      }
-    }
-  }
-}
-section#footer.columnas-footer-6 {
-  width: 100%!important;
-  .in-frame {
-    @include container($gridSizeMine center fluid);
-    >ul {
-      >li {
-        @include span(12 of 12 last)
-      }
-    }
-  }
-  @include breakpoint($large-screens) {
-    @include container($gridSizeMine center fluid);
-    .in-frame {
-      >ul {
-        >li:nth-child(1) {
-          @include span(2 of 12)
-        }
-        >li:nth-child(2) {
-          @include span(2 of 12)
-        }
-        >li:nth-child(3) {
-          @include span(2 of 12)
-        }
-        >li:nth-child(4) {
-          @include span(2 of 12)
-        }
-        >li:nth-child(5) {
-          @include span(2 of 12)
-        }
-        >li:nth-child(6) {
-          @include span(2 of 12)
-        }
-        >li:nth-last-child(1) {
-          @include span(2 of 12 last)
-        }
-      }
-    }
-  }
-}
-section#content {
-  article {
-    @include container(100% center fluid);
-    .texto-inferior {
-      @include span(9 of 12)
-    }
-    .compartir {
-      @include span(3 of 12 last)
-    }
-    @include breakpoint($medium-screens) {
-      .texto-inferior {
-        @include span(9 of 12)
-      }
-      .compartir {
-        @include span(3 of 12 last)
-      }
-    }
-  }
-}
-section#content {
-  .in-frame {
-    @include container(100% center fluid);
-    @include breakpoint($smallmax-screens) {
-      @include container(481px center fluid);
-    }
-    @include breakpoint($medium-screens) {
-      @include container(641px center fluid);
-    }
-    @include breakpoint($almost-screens) {
-      @include container(840px center fluid);
-    }
-    @include breakpoint($large-screens) {
-      @include container(1100px center fluid);
-    }
-  }
-}
+//_________________________________
+//Debug Config Layer
+//_________________________________
 $susy: (gutters: 0);
 @media only screen and (min-width: 0px) {
   .large {
@@ -561,9 +98,249 @@ $susy: (gutters: 0);
 
   }
 }
+
+//_________________________________
+//Main Structure
+//_________________________________
+$susy: (gutters: .25);
+.in-frame {
+  @include container($gridSizeDefault center fluid);
+}
+.in-frame {
+  @include container($gridSizeDefault center fluid);
+  .template-sidebar {
+    @include span(12 of 12 last);
+  }
+  .template-sidebar-right {
+    @include span(12 of 12 );
+  }
+  .template-full {
+    @include span(12 of 12 last);
+  }
+  #secondary {
+    clear: both;
+    @include span(12 of 12 last);
+  }
+  @include breakpoint($almost-screens) {
+    .template-sidebar {
+      @include span(17 of 24 last);
+    }
+    .template-sidebar-right {
+      @include span(17 of 24 );
+    }
+    .template-full {
+      @include span(12 of 12 last);
+    }
+    #secondary {
+      clear: none;
+      @include span(7 of 24 );
+    }
+    #secondary.right {
+      clear: none;
+      @include span(7 of 24 last );
+    }
+    .inner-content {
+      @include container(100% center fluid);
+      article.article-half:nth-child(even) {
+        @include span(6 of 12 last);
+
+        //float:left;
+      }
+      article.article-half:nth-child(odd) {
+        @include span(6 of 12 first );
+      }
+    }
+  }
+}
+
+//_________________________________
+//Optional Structure  Ver/Escuchar 960px
+//_________________________________
+.in-frame {
+  &.online {
+    @include container(960px center fluid);
+    .section-ver-escuchar {
+      .relacionados-grid {
+        >ul {
+          @include container(100% center fluid);
+          >li {
+            @include span(12 of 12 last );
+          }
+        }
+      }
+    }
+    @include breakpoint($medium-screens) {
+      .section-ver-escuchar {
+        @include container(960px center fluid);
+        .relacionados-grid {
+          >ul {
+            @include container(100% center fluid);
+            >li {
+              @include gallery(4 of 12 );
+            }
+          }
+        }
+        .recent-posts-grid-bottom {
+          >ul {
+            @include container(100% center fluid);
+            >li {
+              @include gallery(4 of 12 );
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//_________________________________
+//Header
+//_________________________________
+section#header {
+  .in-frame {
+    >ul {
+      >li:nth-child(1) {
+        @include span(12 of 12 last);
+      }
+      >li:nth-child(2) {
+        @include span(12 of 12 last);
+      }
+    }
+  }
+  @include breakpoint($medium-screens) {
+    .in-frame {
+      >ul {
+        >li:nth-child(1) {
+          @include span(3 of 12 );
+        }
+        >li:nth-child(2) {
+          @include span(9 of 12 last );
+        }
+      }
+    }
+  }
+}
+
+//_________________________________
+//Footer
+//_________________________________
+section#footer.columnas-footer-5 {
+  width: 100%!important;
+  .in-frame {
+    @include container($gridSizeDefault center fluid);
+    >ul {
+      >li {
+        @include span(12 of 12 last)
+      }
+    }
+  }
+  @include breakpoint($large-screens) {
+    @include container($gridSizeDefault center fluid);
+    .in-frame {
+      >ul {
+        >li:nth-child(1) {
+          @include span(2 of 10)
+        }
+        >li:nth-child(2) {
+          @include span(2 of 10)
+        }
+        >li:nth-child(3) {
+          @include span(2 of 10)
+        }
+        >li:nth-child(4) {
+          @include span(2 of 10)
+        }
+        >li:nth-child(5) {
+          @include span(2 of 10)
+        }
+        >li:nth-last-child(1) {
+          @include span(2 of 10 last)
+        }
+      }
+    }
+  }
+}
+section#footer.columnas-footer-6 {
+  width: 100%!important;
+  .in-frame {
+    @include container($gridSizeDefault center fluid);
+    >ul {
+      >li {
+        @include span(12 of 12 last)
+      }
+    }
+  }
+  @include breakpoint($large-screens) {
+    @include container($gridSizeDefault center fluid);
+    .in-frame {
+      >ul {
+        >li:nth-child(1) {
+          @include span(2 of 12)
+        }
+        >li:nth-child(2) {
+          @include span(2 of 12)
+        }
+        >li:nth-child(3) {
+          @include span(2 of 12)
+        }
+        >li:nth-child(4) {
+          @include span(2 of 12)
+        }
+        >li:nth-child(5) {
+          @include span(2 of 12)
+        }
+        >li:nth-child(6) {
+          @include span(2 of 12)
+        }
+        >li:nth-last-child(1) {
+          @include span(2 of 12 last)
+        }
+      }
+    }
+  }
+}
+$susy: (gutters: 0);
+section#footer,
+section#footer.columnas-footer-4 {
+  width: 100%!important;
+  .in-frame {
+    @include container($gridSizeDefault center fluid);
+    >ul {
+      >li {
+        @include span(12 of 12 last)
+      }
+    }
+  }
+  @include breakpoint($large-screens) {
+    @include container($gridSizeDefault center fluid);
+    .in-frame {
+      >ul {
+        >li:nth-child(1) {
+          @include span(3 of 12)
+        }
+        >li:nth-child(2) {
+          @include span(3 of 12)
+        }
+        >li:nth-child(3) {
+          @include span(3 of 12)
+        }
+        >li:nth-child(4) {
+          @include span(3 of 12)
+        }
+        >li:nth-last-child(1) {
+          @include span(3 of 12 last)
+        }
+      }
+    }
+  }
+}
+
+//_________________________________
+//Header Interno
+//_________________________________
 section#content-inside {
   .content-header {
-    @include container($gridSizeMine center fluid);
+    @include container($gridSizeDefault center fluid);
     >ul>li:nth-child(1),
     main {
       @include span(12 of 12);
@@ -575,7 +352,7 @@ section#content-inside {
   }
   @include breakpoint($medium-screens) {
     .content-header {
-      @include container($gridSizeMine center fluid);
+      @include container($gridSizeDefault center fluid);
       >ul>li:nth-child(1),
       main {
         @include span(8 of 12);
@@ -585,6 +362,96 @@ section#content-inside {
 
         //display:none;
         @include span(4 of 12 last);
+      }
+    }
+  }
+}
+
+//_________________________________
+//Categorias Secciones Exposiciones / Agenda / Video / Imagenes /
+//_________________________________
+$susy: (gutters: .05);
+.category-listings {
+  >ul {
+    @include container(99% center fluid);
+    >li {
+      @include gallery(1 of 6);
+    }
+    >li:nth-child(6) {
+      @include span(1 of 6 last);
+    }
+  }
+}
+
+//_________________________________
+//Infinite Loader button contanier Ver/escuchar
+//_________________________________
+$susy: (gutters: .25);
+section#infinite-loader {
+  .in-frame {
+    @include container(960px center fluid);
+  }
+}
+
+//_________________________________
+//Home Articulos Grids
+//_________________________________
+section#content {
+  article {
+    @include container(100% center fluid);
+    .texto-inferior {
+      @include span(9 of 12)
+    }
+    .compartir {
+      @include span(3 of 12 last)
+    }
+    @include breakpoint($medium-screens) {
+      .texto-inferior {
+        @include span(9 of 12)
+      }
+      .compartir {
+        @include span(3 of 12 last)
+      }
+    }
+  }
+}
+
+//_________________________________
+//Home Masonry Adjust
+//_________________________________
+section#content {
+  .in-frame {
+    @include container(100% center fluid);
+    @include breakpoint($smallmax-screens) {
+      @include container(481px center fluid);
+    }
+    @include breakpoint($medium-screens) {
+      @include container(641px center fluid);
+    }
+    @include breakpoint($almost-screens) {
+      @include container(840px center fluid);
+    }
+    @include breakpoint($large-screens) {
+      @include container(1100px center fluid);
+    }
+  }
+}
+$susy: (gutters: .25);
+.inner-content {
+  &.horarios {
+    @include container(100% center fluid);
+    .horarios-columna-1,
+    .horarios-columna-2,
+    .horarios-columna-3 {
+      @include span(12 of 12 );
+    }
+    @include breakpoint($medium-screens) {
+      .horarios-columna-1,
+      .horarios-columna-2 {
+        @include span(4 of 12 );
+      }
+      .horarios-columna-3 {
+        @include span(4 of 12 last );
       }
     }
   }
@@ -633,8 +500,6 @@ section#content-inside {
     @include gallery(6 of 12 );
   }
 }
-
-
 .inner-content {
   article {
 
@@ -848,6 +713,15 @@ section#content-inside {
     }
   }
 }
+.article-gacetillas {
+  @include container(100% center fluid);
+  figure {
+    @include span(6 of 12);
+  }
+  .gacetilla-body {
+    @include span(6 of 12 last);
+  }
+}
 .section-contacto {
   .contact-info {
     @include container(100% center fluid);
@@ -892,7 +766,25 @@ section#content-inside {
     }
   }
 }
-.article-sitemap-static {
+.section-fotos {
+  .fotos-container {
+    @include container(100% center fluid);
+    article {
+      @include gallery(6 of 12 );
+    }
+    @include breakpoint($smallmax-screens) {
+      article {
+        @include gallery(4 of 12 );
+      }
+    }
+    @include breakpoint($medium-screens) {
+      article {
+        @include gallery(3 of 12 );
+      }
+    }
+  }
+}
+.section-sitemap {
   >ul {
     @include container(100% center fluid);
     li {

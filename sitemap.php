@@ -1,7 +1,7 @@
 <?php include( 'header.php'); ?>
 <section id="inside-header">
 </section>
-<section id="content-inside" class="static">
+<section id="content-inside">
   <div class="in-frame">
     <div class="content-header">
       <ul>
@@ -19,8 +19,7 @@
         </li>
       </ul>
     </div>
-    <div class="inner-content template-full">
-      <article class="article-sitemap-static">
+    <div class="inner-content template-full section-sitemap">
         <ul>
           <li>
             <ul>

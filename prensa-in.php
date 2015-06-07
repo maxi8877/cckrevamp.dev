@@ -21,41 +21,9 @@
         </li>
       </ul>
     </div>
-    <div class="inner-content template-full">
-      <section class="article-prensa-2-static">
-        <ul>
-          <li>
-            <ul>
-              <li>
-                <h2>Recursos Descargables</h2>
-                <ul>
-                  <li>
-                    <a href="#">DOCUMENTO DE PRENSA</a>
-                  </li>
-                  <li>
-                    <a href="#">RECURSOS DE GRAFICOS CCK</a>
-                  </li>
-                  <li>
-                    <a href="#">IMAGENES DE ALTA RESOLUCIÓN</a>
-                  </li>
-                </ul>
-                <hr>
-              </li>
-              <li>
-                <h2> Contacto de Prensa </h2>
-                <p>
-                  Ana María Gutierrez
-                  <br> Bouchard 2535 of. 3. CABA
-                  <br> prensa@cckirchner.com.ar
-                </p>
-                <hr>
-              </li>
-              <li>
-                <p>Todas las imágenes son propiedad de sus dueños y son cedidas con fines demostrativos e informativos, esta prohibida la xoxoxoxoxoxo xo oxoxox oxoxox oxoxoxox xoxoxox oxoxo xoxoxoxo xoxox</p>
-              </li>
-            </ul>
-          </li>
-          <li>
+    <div class="bottom-part">
+
+    <div class="inner-content template-sidebar-right section-prensa-in">
 
             <!-- Comienzo  Noticia  Simple-->
 
@@ -107,17 +75,15 @@
 
               </footer>
             </article>
-
-
-
-
             <!-- fin Noticia Simple -->
-
-          </li>
-        </ul>
-      </section>
+    </div>
+    <div id="secondary" class="right sticky-sidebar">
+    <div class="sidebar-prensa-in">
+      Prensa sidebar
+    </div >
     </div>
   </div>
+</div>
 </section>
 </div>
 
