@@ -12,7 +12,6 @@
               <h1>
                 <a href="4.html">Ver / Escuchar</a> / <a class="br-subsection" href="#">Video</a> / <a class="br-category br-tuvoz" href="#">Tu Voz</a>
               </h1>
-              <p>
             </div>
           </li>
           <li class="right-corner">
@@ -108,7 +107,7 @@
         <div class="header-container-2">
           <h6 class="recent-posts-title">RECIENTES</h6>
         </div>
-      
+
         <div class="recent-posts-grid recent-posts-grid-bottom">
           <ul>
             <li>

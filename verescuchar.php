@@ -10,9 +10,13 @@
         <li>
           <div class="header-title-container">
             <h1>
+              <!-- Inicio BreadCrumbs-->
+
               <a href="#">Ver / Escuchar</a>
+
+              <!-- Fin BreadCrumbs-->
+
             </h1>
-            <p>
           </div>
         </li>
         <li class="right-corner ">
@@ -22,7 +26,19 @@
         </li>
       </ul>
     </div>
-    <div class="inner-content root section-ver-escuchar ">
+
+    <!--Inicio Contenido Dinámico-->
+    <!-- Categorias
+    .inner-content .root -> sin color
+    .inner-content .artesvisuales
+    .inner-content .escenicas
+    .inner-content .musica
+    .inner-content .educacion
+    .inner-content .muestraspermanentes
+    .inner-content .tuvoz
+    -->
+    
+    <div class="inner-content  section-ver-escuchar root ">
       <div class="category-listings">
         <ul>
           <li class="tag-artesvisuales">
@@ -69,35 +85,35 @@
                   </div>
                 </div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/xLC_pVhLYek" frameborder="0" allowfullscreen></iframe>
-                </div>
-
-                <ul class="online-tags">
-                  <li>
-                    <a href="">artistas</a>
-                  </li>
-                  <li>
-                    <a href="">biográficos</a>
-                  </li>
-                  <li>
-                    <a href="">obra y creación</a>
-                  </li>
-                  <li>
-                    <a href="">montajes</a>
-                  </li>
-                </ul>
               </div>
+
+              <ul class="online-tags">
+                <li>
+                  <a href="">artistas</a>
+                </li>
+                <li>
+                  <a href="">biográficos</a>
+                </li>
+                <li>
+                  <a href="">obra y creación</a>
+                </li>
+                <li>
+                  <a href="">montajes</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <footer>
-            <div class="page-navigation">
-              <div class="page-nav-prev">
-                <i class='fa fa-arrow-left'></i>
-              </div>
-              <div class="page-nav-next">
-                <i class='fa fa-arrow-right'></i>
-              </div>
+        </div>
+        <footer>
+          <div class="page-navigation">
+            <div class="page-nav-prev">
+              <i class='fa fa-arrow-left'></i>
             </div>
-          </footer>
+            <div class="page-nav-next">
+              <i class='fa fa-arrow-right'></i>
+            </div>
+          </div>
+        </footer>
       </article>
       <h6 class="recent-posts-title">RECIENTES</h6>
 
@@ -133,13 +149,22 @@
           </li>
         </ul>
       </div>
-      </div>
     </div>
+
+    <!--Fin Contenido Dinámico-->
+
+  </div>
+  <!--.in-frame-->
 </section>
+<!--.content-inside-->
+
+
 <section id="infinite-loader">
   <div class="in-frame">
     <div class="infiniteScrollButton">Cargar Más</div>
   </div>
 </section>
+
+
 
 <?php include( 'footer.php'); ?>

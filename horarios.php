@@ -9,8 +9,13 @@
         <li>
           <div class="header-title-container">
             <h1>
+              <!-- Inicio BreadCrumbs-->
+
               <a href="#">Visitar / </a>
               <span class="light">Días y Horarios</span>
+
+              <!-- Fin BreadCrumbs-->
+
             </h1>
             <p>
             </p>
@@ -21,6 +26,9 @@
         </li>
       </ul>
     </div>
+
+    <!--Inicio Contenido Dinámico-->
+
     <div class="inner-content template-full horarios">
       <article>
         <h1>Centro Cultural</h1>
@@ -47,7 +55,12 @@
         <div class="horarios-columna-3"></div>
       </article>
     </div>
+
+    <!--Fin Contenido Dinámico-->
+
   </div>
+  <!--.in-frame-->
 </section>
+<!--.content-inside-->
 
 <?php include( 'footer.php'); ?>

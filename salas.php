@@ -9,17 +9,21 @@
         <li>
           <div class="header-title-container">
             <h1>
+              <!-- Inicio BreadCrumbs-->
+
+
               <a href="#">El centro / </a>
               <span class="light">Salas</span>
+              <!-- Fin BreadCrumbs-->
+
             </h1>
-            <p>
-            </p>
           </div>
         </li>
         <li class="right-corner">
         </li>
       </ul>
     </div>
+    <!--Inicio Contenido Dinámico-->
     <div class="inner-content template-full">
       <ul class="salas-container-2">
         <li>
@@ -88,10 +92,13 @@
           </ul>
         </li>
       </ul>
-
-
       <p class="clearfix"></p>
     </div>
-  </div>
-</section>
-<?php include( 'footer.php'); ?>
+    <!--Fin Contenido Dinámico-->
+
+    </div>
+    <!--.in-frame-->
+    </section>
+    <!--.content-inside-->
+
+    <?php include( 'footer.php'); ?>

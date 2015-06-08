@@ -10,50 +10,57 @@
         <li>
           <div class="header-title-container">
             <h1>
+              <!-- Inicio BreadCrumbs-->
+
               <a href="#">Programación /</a>
               <span class="light">Exposiciones</span>
+
+              <!-- Fin BreadCrumbs-->
+
             </h1>
-            <p>
-            </p>
           </div>
         </li>
         <li class="right-corner">
         </li>
       </ul>
     </div>
+
+    <!--Inicio Contenido Dinámico-->
+
     <div class="inner-content template-full section-exposiciones">
+
+      <!--Inicio Barra de Categorias -->
+
       <div class="category-listings">
         <ul>
           <li class="tag-artesvisuales">
-            <a href="4-c-artesvisuales.php">ARTES VISUALES</a>
+            <a href="#">ARTES VISUALES</a>
           </li>
           <li class="tag-escenicas">
-            <a href="4-c-escenicas.php">ARTES ESCÉNICAS</a>
+            <a href="#">ARTES ESCÉNICAS</a>
           </li>
           <li class="tag-musica">
-            <a href="4-c-musica.php">MÚSICA</a>
+            <a href="#">MÚSICA</a>
           </li>
           <li class="tag-educacion">
-            <a href="4-c-educacion.php">EDUCACIÓN</a>
+            <a href="#">EDUCACIÓN</a>
           </li>
           <li class="tag-muestraspermanentes">
-            <a href="4-c-muestraspermanentes.php">PERMANENTES</a>
+            <a href="#">PERMANENTES</a>
           </li>
           <li class="tag-tuvoz">
-            <a href="4-c-tuvoz.php">TU VOZ</a>
+            <a href="#">TU VOZ</a>
           </li>
         </ul>
       </div>
+      <!--Fin Barra de Categorias -->
+
+      <!--Inicio Contenedor Masonry -->
+
       <div id="masonry-container">
         <div class="grid-sizer"></div>
         <div class="grid-gutter"></div>
-        <article class="item masonry-calendar calendar">
 
-          <div class="agenda-sidebar">
-            <div id="calendar"></div>
-          </div>
-
-        </article>
         <article class="item article-muestras masonry-third">
           <a href="exposiciones-in.php">
             <header>
@@ -66,7 +73,7 @@
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean mas lorem ipcum</p>
 
             <figure>
-              <img src="https://placehold.it/640x480" />
+              <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" alt=""/>
               <figcaption>
                 <div class="share-icons-inside">
                   <a href="#"><i class="fa fa-calendar-o"></i></a>
@@ -80,7 +87,7 @@
           </a>
         </article>
         <article class="item article-muestras masonry-third">
-          <a href="muestras-in-bugge.php">
+          <a href="exposiciones-in.php">
             <header>
               <h4>
                 <strong class='tag-artesvisuales'>artes visuales</strong> Del 15 de Junio al 1 de Julio</h4>
@@ -91,7 +98,7 @@
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean mas lorem ipcum</p>
 
             <figure>
-              <img src="https://placehold.it/640x480" />
+              <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" alt=""/>
               <div class="share-icons-inside">
                 <a href="#"><i class="fa fa-calendar-o"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -103,7 +110,7 @@
           </a>
         </article>
         <article class="item article-muestras masonry-third">
-          <a href="muestras-in-matisse.php">
+          <a href="exposiciones-in.php">
             <header>
               <h4>
                 <strong class='tag-artesvisuales'>artes visuales</strong> Del 20 de Agosto al 1 de Septiembre</h4>
@@ -113,7 +120,7 @@
             </header>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean mas lorem ipcum, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean mas lorem ipcum</p>
             <figure>
-              <img src="https://placehold.it/640x480" />
+              <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" alt=""/>
               <div class="share-icons-inside">
                 <a href="#"><i class="fa fa-calendar-o"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -125,7 +132,7 @@
           </a>
         </article>
         <article class="item article-muestras masonry-third">
-          <a href="muestras-in-matisse.php">
+          <a href="exposiciones-in.php">
             <header>
               <h4>
                 <strong class='tag-artesvisuales'>artes visuales</strong> Del 20 de Agosto al 1 de Septiembre</h4>
@@ -135,7 +142,7 @@
             </header>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean mas lorem ipcum, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean mas lorem ipcum</p>
             <figure>
-              <img src="https://placehold.it/640x480" />
+              <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" />
               <div class="share-icons-inside">
                 <a href="#"><i class="fa fa-calendar-o"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -147,7 +154,7 @@
           </a>
         </article>
         <article class="item article-muestras masonry-third">
-          <a href="muestras-in-matisse.php">
+          <a href="exposiciones-in.php">
             <header>
               <h4>
                 <strong class='tag-artesvisuales'>artes visuales</strong> Del 20 de Agosto al 1 de Septiembre</h4>
@@ -157,7 +164,7 @@
             </header>
             <p></p>
             <figure>
-              <img src="https://placehold.it/640x480" />
+              <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" alt=""/>
               <div class="share-icons-inside">
                 <a href="#"><i class="fa fa-calendar-o"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -180,7 +187,7 @@
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean mas lorem ipcum</p>
 
             <figure>
-              <img src="https://placehold.it/640x480" />
+              <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" alt=""/>
               <figcaption>
                 <div class="share-icons-inside">
                   <a href="#"><i class="fa fa-calendar-o"></i></a>
@@ -205,7 +212,7 @@
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean mas lorem ipcum</p>
 
             <figure>
-              <img src="https://placehold.it/640x480" />
+              <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" alt=""/>
               <figcaption>
                 <div class="share-icons-inside">
                   <a href="#"><i class="fa fa-calendar-o"></i></a>
@@ -219,7 +226,14 @@
           </a>
         </article>
       </div>
+      <!--Fin Contenedor Masonry -->
+
     </div>
+    <!--Inicio Contenido Dinámico-->
+
   </div>
+  <!--.in-frame-->
 </section>
+<!--.content-inside-->
+
 <?php include( 'footer.php'); ?>

@@ -373,12 +373,31 @@ section#content-inside {
 $susy: (gutters: .05);
 .category-listings {
   >ul {
-    @include container(99% center fluid);
+    @include container(100% center fluid);
     >li {
-      @include gallery(1 of 6);
+      @include gallery(1 of 2);
     }
-    >li:nth-child(6) {
-      @include span(1 of 6 last);
+
+  }
+  @include breakpoint($smallmax-screens) {
+
+  >ul {
+    @include container(100% center fluid);
+    >li {
+      @include gallery(1 of 3);
+    }
+
+  }
+}
+  @include breakpoint($large-screens) {
+    >ul {
+      @include container(100% center fluid);
+      >li {
+        @include gallery(1 of 6);
+      }
+      >li:nth-child(6) {
+        @include span(1 of 6 last);
+      }
     }
   }
 }
@@ -716,10 +735,19 @@ $susy: (gutters: .25);
 .article-gacetillas {
   @include container(100% center fluid);
   figure {
+    @include span(12 of 12 last);
+  }
+  .gacetilla-body {
+    @include span(12 of 12 last);
+  }
+  @include breakpoint($medium-screens) {
+
+  figure {
     @include span(6 of 12);
   }
   .gacetilla-body {
     @include span(6 of 12 last);
+  }
   }
 }
 .section-contacto {
@@ -768,6 +796,22 @@ $susy: (gutters: .25);
 }
 .section-fotos {
   .fotos-container {
+    @include container(100% center fluid);
+    article {
+      @include gallery(6 of 12 );
+    }
+    @include breakpoint($smallmax-screens) {
+      article {
+        @include gallery(4 of 12 );
+      }
+    }
+    @include breakpoint($medium-screens) {
+      article {
+        @include gallery(3 of 12 );
+      }
+    }
+  }
+  .fotos-container-2 {
     @include container(100% center fluid);
     article {
       @include gallery(6 of 12 );

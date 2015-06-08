@@ -2,20 +2,21 @@
 
 <section id="inside-header">
 </section>
-<section id="content-inside" class="online">
+<section id="content-inside">
   <div class="in-frame">
     <div class="content-header">
       <ul>
         <li>
           <div class="header-title-container">
             <h1>
-              <a href="4.html">Ver / Escuchar</a> / <a class="br-subsection" href="#">Video</a> / <a class="br-category br-musica" href="#">Música</a>
+              <a href="4.html">Ver / Escuchar</a> / <a class="br-subsection" href="#">Video</a> / <a class="br-category br-educacion" href="#">Educaci&oacute;n</a>
             </h1>
           </div>
         </li>
         <li class="right-corner">
           <input id="searchinchannel" placeholder="buscar en el canal">
           <i class="fa fa-search"></i>
+
           </input>
         </li>
       </ul>
@@ -28,7 +29,7 @@
       .inner-content .muestraspermanentes
       .inner-content .tuvoz
       -->
-      <div class="inner-content section-ver-escuchar musica">
+    <div class="inner-content educacion section-ver-escuchar">
       <div class="category-listings">
         <ul>
           <li class="tag-artesvisuales">
@@ -66,13 +67,16 @@
               <div class="flex-video">
                 <div class="overlay">
                   <div class="bigfat">
-                    <h1>Sophie Calle<br><span class="bajada">Sueña que duerme en el fondo del mar</span>
+                    <h1>Sophie Calle
+                      <br>
+                      <span class="bajada">Sueña que duerme en el fondo del mar</span>
                       <h1>
-                        <span class="tag1 tag-musica">Musica</span><span class="tag2">internacional</span>
+                        <span class="tag1 tag-educacion">Educación</span><span class="tag2">internacional</span>
                   </div>
                 </div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/xLC_pVhLYek" frameborder="0" allowfullscreen></iframe>
               </div>
+
               <ul class="online-tags">
                 <li>
                   <a href="">artistas</a>
@@ -105,7 +109,6 @@
       <div class="header-container-2">
         <h6 class="recent-posts-title">RECIENTES</h6>
       </div>
-
       <div class="recent-posts-grid recent-posts-grid-bottom">
         <ul>
           <li>
@@ -116,7 +119,6 @@
             <img src="assets/img/online-inside/4.jpg" />
             <i class="fa fa-youtube-play"></i>
             <a href="verescuchar-in.php"></a>
-
           </li>
           <li>
             <header>
@@ -144,5 +146,3 @@
     <div class="infiniteScrollButton">Cargar Más</div>
   </div>
 </section>
-
-<?php include( 'footer.php'); ?>

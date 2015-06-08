@@ -2,6 +2,10 @@
 //agenda
 //_________________________________
 .section-agenda-in {
+  td.currentday{
+    background-color: #00b0f6;
+    color:#fff;
+  }
   article {
     header {
       clear: both;

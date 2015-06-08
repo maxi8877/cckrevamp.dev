@@ -10,23 +10,31 @@
         <li>
           <div class="header-title-container">
             <h1>
+
+              <!-- Inicio BreadCrumbs-->
+
               <a href="#">Visitar / </a>
               <span class="light"><a href="planos-piso-0.php">Plano</a> / Vista Lateral</span>
+
+              <!-- Fin BreadCrumbs-->
+
             </h1>
-            <p>
-            </p>
           </div>
         </li>
         <li class="right-corner">
         </li>
       </ul>
     </div>
+    <!--Inicio Contenido Dinámico-->
+
+    <!--Inicio Barra Lateral-->
+
+
     <div id="secondary" class="right">
       <div class="sidebar-widget-planos plano-sidebar">
         <h3 class="acc-trigger button">Pisos</h3>
         <div class="acc-content">
           <ul>
-
               <li class="inactive"><a href="#">SUBSUELO</a></li>
               <li><a href="planos-piso-0.php">PLANTA BAJA</a></li>
               <li class="inactive"><a href="#">PISO 1</a></li>
@@ -95,6 +103,10 @@
         <a href="assets/files/Plano-CCK.pdf"class=" button">Descargar plano en PDF</a>
       </div>
     </div>
+
+    <!--Fin Barra Lateral-->
+
+
     <div class="inner-content template-sidebar-right section-planos">
       <article>
         <header>
@@ -113,6 +125,13 @@
       </article>
 
     </div>
-  </div>
-</section>
-<?php include( 'footer.php'); ?>
+
+
+    <!--Fin Contenido Dinámico-->
+
+    </div>
+    <!--.in-frame-->
+    </section>
+    <!--.content-inside-->
+
+    <?php include( 'footer.php'); ?>

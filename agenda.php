@@ -9,28 +9,27 @@
         <li>
           <div class="header-title-container">
             <h1>
+              <!-- Inicio BreadCrumbs-->
+
               <a href="#">Programación /</a>
               <span class="light">Agenda</span>
+
+              <!-- Fin BreadCrumbs-->
+
             </h1>
           </div>
         </li>
-        </li>
         <li class="right-corner">
-          <div class="calendar-widget">
-            <i class="fa fa-calendar-o"></i>
-            <ul>
-              <li class="calendar-day">
-                20
-              </li>
-              <li class="calendar-month">
-                Mayo
-              </li>
-            </ul>
-          </div>
         </li>
       </ul>
     </div>
+
+    <!--Inicio Contenido Dinámico-->
+
     <div class="inner-content template-sidebar-full section-agenda">
+
+      <!--Inicio Barra de Categorias -->
+
       <div class="category-listings">
         <ul>
           <li class="tag-artesvisuales">
@@ -53,13 +52,24 @@
           </li>
         </ul>
       </div>
+      <!--Fin Barra de Categorias -->
+
+      <!--Inicio Contenedor Masonry -->
+
       <div id="masonry-container">
         <div class="grid-sizer"></div>
         <div class="grid-gutter"></div>
+
+        <!--Inicio Articulo Calendario -->
+
+        <article class="item masonry-calendar calendar">
+          <div class="agenda-sidebar">
+            <div id="calendar"></div>
+          </div>
+        </article>
+        <!--Fin Articulo Calendario -->
+
         <article class="item article-agenda masonry-third">
-
-
-
           <a href="agenda-in.php">
             <header>
               <h4>
@@ -71,7 +81,7 @@
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
               pretium quis</p>
             <figure>
-              <img src="assets/img/eventos/sophie-inside.jpg" />
+              <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" alt=""/>
               <figcaption>
                 <div class="share-icons-inside">
                   <a href="#"><i class="fa fa-calendar-o"></i></a>
@@ -84,6 +94,7 @@
             </footer>
           </a>
         </article>
+
         <article class="item article-agenda masonry-third">
           <a href="agenda-in.php">
             <header>
@@ -96,7 +107,7 @@
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
               pretium quis</p>
             <figure>
-              <img src="assets/img/eventos/tango-inside.jpg" />
+              <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" alt=""/>
               <div class="share-icons-inside">
                 <a href="#"><i class="fa fa-calendar-o"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -119,7 +130,7 @@
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
               pretium quis</p>
             <figure>
-              <img src="assets/img/eventos/duerme-inside.jpg" />
+              <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" alt=""/>
               <div class="share-icons-inside">
                 <a href="#"><i class="fa fa-calendar-o"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -131,8 +142,16 @@
           </a>
         </article>
 
+
       </div>
+      <!--Fin Contenedor Masonry -->
+
     </div>
+
+    <!--Fin Contenido Dinámico-->
+
   </div>
+  <!--.in-frame-->
 </section>
+<!--.content-inside-->
 <?php include( 'footer.php'); ?>

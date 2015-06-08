@@ -23,7 +23,7 @@
           <a href="index.php">logo</a>
         </li>
         <li class="logos-container">
-          <img src="assets/img/logos.png" />
+          <img src="assets/img/logos.png" alt="logos"/>
         </li>
       </ul>
     </div>
@@ -66,8 +66,7 @@
               <li><a href="historia.php">Historia</a></li>
               <li><a href="salas.php">Salas</a></li>
               <li><a href="contacto.php">Contacto</a></li>
-              <li><a href="prensa.php">Prensa</a></li>
-              <li><a href="gacetillas.php">Gacetillas</a></li>
+              <li><a href="gacetillas.php">Prensa</a></li>
               <li><a href="social.php">Redes</a></li>
               <li><a href="sitemap.php">Mapa del Sitio</a></li>
             </ul>

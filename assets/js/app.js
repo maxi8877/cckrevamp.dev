@@ -13,8 +13,12 @@ $(document).ready(function() {
     }
     $('body #debug').append('<div id="debugsize" class="debugsize ' + sizes[s] + '">' + sizes[s] + '</div>');
   });
+
+  //init
   start();
   stickySidebarOptions();
+
+  //on resize
   widthG = $(window).width();
   $(window).resize(function() {
     if ($(window).width() != widthG) {
@@ -23,18 +27,15 @@ $(document).ready(function() {
       });
       start();
       stickySidebarOptions();
-
       widthG = $(window).width();
       resizeG = true;
-
     }
     resizeG = false;
-
   });
+
 
   $(document).mouseup(function(e) {
     var container = $(".search-box input");
-
     if (!container.is(e.target) && container.has(e.target).length === 0) {
       container.animate({
         'width': 0,
@@ -42,28 +43,23 @@ $(document).ready(function() {
       });
     }
   });
-  //
-  // jQuery('.inner-content,.sticky-sidebar').theiaStickySidebar({
-  //     // Settings
-  //     additionalMarginTop: 0,
-  //    updateSidebarHeight:false,
-  //   });
 
-  // $(".sticky-sidebar").stick_in_parent({
-  //   offset_top: 100,
-  //   recalc_every: 1,
-  // });
+
+  //Sidebar Sticking
   $('.sticky-sidebar').fixTo('.inner-content', {
     //  className : 'my-class-name',
     //  zIndex: 10,
-      //mind: '#header',
-      top: 100
+    //  mind: '#header',
+    top: 100
   });
+
+
+
   //if home
   if ($('.home').length) {
     var mySwiper = new Swiper('.swiper-container', {
       speed: 1500,
-      //  autoplay: 15000,
+      autoplay: 15000,
       direction: 'horizontal',
       pagination: '.swiper-pagination',
       paginationClickable: true,
@@ -72,14 +68,7 @@ $(document).ready(function() {
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
     });
-    if ($('#calendar').length) {
-      var d = new Date();
-      var n = d.getMonth();
-      var y = d.getFullYear();
-      $('#calendar').html('');
-      calendar(n, y);
-      calendarEvents();
-    }
+
     $('.downarrow').click(function(event) {
       if ($(document).scrollTop() <= 200) {
         event.preventDefault();
@@ -98,16 +87,12 @@ $(document).ready(function() {
   }
   //if verEscuchar
   if ($('.section-ver-escuchar').length) {
-    $('#content-inside .in-frame').addClass('online');
-
-  }
-
-  //if agenda
-  if ($('.agenda').length) {
+    $('#content-inside >.in-frame').addClass('online');
 
   }
 
 
+  //create Calendar
   if ($('#calendar').length) {
     if ($('#calendar').length) {
 
@@ -121,34 +106,66 @@ $(document).ready(function() {
     }
   }
 
-  if ($('.fotos-container').length) {
-    $('.fotos-container article').hoverdir({
-      speed: 300, // Times in ms
-      easing: 'ease',
-      hoverDelay: 500, // Times in ms
-      inverse: false,
-      hoverElem: 'div'
-    });
-  }
-  //if agenda in
-  if ($('.agenda-in').length) {
-    // var swiper = new Swiper('.swiper-container', {
-    //   speed: 1500,
-    //   autoplay: 4000,
-    //   pagination: '.swiper-pagination',
-    //   slidesPerView: '2',
-    //   paginationClickable: true,
-    //   spaceBetween: 5
-    // });
-    if ($('#calendar').length) {
+  //option fotos 1
+  // if ($('.fotos-container').length) {
+  //   $('.fotos-container article').hoverdir({
+  //     speed: 300, // Times in ms
+  //     easing: 'ease',
+  //     hoverDelay: 500, // Times in ms
+  //     inverse: false,
+  //     hoverElem: 'div'
+  //   });
+  // }
+  //
+  // $('.fotos-container article').hoverdir({
+  //   speed: 300, // Times in ms
+  //   easing: 'ease',
+  //   hoverDelay: 500, // Times in ms
+  //   inverse: false,
+  //   hoverElem: 'div'
+  // });
 
-      var d = new Date();
-      var n = d.getMonth();
-      var y = d.getFullYear();
-      $('#calendar').html('');
-      calendar(n, y);
-      calendarEvents();
-    }
+
+  //option fotos 2
+  if ($('.fotos-container-2').length) {
+    $('.fotos-container-2 article').each(function(index, item) {
+      $('.fotos-container-2 article').eq(index).imagesLoaded(function() {
+        $('.fotos-container-2 article').eq(index).css({
+          'opacity': 1
+        });
+      });
+    })
+    setTimeout(function() {
+      fadeOutItems($('.fotos-container-2 article a div'));
+    }, 4000);
+
+    $('.js-add-fotos').click(function() {
+      var $item = $('.fotos-container-2 article').slice(0, 4).clone();
+      $item.css({
+        'opacity': 0
+      });
+      $item.find('a div').css({
+        'opacity': 1,
+        'bottom': '0'
+      });
+      $('.fotos-container-2').append($item);
+
+      $item.animate({
+        'opacity': 1
+      });
+      setTimeout(function() {
+        fadeOutItems($('.fotos-container-2 article a div'));
+      }, 4000);
+    });
+    var toggleFade = 0;
+    setInterval(function() {
+
+      fadeInFotos($('.fotos-container-2 article a div'));
+      setTimeout(function() {
+        fadeOutItems($('.fotos-container-2 article a div'));
+      }, 10000);
+
+    }, 17000);
   }
 
 
@@ -162,9 +179,7 @@ $(document).ready(function() {
       initializeGmap(17);
       center = cckposs;
       map.setCenter(center);
-
     }
-
     $(window).resize(function() {
       if ($(window).width() != widthG) {
         var currSize = sizeOrder(sizeDetector());
@@ -202,7 +217,6 @@ $(document).ready(function() {
             $('.acc-content').css({
               'display': 'block'
             });
-            console.log('block');
           } else {
             $('.acc-content').css({
               'display': 'none'
@@ -242,7 +256,6 @@ $(document).ready(function() {
           timerId = window.setTimeout(function() {
             timerId = null;
             $(self).slideUp('fast');
-            console.log(self);
           }, 1000);
         }
       },
@@ -340,16 +353,13 @@ function mazoncck() {
         columnWidth = 10;
       } else if (sizeDetector('large')) {
         columnWidth = 275;
-
       }
       percentPos = false;
       gut = 0;
-
     } else {
       columnWidth = '.grid-sizer';
       percentPos = true;
       gut = '.grid-gutter';
-
     }
     var $container = $('#masonry-container');
     $container.masonry({
@@ -366,7 +376,6 @@ function mazoncck() {
 function sizeDetector(size) {
   var rn;
   $('.debugsize').each(function() {
-    //console.log(  $(this).attr('class'));
     if ($(this).css('display').toLowerCase() == 'block') {
       var sizee = $(this).attr('class').split(' ').pop();
       if (size) {
@@ -405,15 +414,11 @@ function start() {
   if ($('#masonry-container').length) {
     setTimeout(function() {
       mazoncck();
-      console.log('bla');
     }, 0);
   }
   if ($('#hero .swiper-container').length) {
     sliderHeight();
   }
-
-
-
 }
 
 //fadeIn pogressive
@@ -423,7 +428,39 @@ function fadeInItems(lis) {
     var $li = $(this);
     $li.queue('fade', function(next) {
       $li.delay(delay).animate({
-        'opacity': 1
+        'opacity': 1,
+      }, 500, next);
+    });
+    $li.dequeue('fade');
+    delay += 500;
+  });
+}
+
+function fadeOutItems(lis) {
+  var delay = 0;
+  lis.each(function() {
+    if ($(this).css('opacity') == 1) {
+      var $li = $(this);
+      $li.queue('fade', function(next) {
+        $li.delay(delay).animate({
+          'opacity': 0,
+          'bottom': '20px'
+        }, 500, next);
+      });
+      $li.dequeue('fade');
+      delay += 500;
+    }
+  });
+}
+
+function fadeInFotos(lis) {
+  var delay = 0;
+  lis.each(function() {
+    var $li = $(this);
+    $li.queue('fade', function(next) {
+      $li.delay(delay).animate({
+        'opacity': 1,
+        'bottom': 0,
       }, 500, next);
     });
     $li.dequeue('fade');
@@ -440,75 +477,6 @@ function delegateOnlineClicks() {
   });
 }
 
-function appendEl(interval, limit) {
-
-  numm = 0;
-
-  intervalId = setInterval(function() {
-
-
-    $item = $('.recent-posts-grid-bottom li ').eq(getRandomInt(0, 3)).clone().css({
-      'display': 'none'
-    });
-
-
-    if ($('.recent-posts-grid').last().hasClass('recent-posts-grid-top') || $('.recent-posts-grid').last().hasClass('recent-posts-grid-top-alt')) {
-      if ($('.recent-posts-grid').last().hasClass('recent-posts-grid-top-alt')) {
-
-        if ($('.recent-posts-grid').last().find('li').length < 2) {
-          $('.recent-posts-grid').last().find('ul').append('<li><ul></ul></li>');
-          $('.recent-posts-grid').last().find('ul li ul').append($item);
-          $(window).scroll();
-        } else {
-          $('.recent-posts-grid').last().find('ul').append($item);
-          $(window).scroll();
-          $('.inner-content').append('<div class="recent-posts-grid recent-posts-grid-bottom"><ul></ul></div>');
-
-        }
-      } else {
-        if ($('.recent-posts-grid').last().find('li').length < 4) {
-          //insert
-          $('.recent-posts-grid').last().find('ul li ul').append($item);
-          $(window).scroll();
-        } else {
-          $('.inner-content').append('<div class="recent-posts-grid recent-posts-grid-bottom"><ul></ul></div>');
-          //insert
-          $('.recent-posts-grid').last().find('ul').append($item);
-          $(window).scroll();
-        }
-      }
-    } else {
-      if ($('.recent-posts-grid').last().find('li').length < 3) {
-        $('.recent-posts-grid').last().find('ul').append($item);
-        $(window).scroll();
-      } else {
-        if ($('.recent-posts-grid:nth-last-child(2)').hasClass('recent-posts-grid-top')) {
-          $('.inner-content').append('<div class="recent-posts-grid recent-posts-grid-top-alt"><ul></ul></div>');
-
-        } else {
-          $('.inner-content').append('<div class="recent-posts-grid recent-posts-grid-top"><ul></ul></div>');
-          $('.recent-posts-grid').last().find('ul').append($item);
-          $('.recent-posts-grid').last().find('ul').append('<li><ul></ul></li>');
-        }
-      }
-    }
-    $('.recent-posts-grid li').imagesLoaded(function() {
-      $('.recent-posts-grid li').css({
-        'display': 'block'
-      });
-    });
-    numm++;
-    if (numm > 2) {
-      clearInterval(intervalId);
-      delegateOnlineClicks();
-
-    }
-  }, interval);
-
-
-}
-
-
 function calendarEvents() {
   $('.calendar-prev').click(function(e) {
     e.preventDefault();
@@ -519,11 +487,9 @@ function calendarEvents() {
     if (curr === 0) {
       curr = 12;
       currY--;
-
     }
     calendar(curr - 1, currY);
     calendarEvents();
-
   });
   $('.calendar-next').click(function(e) {
     e.preventDefault();
@@ -538,7 +504,6 @@ function calendarEvents() {
     calendar(curr + 1, currY);
     calendarEvents();
   });
-
 }
 
 
@@ -547,10 +512,10 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function initializeGmap(zoomx) {
-  var latlng = new google.maps.LatLng(-34.6041528, -58.3746608);
+function initializeGmap() {
+  var latlng = new google.maps.LatLng(-34.604004, -58.369465);
   var settings = {
-    zoom: zoomx,
+    zoom: 16,
     //scrollwheel: false,
     center: latlng,
     mapTypeControl: true,
@@ -570,95 +535,94 @@ function initializeGmap(zoomx) {
   var cck = new google.maps.MarkerImage('assets/img/mapa/cck.png',
     new google.maps.Size(133, 128),
     new google.maps.Point(0, 0),
-    new google.maps.Point(0, 0)
+    new google.maps.Point(71, 118)
   );
 
-  var cckPos = new google.maps.LatLng(-34.6015993, -58.3704000);
+  var cckPos = new google.maps.LatLng(-34.604004, -58.369465);
   var cckMarker = new google.maps.Marker({
     position: cckPos,
     map: map,
     icon: cck,
     title: "Centro Cultural Kirchner",
-    zIndex: 4
+    zIndex: 10
   });
   window.cckposs = cckPos;
 
   var lineac = new google.maps.MarkerImage('assets/img/mapa/lineac.png',
     new google.maps.Size(152, 41),
     new google.maps.Point(0, 0),
-    new google.maps.Point(0, 0)
+    new google.maps.Point(141, 30)
   );
-  var lineacPos = new google.maps.LatLng(-34.6012993, -58.3812000);
+  var lineacPos = new google.maps.LatLng(-34.601830, -58.378281);
   var lineacMarker = new google.maps.Marker({
     position: lineacPos,
     map: map,
     icon: lineac,
-    title: "Subte Linea C - Estación Esmeralda",
+    title: "Subte Linea C - EstaciÃ³n Esmeralda",
     zIndex: 5
   });
 
   var lineab = new google.maps.MarkerImage('assets/img/mapa/lineab.png',
     new google.maps.Size(205, 41),
     new google.maps.Point(0, 0),
-    new google.maps.Point(0, 0)
+    new google.maps.Point(193, 30)
   );
-  var lineabPos = new google.maps.LatLng(-34.602400, -58.3740000);
+  var lineabPos = new google.maps.LatLng(-34.602960, -58.369849);
   var lineabMarker = new google.maps.Marker({
     position: lineabPos,
     map: map,
     icon: lineab,
-    title: "Subte Linea B - Estación Leandro N. Alem",
+    title: "Subte Linea B - EstaciÃ³n Leandro N. Alem",
     zIndex: 6
   });
 
   var lineaa = new google.maps.MarkerImage('assets/img/mapa/lineaa.png',
     new google.maps.Size(171, 41),
     new google.maps.Point(0, 0),
-    new google.maps.Point(0, 0)
+    new google.maps.Point(13, 30)
   );
-  var lineaaPos = new google.maps.LatLng(-34.608500, -58.3713000);
+  var lineaaPos = new google.maps.LatLng(-34.608745, -58.371007);
   var lineaaMarker = new google.maps.Marker({
     position: lineaaPos,
     map: map,
     icon: lineaa,
-    title: "Subte Linea A - Estación Plaza de Mayo",
+    title: "Subte Linea A - EstaciÃ³n Plaza de Mayo",
     zIndex: 7
   });
 
   var linead = new google.maps.MarkerImage('assets/img/mapa/linead.png',
     new google.maps.Size(171, 41),
     new google.maps.Point(0, 0),
-    new google.maps.Point(0, 0)
+    new google.maps.Point(129, 31)
   );
-  var lineadPos = new google.maps.LatLng(-34.607200, -58.3765000);
+  var lineadPos = new google.maps.LatLng(-34.607950, -58.373829);
   var lineadMarker = new google.maps.Marker({
     position: lineadPos,
     map: map,
     icon: linead,
-    title: "Subte Linea D - Estación Catedral",
+    title: "Subte Linea D - EstaciÃ³n Catedral",
     zIndex: 8
   });
 
   var lineae = new google.maps.MarkerImage('assets/img/mapa/lineae.png',
     new google.maps.Size(171, 41),
     new google.maps.Point(0, 0),
-    new google.maps.Point(0, 0)
+    new google.maps.Point(131, 32)
   );
-  var lineaePos = new google.maps.LatLng(-34.608500, -58.3763000);
+  var lineaePos = new google.maps.LatLng(-34.609160, -58.373625);
   var lineaeMarker = new google.maps.Marker({
     position: lineaePos,
     map: map,
     icon: lineae,
-    title: "Subte Linea E - Estación Bolivar",
+    title: "Subte Linea E - EstaciÃ³n Bolivar",
     zIndex: 9
   });
 
 }
 
 function stickySidebarOptions() {
-
   var currSize = sizeOrder(sizeDetector());
-  if (currSize > 3) {
+  if (currSize > 2) {
     $('#secondary').addClass('sticky-sidebar');
   } else {
     $('#secondary').removeClass('sticky-sidebar');
@@ -666,3 +630,68 @@ function stickySidebarOptions() {
   }
 
 }
+
+
+// Define data for the popup
+var data = [{
+    entrada: "Titulo", // Key "entrada" means that Magnific Popup will look for an element with class "mfp-entrada" in markup and will replace its inner HTML with the value.
+
+    fecha: 'El 1 de Julio ', // Key "fecha" means that Magnific Popup will look for an element with class "mfp-fecha"
+
+    bajada: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes',
+
+    imagen_img: 'http://lorempixel.com/800/600/abstract', // Prefix "_img" is special. With it Magnific Popup finds an  element "imagen" and replaces it completely with image tag.
+
+    categoria: 'artes visuales'
+  }, {
+    entrada: "Titulo",
+
+    fecha: 'El 1 de Julio ',
+
+    bajada: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes',
+
+    imagen_img: 'http://lorempixel.com/800/600/abstract/2',
+
+    categoria: 'Muestras permanentes'
+  },
+
+];
+
+// initalize popup
+$('.fotos-container a,.fotos-container-2 a').magnificPopup({
+  key: 'fotos-popup',
+  items: data,
+  type: 'inline',
+  mainClass: 'mfp-fade',
+  inline: {
+    // Define markup. Class names should match key names.
+    markup: '<div class="white-popup"><div class="mfp-close"></div>' +
+      '<div class="mfp-imagen"></div>' +
+      '<header>' +
+      '<div  class="mfp-categoria"></div>' +
+      '<div class="mfp-fecha"></div>' +
+      '</header>' +
+      '<div class="mfp-entrada"></div>' +
+      '<div class="mfp-bajada"></div>' +
+      '</div>'
+  },
+  gallery: {
+    enabled: true
+  },
+  callbacks: {
+    markupParse: function(template, values, item) {
+      // optionally apply your own logic - modify "template" element based on data in "values"
+      // console.log('Parsing:', template, values, item);
+      setTimeout(function() {
+
+        var cat = item.data.categoria.replace(/\s+/g, '').toLowerCase();;
+        $('.mfp-categoria').removeClass(function(index, css) {
+          return (css.match(/(^|\s)tag-\S+/g) || []).join(' ');
+        });
+        $('.mfp-categoria').addClass('tag-' + cat);
+
+      }, 0);
+
+    }
+  }
+});

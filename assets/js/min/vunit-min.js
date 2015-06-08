@@ -1,0 +1,10 @@
+/*!
+ * @license MIT
+ * @preserve
+ *
+ * vUnit: A vanilla JS alternative for vh and vw CSS units.
+ * https://github.com/joaocunha/v-unit/
+ *
+ * @author João Cunha - joao@joaocunha.net - twitter.com/joaocunha
+ */
+!function(e,t,r){"use strict";e.vUnit=function(r){var i=this,n=r||{};i.options={stylesheetId:n.stylesheetId||"v-unit-stylesheet",viewportObserverInterval:n.viewportObserverInterval||100,CSSMap:n.CSSMap||null},i.viewportSize={height:0,width:0},i.init=function(){return n.CSSMap?e.setInterval(function t(){if(a()){var e=o(),r=s();h(r,e),v(e)}return t}(),i.options.viewportObserverInterval):!1};var a=function(){var e=p(),t=e.height!==i.viewportSize.height,r=e.width!==i.viewportSize.width;return i.viewportSize=e,t||r},o=function(){var e=t.createElement("style");return e.setAttribute("rel","stylesheet"),e.setAttribute("type","text/css"),e.setAttribute("media","screen"),e.setAttribute("id",i.options.stylesheetId),e},s=function(){var e=i.viewportSize.height/100,t=i.viewportSize.width/100,r=Math.min(t,e),n=Math.max(t,e),a=i.options.CSSMap,o="",s=0;for(var h in a)for(var v=a[h].property,p=1;100>=p;p++){switch(a[h].reference){case"vw":s=t*p;break;case"vh":s=e*p;break;case"vmin":s=r*p;break;case"vmax":s=n*p}var c="_SELECTOR__RANGE_{_PROPERTY_:_VALUE_px}\n";o+=c.replace("_SELECTOR_",h).replace("_RANGE_",p).replace("_PROPERTY_",v).replace("_VALUE_",s)}return o},h=function(e,r){r.styleSheet?r.styleSheet.cssText=e:r.appendChild(t.createTextNode(e))},v=function(e){var r=t.head||t.getElementsByTagName("head")[0]||t.documentElement,n=t.getElementById(i.options.stylesheetId);n&&r.removeChild(n),r.appendChild(e)},p=function(){var e={height:t.documentElement.clientHeight,width:t.documentElement.clientWidth};return e}}}(window,document),new vUnit({CSSMap:{".vh_height":{property:"height",reference:"vh"},".vw_font-size":{property:"font-size",reference:"vw"},".vmin_margin-top":{property:"margin-top",reference:"vmin"}}}).init();

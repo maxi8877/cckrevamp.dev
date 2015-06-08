@@ -9,8 +9,13 @@
         <li>
           <div class="header-title-container">
             <h1>
+              <!-- Inicio BreadCrumbs-->
+
               <a href="#">Ver / Escuchar  </a>/
               <span class="light">Vivo</span>
+
+              <!-- Fin BreadCrumbs-->
+
             </h1>
           </div>
         </li>
@@ -18,6 +23,11 @@
         </li>
       </ul>
     </div>
+
+
+    <!--Inicio Contenido Dinámico-->
+
+
     <div class="inner-content template-full section-envivo">
       <div>
         <h1 class="tag-trama red">VIVO</h1>
@@ -70,7 +80,12 @@
         </ul>
       </div>
     </div>
+
+    <!--Fin Contenido Dinámico-->
+
   </div>
+  <!--.in-frame-->
 </section>
+<!--.content-inside-->
 
 <?php include( 'footer.php'); ?>

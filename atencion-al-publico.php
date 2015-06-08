@@ -9,17 +9,23 @@
         <li>
           <div class="header-title-container">
             <h1>
+
+              <!--Inicio BreadCrumbs-->
+
               <a href="#">Visitar / </a>
               <span class="light">Atención al público</span>
+
+              <!--Fin BreadCrumbs-->
+
             </h1>
-            <p>
-            </p>
           </div>
         </li>
         <li class="right-corner">
         </li>
       </ul>
-    </div>
+    </div><!-- .content-header -->
+
+    <!--Inicio Contenido Dinámico-->
 
     <div class="inner-content template-sidebar-right informacion-general">
       <article>
@@ -31,7 +37,10 @@
         <p>0800 3339300</p>
         <p>Funcionará de lunes a lunes de 10:00 a 24:00 horas.</p>
       </article>
-    </div>
+    </div><!-- .inner-content-->
+
+    <!--Inicio Barra Lateral-->
+
     <div id="secondary">
       <div class="sidebar-informacion-general">
         <h3>Información General</h3>
@@ -63,6 +72,13 @@
         </ul>
       </div>
     </div>
-  </div>
-</section>
+
+    <!--Fin Barra Lateral-->
+
+    <!--Fin Contenido Dinámico-->
+
+
+
+  </div><!-- .in-frame-->
+</section><!-- .content-inside -->
 <?php include( 'footer.php'); ?>

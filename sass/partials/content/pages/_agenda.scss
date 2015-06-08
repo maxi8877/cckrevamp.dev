@@ -1,11 +1,28 @@
 //_________________________________
 //agenda
 //_________________________________
-.section-agenda{
+.section-agenda {
+
+  td.currentday{
+    background-color: #00b0f6;
+    color:#fff;
+  }
   #masonry-container {
-    top:80px;
-    padding-bottom:100px;
-}
+    top: 140px;
+    padding-bottom: 100px;
+  }
+  @include breakpoint($smallmax-screens) {
+    #masonry-container {
+      top: 100px;
+      padding-bottom: 100px;
+    }
+  }
+  @include breakpoint($large-screens) {
+    #masonry-container {
+      top: 80px;
+      padding-bottom: 100px;
+    }
+  }
 }
 .article-agenda {
   a {
@@ -36,7 +53,7 @@
       font-weight: 200;
       color: #504f51;
       margin: 5px 0;
-      font-size: 30px;
+      font-size: 28px;
 
       //font-family: 'Dosis', sans-serif;
       strong {
@@ -63,6 +80,7 @@
     font-weight: normal;
     color: #504f51;
     line-height: 22px;
+
     //padding: 10px 0;
     font-size: 15px;
   }
@@ -89,7 +107,8 @@
 
         }
         h1 {
-        //  height: 35px;
+
+          //  height: 35px;
           letter-spacing: -1px;
           strong {
 
@@ -103,8 +122,9 @@
         }
       }
       p {
-      //  height: 60px;
-      //  max-height: 60px;
+
+        //  height: 60px;
+        //  max-height: 60px;
         margin: 5px 0;
       }
       figure {

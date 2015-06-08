@@ -10,38 +10,44 @@
         <li>
           <div class="header-title-container">
             <h1>
+              <!-- Inicio BreadCrumbs-->
+
               <a href="#">Visitar / </a>
               <span class="light"><a href="planos-piso-0.php">Plano</a> / Piso 6</span>
+
+              <!-- Fin BreadCrumbs-->
+
             </h1>
-            <p>
-            </p>
           </div>
         </li>
         <li class="right-corner">
-
-
         </li>
       </ul>
     </div>
+
+
+    <!--Inicio Contenido Dinámico-->
+
+    <!--Inicio Barra Lateral-->
     <div id="secondary" class="right">
       <div class="sidebar-widget-planos plano-sidebar">
         <h3 class="acc-trigger button">Pisos</h3>
         <div class="acc-content">
           <ul>
 
-              <li class="inactive"><a href="#">SUBSUELO</a></li>
-              <li><a href="planos-piso-0.php">PLANTA BAJA</a></li>
-              <li class="inactive"><a href="#">PISO 1</a></li>
-              <li><a href="planos-piso-2.php">PISO 2</a></li>
-              <li class="inactive"><a href="#">PISO 3</a></li>
-              <li><a href="planos-piso-4.php">PISO 4</a></li>
-              <li class="inactive"><a href="#">PISO 5</a></li>
-              <li class="active"><a href="planos-piso-6.php">PISO 6</a></li>
-              <li class="inactive"><a href="#">PISO 7</a></li>
-              <li class="inactive"><a href="#">PISO 8</a></li>
-              <li><a href="planos-piso-9.php">PISO 9</a></li>
-              <li><a href="planos-vista-lateral.php">Corte longitudinal del CCK</a></li>
-            </ul>
+            <li class="inactive"><a href="#">SUBSUELO</a></li>
+            <li><a href="planos-piso-0.php">PLANTA BAJA</a></li>
+            <li class="inactive"><a href="#">PISO 1</a></li>
+            <li><a href="planos-piso-2.php">PISO 2</a></li>
+            <li class="inactive"><a href="#">PISO 3</a></li>
+            <li><a href="planos-piso-4.php">PISO 4</a></li>
+            <li class="inactive"><a href="#">PISO 5</a></li>
+            <li class="active"><a href="planos-piso-6.php">PISO 6</a></li>
+            <li class="inactive"><a href="#">PISO 7</a></li>
+            <li class="inactive"><a href="#">PISO 8</a></li>
+            <li><a href="planos-piso-9.php">PISO 9</a></li>
+            <li><a href="planos-vista-lateral.php">Corte longitudinal del CCK</a></li>
+          </ul>
         </div>
       </div>
       <div class="sidebar-widget-plano-details plano-sidebar-details">
@@ -94,9 +100,12 @@
         </div>
       </div>
       <div class="plano-dl-button">
-        <a href="assets/files/Plano-CCK.pdf"class=" button">Descargar plano en PDF</a>
+        <a href="assets/files/Plano-CCK.pdf" class=" button">Descargar plano en PDF</a>
       </div>
     </div>
+
+    <!--Fin Barra Lateral-->
+
     <div class="inner-content template-sidebar-right section-planos">
       <article>
         <header>
@@ -128,8 +137,14 @@
           </ul>
         </div>
       </article>
-
     </div>
+
+
+    <!--Fin Contenido Dinámico-->
+
   </div>
+  <!--.in-frame-->
 </section>
+<!--.content-inside-->
+
 <?php include( 'footer.php'); ?>

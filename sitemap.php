@@ -1,4 +1,6 @@
 <?php include( 'header.php'); ?>
+
+
 <section id="inside-header">
 </section>
 <section id="content-inside">
@@ -8,8 +10,11 @@
         <li>
           <div class="header-title-container">
             <h1>
+              <!-- Inicio BreadCrumbs-->
               <a href="#">El Centro / </a>
               <span class="light">Mapa del Sito</span>
+              <!-- Fin BreadCrumbs-->
+
             </h1>
             <p>
             </p>
@@ -19,6 +24,9 @@
         </li>
       </ul>
     </div>
+
+    <!--Inicio Contenido Dinámico-->
+
     <div class="inner-content template-full section-sitemap">
         <ul>
           <li>
@@ -44,8 +52,7 @@
               <li>
                 <ul>
                   <li><a href="agenda.php">En agenda</a></li>
-
-
+                  <li><a href="exposiciones.php">Exposiciones</a></li>
                 </ul>
               </li>
             </ul>
@@ -59,6 +66,7 @@
                 <ul>
                   <li><a href="envivo.php">En Vivo</a></li>
                   <li><a href="verescuchar.php">Video</a></li>
+                  <li><a href="fotos.php">Fotos</a></li>
                 </ul>
               </li>
             </ul>
@@ -73,7 +81,7 @@
                   <li><a href="historia.php">Historia</a></li>
                   <li><a href="salas.php">Salas</a></li>
                   <li><a href="contacto.php">Contacto</a></li>
-                  <li><a href="prensa-2.php">Prensa</a></li>
+                  <li><a href="gacetillas.php">Prensa</a></li>
                   <li><a href="social.php">Redes</a></li>
                   <li><a href="sitemap.php">Mapa del Sitio</a></li>
                 </ul>
@@ -83,6 +91,12 @@
         </ul>
       </article>
     </div>
-  </div>
-</section>
-<?php include( 'footer.php'); ?>
+
+    <!--Fin Contenido Dinámico-->
+
+    </div>
+    <!--.in-frame-->
+    </section>
+    <!--.content-inside-->
+
+    <?php include( 'footer.php'); ?>

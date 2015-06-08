@@ -9,17 +9,23 @@
         <li>
           <div class="header-title-container">
             <h1>
+              <!-- Inicio BreadCrumbs-->
+
               <a href="#">Programación /</a>
               <span class="light"><a href="exposiciones.php">Exposiciones</a></span>
+
+              <!-- Fin BreadCrumbs-->
+
             </h1>
-            <p>
-            </p>
           </div>
         </li>
         <li class="right-corner">
         </li>
       </ul>
     </div>
+
+    <!--Inicio Contenido Dinámico-->
+
 
     <div class="inner-content template-sidebar-right section-agenda-in">
 
@@ -32,13 +38,16 @@
           <h3 class="sala">Sala SUM</h3>
           <h3 class=horarios>VIE 21 Hs .Sab 22 Hs Dom 22 Hs</h3>
         </header>
-      <img src="//placehold.it/768x576"/>
+        <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" />
         <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor. Lorem Ipsum es simplemente el texto de relleno de las
           imprentas y archivos de texto.Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos.</p>
         <footer>
         </footer>
       </article>
     </div>
+
+    <!--Inicio Barra Lateral-->
+
     <div id="secondary" class="right sticky-sidebar">
       <div class="agenda-in-sidebar">
         <div class="agenda-in-info-event sidebar-panel sidebar-muestras">
@@ -58,6 +67,14 @@
         </ul>
       </div>
     </div>
+
+    <!--Fin Barra Lateral-->
+
+    <!--Inicio Contenido Dinámico-->
+
   </div>
+  <!--.in-frame-->
 </section>
+<!--.content-inside-->
+
 <?php include( 'footer.php'); ?>

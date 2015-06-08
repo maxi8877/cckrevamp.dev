@@ -1,0 +1,154 @@
+.as_paginador,
+.as_paginador_leyenda {
+  font-family: 'geogrotesque';
+  font-size: 14px;
+}
+.as_paginador,
+.as_paginador li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.as_paginador {
+  margin: 1em auto;
+  padding: 0;
+  float: left;
+  left: 50%;
+  position: relative;
+  clear: left;
+}
+.as_paginador li {
+  float: left;
+  position: relative;
+  right: 50%;
+  margin: 1px 0;
+}
+.as_paginador a,
+.as_paginador .active,
+.as_paginador .disabled {
+  border-color: transparent;
+  border: none;
+  line-height: 2.4em;
+  padding: 0 1em;
+  display: block;
+  text-decoration: none;
+  box-shadow: none;
+}
+.as_paginador li:first-child a,
+.as_paginador li:first-child.active,
+.as_paginador li:first-child.disabled {
+  border-color: transparent;
+  border: none;
+  position: relative;
+  color: transparent;
+
+  max-width: 11px;
+  &:after {
+    position: absolute;
+    content: '<<';
+    top: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 12px;
+  }
+}
+.as_paginador li:nth-child(2) a,
+.as_paginador li:nth-child(2).active,
+.as_paginador li:nth-child(2).disabled {
+  border-color: transparent;
+  border: none;
+  color: transparent;
+  position: relative;
+  max-width: 10px;
+  &:after {
+    position: absolute;
+    content: '<';
+    top: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 11px;
+  }
+}
+.as_paginador li:nth-last-child(2) a,
+.as_paginador li:nth-last-child(2).active,
+.as_paginador li:nth-last-child(2).disabled {
+  border-color: transparent;
+  border: none;
+  position: relative;
+  max-width: 10px;
+  &:after {
+    position: absolute;
+    content: '>';
+    top: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 11px;
+  }
+}
+.as_paginador li:last-child a,
+.as_paginador li:last-child.disabled {
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  position: relative;
+   width: 14px;
+
+  &:after {
+    position: absolute;
+    content: '>>';
+    top: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 14px;
+  }
+}
+
+.as_paginador li{
+}
+.as_paginador a {
+  background:    #fafafa;
+  color:#00b0f6;
+  &:after {
+    background:    #fafafa;
+    color:#00b0f6;
+ }
+
+}
+.as_paginador a:hover {
+  background:    #00b0f6;
+  color:#fff;
+  &:after {
+    background:    #00b0f6;
+    color:#fff;
+ }
+
+}
+.as_paginador .active a,
+.as_paginador .active {
+  background:    #00b0f6;
+  color:#fff;
+
+}
+.as_paginador .disabled a,
+.as_paginador .disabled {
+  background:    #fafafa;
+  color:transparent;
+  &:after {
+    background:    #fafafa;
+    color:#ccc;
+ }
+}
+.as_paginadorLeyenda {
+  text-align: center;
+  margin-top: 1em;
+  color: #555;
+  font-size: 90%;
+  clear: both;
+}

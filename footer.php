@@ -36,7 +36,7 @@
           <li><a href="historia.php">Historia</a></li>
           <li><a href="salas.php">Salas</a></li>
           <li><a href="contacto.php">Contacto</a></li>
-          <li><a href="prensa.php">Prensa</a></li>
+          <li><a href="gacetillas.php">Prensa</a></li>
           <li><a href="social.php">Redes</a></li>
           <li><a href="sitemap.php">Mapa del Sitio</a></li>
         </ul>

@@ -1,25 +1,25 @@
 //_________________________________
 //agenda
 //_________________________________
-.section-exposiciones {
+.section-prensa {
   #masonry-container {
     top: 140px;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
   }
   @include breakpoint($smallmax-screens) {
     #masonry-container {
-      top: 100px;
+      top: 0px;
       padding-bottom: 100px;
     }
   }
   @include breakpoint($large-screens) {
     #masonry-container {
-      top: 80px;
+      top: 0px;
       padding-bottom: 100px;
     }
   }
 }
-.article-muestras {
+.article-prensa {
   a {
     text-decoration: none;
   }

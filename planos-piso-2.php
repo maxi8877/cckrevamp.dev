@@ -10,19 +10,27 @@
         <li>
           <div class="header-title-container">
             <h1>
+              <!-- Inicio BreadCrumbs-->
+
               <a href="#">Visitar / </a>
               <span class="light"><a href="planos-piso-0.php">Plano</a> / Piso 2</span>
+
+              <!-- Fin BreadCrumbs-->
+
             </h1>
-            <p>
-            </p>
           </div>
         </li>
         <li class="right-corner">
-
-
         </li>
       </ul>
     </div>
+
+    <!--Inicio Contenido Dinámico-->
+
+
+    <!--Inicio Barra Lateral-->
+
+
     <div id="secondary" class="right">
       <div class="sidebar-widget-planos plano-sidebar">
         <h3 class="acc-trigger button">Pisos</h3>
@@ -93,9 +101,12 @@
         </div>
       </div>
       <div class="plano-dl-button">
-        <a href="assets/files/Plano-CCK.pdf"class=" button">Descargar plano en PDF</a>
+        <a href="assets/files/Plano-CCK.pdf" class=" button">Descargar plano en PDF</a>
       </div>
     </div>
+
+    <!--Fin Barra Lateral-->
+
     <div class="inner-content template-sidebar-right section-planos">
       <article>
         <header>
@@ -103,8 +114,6 @@
           <h2 class="cyan">LA BALLENA AZUL</h2>
           <h2>SALÓN DE LOS ESCUDOS</h2>
           <h2>SALÓN DE HONOR</h2>
-
-
         </header>
         <div class="plano">
           <span class="zoom-panel">
@@ -132,8 +141,13 @@
           </ul>
         </div>
       </article>
-
     </div>
+
+    <!--Fin Contenido Dinámico-->
+
   </div>
+  <!--.in-frame-->
 </section>
+<!--.content-inside-->
+
 <?php include( 'footer.php'); ?>

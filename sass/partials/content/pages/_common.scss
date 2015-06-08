@@ -89,9 +89,16 @@
   li:nth-child(2),
 
   .right-corner {
+    display:none;
     list-style-type: none;
     position: relative;
   }
+  @include breakpoint($medium-screens) {
+    .right-corner {
+    display:block;
+    }
+  }
+
 }
 
 
@@ -125,6 +132,9 @@
     margin-top: -340px;
   }
 }
+
+@include breakpoint($medium-screens) {
+
 .template-sidebar-right:after {
   content: '';
   position: absolute;
@@ -134,4 +144,5 @@
   width: 1px;
   margin-bottom: 10%;
   background: #e1e1e1;
+}
 }

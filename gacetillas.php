@@ -10,8 +10,14 @@
         <li>
           <div class="header-title-container">
             <h1>
+
+              <!-- Inicio BreadCrumbs-->
+
               <a href="#">El Centro / </a>
               <span class="light">Prensa / Gacetillas</span>
+
+              <!-- Fin BreadCrumbs-->
+
             </h1>
             <p>
             </p>
@@ -22,11 +28,19 @@
       </ul>
     </div>
 
+
+
+    <!--Inicio Contenido Dinámico-->
+
+
     <div class="inner-content template-sidebar-right section-gacetillas">
+
+      <!-- Inicio loop de Gacetillas -->
+
       <article class="article-gacetillas item cat-escenicas">
 
         <figure>
-          <img src="//lorempixel.com/640/480/abstract/3" />
+          <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" />
           <figcaption>
 
           </figcaption>
@@ -51,7 +65,7 @@
       <article class="article-gacetillas item cat-escenicas">
 
         <figure>
-          <img src="//lorempixel.com/640/480/abstract/1" />
+          <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" />
           <figcaption>
 
           </figcaption>
@@ -75,7 +89,7 @@
       <article class="article-gacetillas item cat-escenicas">
 
         <figure>
-          <img src="//lorempixel.com/640/480/abstract/2" />
+          <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" />
           <figcaption>
 
           </figcaption>
@@ -96,37 +110,40 @@
       </article>
       <hr>
 
-      <!-- fin loop de Noticias -->
+      <!-- fin loop de Gacetillas -->
 
     </div>
+
+    <!--Inicio Barra Lateral-->
+
     <div id="secondary" class="right">
 
-      <div class="sidebar-recursos-descargables">
+      <div class="sidebar-prensa">
         <h2>
-          Recursos Descargables
+          Recursos Disponibles
         </h2>
         <ul>
           <li>
-            <a href="#">
-            Gacetillas
-          </a>
+            <a href="gacetillas.php">Gacetillas</a>
           </li>
           <li>
-            <a href="#">
-
-            Notas
-          </a>
+            <a href="prensa.php">Notas</a>
           </li>
           <li>
-            <a href="#">
-
-            Contacto
-          </a>
+            <a href="#">Contacto</a>
           </li>
         </ul>
+      </div>
     </div>
+
+    <!--Fin Barra Lateral-->
+
+    <!--Fin Contenido Dinámico-->
+
+
   </div>
+  <!--.in-frame-->
 </section>
-</div>
+<!--.content-inside-->
 
 <?php include( 'footer.php'); ?>

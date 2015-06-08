@@ -1,5 +1,6 @@
 <?php include( 'header.php'); ?>
 
+
 <section id="inside-header">
 </section>
 <section id="content-inside">
@@ -11,7 +12,6 @@
             <h1>
               <a href="4.html">Ver / Escuchar</a> / <a class="br-subsection" href="#">Video</a> / <a class="br-category br-educacion" href="#">Educación</a>
             </h1>
-            <p>
           </div>
         </li>
         <li class="right-corner">
@@ -67,16 +67,13 @@
               <div class="flex-video">
                 <div class="overlay">
                   <div class="bigfat">
-                    <h1>Sophie Calle
-                      <br>
-                      <span class="bajada">Sueña que duerme en el fondo del mar</span>
+                    <h1>Sophie Calle<br><span class="bajada">Sueña que duerme en el fondo del mar</span>
                       <h1>
                         <span class="tag1 tag-educacion">Educación</span><span class="tag2">internacional</span>
                   </div>
                 </div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/xLC_pVhLYek" frameborder="0" allowfullscreen></iframe>
               </div>
-
               <ul class="online-tags">
                 <li>
                   <a href="">artistas</a>
@@ -115,7 +112,6 @@
             <header>
               <span>Sueña que duerme en e fondo del mar</span>
             </header>
-
             <img src="assets/img/online-inside/4.jpg" />
             <i class="fa fa-youtube-play"></i>
             <a href="verescuchar-in.php"></a>
@@ -146,3 +142,5 @@
     <div class="infiniteScrollButton">Cargar Más</div>
   </div>
 </section>
+
+<?php include( 'footer.php'); ?>

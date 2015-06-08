@@ -1,0 +1,135 @@
+//_________________________________
+//Fotos
+//_________________________________
+.section-fotos {
+  .fotos-container-2 {
+    article {
+      margin: 0 0 20px;
+      background: #fff;
+      opacity:0;
+      -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+
+
+      //padding: 8px;
+      position: relative;
+
+      //box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      //  @include aspect-ratio(4, 3);
+      overflow: hidden;
+      a,
+      a img {
+        display: block;
+        position: relative;
+        opacity: 1;
+      }
+      a div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 0 10px;
+        background: rgba(0, 156, 255, 0.7);
+        z-index: 1;
+        overflow: hidden;
+        vertical-align: baseline;
+         bottom:0px;
+         opacity:1;
+        -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+
+        span {
+          position:absolute;
+          bottom:5px;
+
+          h1 {
+            color: #fff;
+            font-size: 15px;
+            padding: 0;
+            margin: 0;
+            font-weight: 200;
+            letter-spacing: 0;
+            line-height: 16px;
+
+            //  display:block;
+          }
+          h4 {
+            strong {
+              width: 14px;
+              overflow: hidden;
+              height: 15px;
+              padding: 0!important;
+              text-indent: -9999px;
+            }
+            font-size:14px;
+            font-weight: 200;
+            color: #fafafa;
+            padding: 0;
+            margin: 0;
+          }
+        }
+      }
+      a header:hover {
+        h1 {
+
+          //  bottom:0;
+        }
+      }
+    }
+    article:hover{
+      a div{
+        opacity:1!important;
+        bottom:0!important;
+      }
+
+
+    }
+  }
+  @include breakpoint($smallmax-screens) {
+
+  }
+  @include breakpoint($almost-screens) {
+    .fotos-container-2 {
+      article {
+        a,
+        a img {
+        }
+        a div {
+
+          span {
+
+            h1 {
+              font-size: 20px;
+
+              line-height: 23px;
+
+              //  display:block;
+            }
+            h4 {
+              font-size:16px;
+              strong {
+              }
+            }
+          }
+        }
+        a header:hover {
+          h1 {
+
+            //  bottom:0;
+          }
+        }
+      }
+      article:hover{
+        a div{
+        }
+
+
+      }
+    }
+
+  }
+  @include breakpoint($medium-screens) {
+
+  }
+}

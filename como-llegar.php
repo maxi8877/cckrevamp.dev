@@ -1,7 +1,9 @@
 <!-- Google Map -->
 <?php include( 'header.php'); ?>
+
 <section id="inside-header">
 </section>
+
 <section id="content-inside">
   <div class="in-frame">
     <div class="content-header">
@@ -9,18 +11,23 @@
         <li>
           <div class="header-title-container">
             <h1>
+              <!--Inicio BreadCrumbs-->
+
               <a href="#">Visitar / </a>
               <span class="light">Como llegar</span>
-            </h1>
-            <p>
-            </p>
-          </div>
 
+              <!--Fin BreadCrumbs-->
+
+            </h1>
+          </div>
         </li>
         <li class="right-corner">
         </li>
       </ul>
-    </div>
+    </div><!-- .content-header -->
+
+    <!--Inicio Contenido Dinámico-->
+
     <div class="inner-content template-full section-como-llegar">
       <article>
         <header>
@@ -77,13 +84,15 @@
               <strong>FFCC Mitre </strong>. Ramal Mitre Estación X
               <br>Distancia 6 cuadras.</p>
           </div>
-        <div>
+        </div>
         <p class="clearfix"></p>
       </article>
     </div>
-  </div>
-</section>
+
+    <!--Fin Contenido Dinámico-->
 
 
+  </div><!-- .in-frame-->
+</section><!-- .content-inside -->
 
 <?php include( 'footer.php'); ?>

@@ -12,7 +12,6 @@
             <h1>
               <a href="4.html">Ver / Escuchar</a> / <a class="br-subsection" href="#">Video</a> / <a class="br-category br-escenicas" href="#">Artes Escénicas</a>
             </h1>
-            <p>
           </div>
         </li>
         <li class="right-corner">

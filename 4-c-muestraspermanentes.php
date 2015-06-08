@@ -3,7 +3,7 @@
 
 <section id="inside-header">
 </section>
-<section id="content-inside" class="online">
+<section id="content-inside">
   <div class="in-frame">
     <div class="content-header">
       <ul>
@@ -12,7 +12,6 @@
             <h1>
               <a href="4.html">Ver / Escuchar</a> / <a class="br-subsection" href="#">Video</a> / <a class="br-category br-muestraspermanentes" href="#">Muestras Permanentes</a>
             </h1>
-            <p>
           </div>
         </li>
         <li class="right-corner">

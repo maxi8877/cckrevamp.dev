@@ -707,7 +707,7 @@ section#infinite-loader {
       margin-top: 50px!important;
     }
     .header-container {
-      padding: 25px 0 5px;
+      padding: 45px 0 5px;
       h6 {
         margin: 0!important;
       }
@@ -743,6 +743,12 @@ section#infinite-loader {
       }
     }
     .recent-posts-grid {
+
+    }
+  }
+  @include breakpoint($large-screens) {
+    .header-container {
+      padding: 25px 0 5px;
 
     }
   }
