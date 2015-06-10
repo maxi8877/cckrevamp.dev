@@ -65,28 +65,26 @@
     li {
       display: inline;
       width: auto;
-      background-color: #ddd;
-      margin-bottom:10px;
+      background-color: #333;
+      margin-bottom: 10px;
 
       //float: left;
       //margin-right: 5px;
       //  text-align: center;
       height: 30px;
       padding-top: 4px;
-      position:relative;
-
+      position: relative;
       a {
         font-family: 'geogrotesque';
         color: #fff;
         text-decoration: none;
-        font-size: 13px;
-        padding: 6px 0 0 28px ;
+        font-size: 12px;
+        padding: 8px 0 0 22px;
         width: 100%;
-        height:100%;
-        position:absolute;
-        top:0px;
-        left:0;
-
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
 
         //padding: 10px;
       }
@@ -95,12 +93,145 @@
     .tag-muestraspermanentes,
     .tag-tuvoz {
       a {
-        padding-left: 30px!important;
+        padding-left: 26px!important;
       }
     }
   }
   @include breakpoint($medium-screens) {
-    height:40px;
+    height: 40px;
     display: block;
+  }
+}
+#calendar-2 {
+  background-color: #fff;
+
+  //margin-top: 300px;
+  border-bottom: 2px solid rgb(189, 189, 189);
+  height: 55px;
+  .calendar-2 {
+    position: relative;
+    ul {
+      margin: 0;
+      padding: 5px 0 0 55px;
+      max-height: 40px;
+      overflow: hidden;
+      >li {
+        font-family: 'geogrotesque';
+        font-weight: 200;
+        font-size: 20px;
+        line-height: 30px;
+        list-style-type: none;
+        text-align: left;
+        position: relative;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+        display: inline-block;
+        max-height: 30px;
+        overflow: hidden;
+        -webkit-transition-delay: 0.5s;
+        transition-delay: 0.5s;
+        padding: 3px;
+
+
+        span.month {
+          opacity: 0;
+          margin-left: 5px;
+          margin-right: 5px;
+          -webkit-transition: all 0.5s ease-out;
+          -moz-transition: all 0.5s ease-out;
+          transition: all 0.5s ease-out;
+          -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+          color: #00b0f6;
+
+        }
+        &:after {
+          content: '.';
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          height: 100%;
+          color: #00b0f6;
+          line-height: 37px;
+          font-size: 20px;
+        }
+      }
+      >li:hover {
+        width: 160px;
+        cursor: pointer;
+        color: #00b0f6;
+
+
+        span.month {
+          opacity: 1;
+        }
+        &:after {
+          content: '.';
+        }
+
+      }
+      .currentday {
+        color: #00b0f6;
+        font-weight: 300;
+      }
+    }
+    ul:hover {
+
+    }
+    .calendar-header {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      position: absolute;
+
+      //  top:5px;
+      //left:-5px;
+      width: 100%;
+      font-family: 'geogrotesque';
+      font-size: 15px;
+      text-align: center;
+      padding-bottom: 10px;
+      .calendar-header-month {
+        font-weight: 200;
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 26px;
+        text-transform: uppercase;
+        width: 52px;
+        border-right: 1px solid #ddd;
+      }
+      .calendar-header-year {
+        position: absolute;
+        left: 0;
+        top: 30px;
+        font-weight: 200;
+        font-size: 20px;
+        width: 52px;
+        border-right: 1px solid #ddd;
+      }
+      .calendar-prev {
+        position: absolute;
+        right: 15px;
+        top: 13px;
+      }
+      .calendar-next {
+        position: absolute;
+        right: -10px;
+        top: 13px;
+      }
+      i {
+        font-size: 20px;
+        position: relative;
+        top: 0;
+        font-weight: 100;
+        color: #707070;
+        margin: 0 10px;
+      }
+    }
   }
 }

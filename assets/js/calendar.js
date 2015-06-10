@@ -24,8 +24,11 @@ function calendar(month,year,links) {
     var monthNames = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
     var dayNames = ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"];
     var totalDays = ["31", "" + totalFeb + "", "31", "30", "31", "30", "31", "31", "30", "31", "30", "31"];
+  console.log(  tempMonth + '-01-' + year);
+     var dattt= parseDate(tempMonth+'.01.'+year, 'mm.dd.yyyy');
 
-    var tempDate = new Date(tempMonth + 1 , + year);
+    var tempDate = new Date(''+dattt);
+    console.log(tempDate);
     var tempweekday = tempDate.getDay();
     var tempweekday2 = tempweekday;
     var dayAmount = totalDays[month];
@@ -66,6 +69,21 @@ function calendar(month,year,links) {
     document.getElementById("calendar").innerHTML += calendarTable;
 }
 
+
+function parseDate(input, format) {
+  format = format || 'yyyy-mm-dd'; // default format
+  var parts = input.match(/(\d+)/g),
+      i = 0, fmt = {};
+  // extract date-part indexes from the format
+  format.replace(/(yyyy|dd|mm)/g, function(part) { fmt[part] = i++; });
+
+  return new Date(parts[fmt['yyyy']], parts[fmt['mm']]-1, parts[fmt['dd']]);
+}
+
+// parseDate('06.21.2010', 'mm.dd.yyyy');
+// parseDate('21.06.2010', 'dd.mm.yyyy');
+// parseDate('2010/06/21', 'yyyy/mm/dd');
+// parseDate('2010-06-21');
 
 //calendar(6);
 // function go12() {

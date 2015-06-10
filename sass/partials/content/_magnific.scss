@@ -777,7 +777,7 @@ body {
       padding: 10px;
     }
     .mfp-arrow-left {
-      left: 18.5%;
+      left: 0%;
       top: 50%!important;
 
       //  z-index:2;
@@ -790,7 +790,7 @@ body {
       }
     }
     .mfp-arrow-right {
-      right: 20%;
+      right: 0%;
       top: 48.7%!important;
       &:before {
         content: "\f061";
@@ -842,4 +842,38 @@ body {
   right: -50px;
   font-size: 40px;
   color: #fff!important;
+}
+
+
+
+.gallery-popup{
+  .mfp-img{
+    background: #fff;
+    padding:10px 10px 70px 10px;
+
+  }
+  .mfp-bottom-bar{
+    padding: 0 10px;
+    color:#000;
+    margin-top: -50px;
+    .mfp-title{
+      color:#000;
+      font-family:$font-h;
+      font-size:16px;
+    }
+    .mfp-counter{
+      right:10px;
+      top:-20px;
+      color:#333;
+      font-family:$font-h;
+
+    }
+  }
+  .mfp-close{
+    top:-50px;
+  color:#000;
+  }
+
+
+
 }

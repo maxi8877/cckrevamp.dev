@@ -18,7 +18,7 @@ en app.js se encuentra definida una variable data con informacion de Muestra.
               <!-- Inicio BreadCrumbs-->
 
               <a href="#">Ver/Escuchar /</a>
-              <span class="light">Fotos</span>
+              <span class="light">Imágenes</span>
 
               <!-- Fin BreadCrumbs-->
 

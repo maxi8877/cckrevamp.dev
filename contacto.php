@@ -36,8 +36,8 @@
           <h1>Centro Cultural Kirchner</h1>
           <ul>
             <li>
-              <p>Bouchard 350,
-                <br>1106 Buenos Aires</p>
+              <p>Sarmiento 151 CABA,
+                <br>1041 Buenos Aires</p>
             </li>
             <li>
               <p>info@cckirchner.com.ar

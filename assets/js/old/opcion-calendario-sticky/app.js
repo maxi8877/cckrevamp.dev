@@ -63,6 +63,7 @@ $(document).ready(function() {
       direction: 'horizontal',
       pagination: '.swiper-pagination',
       paginationClickable: true,
+
       loop: true,
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
@@ -84,11 +85,14 @@ $(document).ready(function() {
     });
 
   }
+  //if verEscuchar
+  if ($('.section-ver-escuchar').length) {
+    $('#content-inside >.in-frame').addClass('online');
 
+  }
 
 
   //create Calendar
-  if ($('#calendar').length) {
     if ($('#calendar').length) {
 
       var d = new Date();
@@ -96,10 +100,12 @@ $(document).ready(function() {
       var y = d.getFullYear();
       $('#calendar').html('');
       calendar(n, y);
+      setTimeout(function(){
       calendarEvents();
+    },1000);
       $(".calendar-month").fitText(0.5);
     }
-  }
+
 
   //option fotos 1
   // if ($('.fotos-container').length) {
@@ -129,19 +135,44 @@ $(document).ready(function() {
           'opacity': 1
         });
       });
-    });
+    })
     setTimeout(function() {
       fadeOutItems($('.fotos-container-2 article a div'));
     }, 4000);
-    setTimeout(function() {
-      $('.fotos-container-2 article a div').css({
-        'transition': 'all 0.5s ease-out'
-      })
-    }, 10000);
+
+    $('.js-add-fotos').click(function() {
+      var $item = $('.fotos-container-2 article').slice(0, 4).clone();
+      $item.css({
+        'opacity': 0
+      });
+      $item.find('a div').css({
+        'opacity': 1,
+        'bottom': '0'
+      });
+      $('.fotos-container-2').append($item);
+
+      $item.animate({
+        'opacity': 1
+      });
+      setTimeout(function() {
+        fadeOutItems($('.fotos-container-2 article a div'));
+      }, 4000);
+    });
+    // var toggleFade = 0;
+    // setInterval(function() {
+    //
+    //   fadeInFotos($('.fotos-container-2 article a div'));
+    //   setTimeout(function() {
+    //     fadeOutItems($('.fotos-container-2 article a div'));
+    //   }, 10000);
+    //
+    // }, 17000);
   }
+
 
   //if map
   if ($('#map_canvas').length) {
+
     var currSize = sizeOrder(sizeDetector());
     if (currSize >= 4) {
       initializeGmap(17);
@@ -198,61 +229,60 @@ $(document).ready(function() {
     });
   }
 
+
   //if VER/ESCUCHAR
-  if ($('.section-ver-escuchar').length) {
-    $('#content-inside >.in-frame').addClass('online');
+  if ($('.recent-posts-grid').length) {
+    var veSwipper = new Swiper('.swiper-container', {
 
-    if ($('.swiper-container').length) {
-      var veSwipper = new Swiper('.swiper-container', {
-        direction: 'horizontal',
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
+      direction: 'horizontal',
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
 
-        loop: true,
-        nextButton: '.page-nav-next',
-        prevButton: '.page-nav-prev',
-      });
-      var refreshIntervalId;
-      fadeInItems($('.recent-posts-grid li'));
-      delegateOnlineClicks();
-      if ($('.recent-posts-grid li').length <= 3) {
-        $('#infinite-loader').remove();
-      }
+      loop: true,
+      nextButton: '.page-nav-next',
+      prevButton: '.page-nav-prev',
+    });
+    var refreshIntervalId;
+    fadeInItems($('.recent-posts-grid li'));
+    delegateOnlineClicks();
+    if ($('.recent-posts-grid li').length <= 3) {
+      $('#infinite-loader').remove();
     }
-    if ($('.overlay').length) {
-      var timerId;
-      $(".overlay").hover(function() {
-          self = this;
-          if (!timerId) {
-            timerId = window.setTimeout(function() {
-              timerId = null;
-              $(self).slideUp('fast');
-            }, 1000);
-          }
-        },
-        function() {
-          if (timerId) {
-            window.clearTimeout(timerId);
+  }
+  if ($('.overlay').length) {
+    var timerId;
+    $(".overlay").hover(function() {
+        self = this;
+        if (!timerId) {
+          timerId = window.setTimeout(function() {
             timerId = null;
-          } else {
-            //oposite
-          }
-        });
-    }
+            $(self).slideUp('fast');
+          }, 1000);
+        }
+      },
+      function() {
+        if (timerId) {
+          window.clearTimeout(timerId);
+          timerId = null;
+        } else {
+          //oposite
+        }
+      });
+
+
   }
 
   //if ver/escuchar-in
-  // if ($('.relacionados-grid').length) {
-  //   if ($('.relacionados-grid li').length <= 3) {
-  //     $('#infinite-loader').remove();
-  //   }
-  // }
-
-  // stycky Navigation
+  if ($('.relacionados-grid').length) {
+    if ($('.relacionados-grid li').length <= 3) {
+      $('#infinite-loader').remove();
+    }
+  }
   if (!$('.hidden-menu').length) {
     $('body').append('<div class="hidden-menu" style="display:none;" ></div>');
     $('.hidden-menu').html($('section#site-navigation ').clone());
     $('.hidden-menu').append($('section#header ').clone());
+    $('.hidden-menu').append('<div id="calendar-2"></div>');
     $('.search-box').unbind('click');
     $('.search-box').click(function(e) {
       e.preventDefault();
@@ -262,7 +292,7 @@ $(document).ready(function() {
       }, 300);
     });
   }
-  //on scroll
+
   $(document).scroll(function() {
     if ($(document).scrollTop() >= 200) {
       $('.hidden-menu').fadeIn();
@@ -298,8 +328,6 @@ $(document).ready(function() {
   });
 });
 
-
-//mobile menu items animation
 function slideToMenuItems() {
   var lis = $('.modal-container >#primary-menu >li a');
   var delay = 0;
@@ -317,7 +345,6 @@ function slideToMenuItems() {
   });
 }
 
-//Masonry
 function mazoncck() {
   $('#masonry-container').imagesLoaded(function() {
     if (!$('.grid-sizer').length) {
@@ -348,7 +375,6 @@ function mazoncck() {
   });
 }
 
-//Detector Sizes
 function sizeDetector(size) {
   var rn;
   $('.debugsize').each(function() {
@@ -367,13 +393,12 @@ function sizeDetector(size) {
   });
   return rn;
 }
-// Order sizes
+
 function sizeOrder(size) {
   var sizz = ['small', 'smallmax', 'medium', 'almost', 'large'];
   return sizz.indexOf(size);
 }
 
-// slider Height to VH
 function sliderHeight() {
   var currSize = sizeOrder(sizeDetector());
   if (currSize !== 0) {
@@ -387,7 +412,6 @@ function sliderHeight() {
   }
 }
 
-//Init
 function start() {
   if ($('#masonry-container').length) {
     setTimeout(function() {
@@ -414,56 +438,51 @@ function fadeInItems(lis) {
   });
 }
 
-//Fade out progressive
 function fadeOutItems(lis) {
   var delay = 0;
   lis.each(function() {
-    if ($(this).css('opacity') == 1) {
       var $li = $(this);
       $li.queue('fade', function(next) {
         $li.delay(delay).animate({
           'opacity': 0,
-          'bottom': '20px',
+          'bottom': '20px'
         }, 500, next);
       });
       $li.dequeue('fade');
       delay += 500;
-    }
+
   });
-
-
 }
 
-// function fadeInFotos(lis) {
-//   var delay = 0;
-//   lis.each(function() {
-//     var $li = $(this);
-//     $li.queue('fade', function(next) {
-//       $li.delay(delay).animate({
-//         'opacity': 1,
-//         'bottom': 0,
-//       }, 500, next);
-//     });
-//     $li.dequeue('fade');
-//     delay += 500;
-//   });
-// }
+function fadeInFotos(lis) {
+  var delay = 0;
+  lis.each(function() {
+    var $li = $(this);
+    $li.queue('fade', function(next) {
+      $li.delay(delay).animate({
+        'opacity': 1,
+        'bottom': 0,
+      }, 500, next);
+    });
+    $li.dequeue('fade');
+    delay += 500;
+  });
+}
 
-//
-// function delegateOnlineClicks() {
-//   $('.infiniteScrollButton').click(function() {
-//     appendEl(500, 3);
-//     $(this).unbind('click');
-//
-//
-//   });
-// }
+function delegateOnlineClicks() {
+  $('.infiniteScrollButton').click(function() {
+    appendEl(500, 3);
+    $(this).unbind('click');
 
-//Delegate Calendar Events
+
+  });
+}
+
 function calendarEvents() {
   $('.calendar-prev').click(function(e) {
     e.preventDefault();
     $('#calendar').html('');
+    $('#calendar-2').html('');
 
     var curr = parseInt($(this).attr('data-currentmonth'));
     var currY = parseInt($(this).attr('data-currentyear'));
@@ -472,11 +491,18 @@ function calendarEvents() {
       currY--;
     }
     calendar(curr - 1, currY);
+    setTimeout(function(){
+
     calendarEvents();
+  },150);
+
   });
   $('.calendar-next').click(function(e) {
+    console.log('click');
     e.preventDefault();
     $('#calendar').html('');
+    $('#calendar-2').html('');
+
 
     var curr = parseInt($(this).attr('data-currentmonth'));
     var currY = parseInt($(this).attr('data-currentyear'));
@@ -485,17 +511,19 @@ function calendarEvents() {
       currY++;
     }
     calendar(curr + 1, currY);
+    setTimeout(function(){
+
     calendarEvents();
+  },150);
   });
 }
 
 
-//RAndom
+
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-//Map
 function initializeGmap() {
   var latlng = new google.maps.LatLng(-34.604004, -58.369465);
   var settings = {
@@ -616,8 +644,6 @@ function stickySidebarOptions() {
 }
 
 
-
-//Section Fotos Popup
 // Define data for the popup
 var data = [{
     entrada: "Titulo", // Key "entrada" means that Magnific Popup will look for an element with class "mfp-entrada" in markup and will replace its inner HTML with the value.
@@ -677,44 +703,7 @@ $('.fotos-container a,.fotos-container-2 a').magnificPopup({
         $('.mfp-categoria').addClass('tag-' + cat);
 
       }, 0);
+
     }
   }
 });
-
-
-
-//Popup Galerias
-
-if ($('.gallery-grid').length) {
-
-  $('.gallery-grid').each(function() { // the containers for all your galleries
-    $(this).magnificPopup({
-      delegate: 'a', // the selector for gallery item
-      type: 'image',
-      gallery: {
-        enabled: true,
-        tPrev: 'Anterior (Flecha Izquierda)', // Alt text on left arrow
-        tNext: 'Siguiente (Flecha Derecha)', // Alt text on right arrow
-        tCounter: '%curr% de %total%',
-      },
-      image: {
-        markup: '<div class="mfp-figure gallery-popup">' +
-          '<div class="mfp-close"></div>' +
-          '<div class="mfp-img"></div>' +
-          '<div class="mfp-bottom-bar">' +
-          '<div class="mfp-title"></div>' +
-          '<div class="mfp-counter"></div>' +
-          '</div>' +
-          '</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
-        cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
-        titleSrc: 'title', // Attribute of the target element that contains caption for the slide.
-        // Or the function that should return the title. For example:
-        // titleSrc: function(item) {
-        //   return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-        // }
-        verticalFit: true, // Fits image in area vertically
-        tError: '<a href="%url%">La imagen</a> no pudo ser cargada.'
-      },
-    });
-  });
-}

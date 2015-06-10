@@ -3,7 +3,8 @@
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img src="assets/img/slider/7.jpg" />
+        <img src="https://placeholdit.imgix.net/~text?txtsize=200&txt=16:9&w=1600&h=900" />
+        
         <div class="caption">
           <div class="in-frame">
             <h1>Unipersonales de Cristina Banegas: </h1>
@@ -15,7 +16,7 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <img src="assets/img/slider/6.jpg" />
+        <img src="https://placeholdit.imgix.net/~text?txtsize=200&txt=16:9&w=1600&h=900" />
         <div class="caption">
           <div class="in-frame">
             <h1>Fernando Rubio</h1>
@@ -27,7 +28,7 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <img src="assets/img/slider/8.jpg" />
+        <img src="https://placeholdit.imgix.net/~text?txtsize=200&txt=16:9&w=1600&h=900" />
         <div class="caption">
           <div class="in-frame">
             <h1>Fernando Rubio</h1>
@@ -39,7 +40,7 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <img src="assets/img/slider/5.jpg" />
+        <img src="https://placeholdit.imgix.net/~text?txtsize=200&txt=16:9&w=1600&h=900" />
         <div class="caption">
           <div class="in-frame">
             <h1>Fernando Rubio</h1>
@@ -72,7 +73,7 @@
               Obra móvil alrededor del mundo: Interviniendo diversos espacios de la ciudades con una serie de camas. En cada una de ellas se encuentra una actriz y un espectador.</p>
           </header>
           <figure>
-            <img src="assets/img/eventos/rubio.jpg" alt="Argerich" />
+            <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" />
             <figcaption></figcaption>
           </figure>
           <footer>
@@ -131,7 +132,7 @@
             <h4>
               <strong>LO QUE VIENE</strong>
             </h4>
-            <img src="assets/img/eventos/molly-bloom.jpg" class="img-responsive" width="100%" />
+            <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" />
             <h3>
               <strong>Unipersonales de Cristina Banegas:</strong> Molly Bloom de James Joyce</h3>
             <small>
@@ -157,7 +158,7 @@
             </h4>
           </header>
           <p>Ya abrimos nuestras puertas para que vengan a disfrutar, conocer y aprender sobre nuestra cultura. #gratis</p>
-          <img src="assets/img/eventos/cck.jpg" class="img-responsive" />
+          <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" />
           <hr>
           <h4>
             <small>27 Jun</small>
@@ -178,7 +179,7 @@
               <strong>GALERIA</strong>
             </h4>
           </header>
-          <img src="assets/img/eventos/ballena.jpg" class="img-responsive" width="100%" />
+          <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" />
           <h3>La ballena azul</h3>
           <button>VER MÁS</button>
           <footer>
@@ -194,7 +195,7 @@
             </h4>
             <h1>Así se baila el tango</h1>
           </header>
-          <img src="assets/img/eventos/tango.jpg" />
+          <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" />
           <footer>
             <div class="compartir">
               <a href="#"><i class="fa fa-twitter"></i></a>
@@ -211,7 +212,7 @@
               <strong>GALERIA</strong>
             </h4>
           </header>
-          <img src="assets/img/eventos/obra.jpg" class="img-responsive" width="100%" />
+          <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" />
           <div class="over-image">
             <h3>Como se construyó el CCK</h3>
             <button>VER MÁS</button>
@@ -229,7 +230,7 @@
             </h4>
             <h1>Sueña que duerme en el fondo del mar</h1>
           </header>
-          <img src="assets/img/eventos/duerme.jpg" />
+          <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" />
 
           <footer>
             <div class="compartir">

@@ -35,6 +35,18 @@
         <div class="menu-toggle"><a data-remodal-target="modal" href="#modal"><i class="fa fa-bars"></i></a></div>
         <ul id="primary-menu">
           <li>
+            <a href="#">EL CENTRO</a>
+            <ul class="dropdown">
+              <li><a href="historia.php">Historia</a></li>
+              <li><a href="salas.php">Salas</a></li>
+              <li><a href="contacto.php">Contacto</a></li>
+              <li><a href="gacetillas.php">Prensa</a></li>
+              <!-- <li><a href="noticias.php">Noticias</a></li> -->
+              <li><a href="social.php">Redes</a></li>
+              <li><a href="sitemap.php">Mapa del Sitio</a></li>
+            </ul>
+          </li>
+          <li>
             <a href="#">VISITAR</a>
             <ul class="dropdown">
               <li><a href="como-llegar.php">Como llegar</a></li>
@@ -56,21 +68,11 @@
             <ul class="dropdown">
               <li><a href="envivo.php">En Vivo</a></li>
               <li><a href="verescuchar.php">Video</a></li>
-              <li><a href="fotos.php">Fotos</a></li>
+              <li><a href="fotos.php">Imágenes</a></li>
             </ul>
           </li>
 
-          <li>
-            <a href="#">EL CENTRO</a>
-            <ul class="dropdown">
-              <li><a href="historia.php">Historia</a></li>
-              <li><a href="salas.php">Salas</a></li>
-              <li><a href="contacto.php">Contacto</a></li>
-              <li><a href="gacetillas.php">Prensa</a></li>
-              <li><a href="social.php">Redes</a></li>
-              <li><a href="sitemap.php">Mapa del Sitio</a></li>
-            </ul>
-          </li>
+
         </ul>
       </nav>
       <ul class="search-box-container">

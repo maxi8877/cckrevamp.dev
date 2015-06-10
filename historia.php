@@ -75,6 +75,9 @@
         <p>Es una obra clave para nuestro país, que permitirá que todos los argentinos puedan acceder a la cultura, a través de una programación amplia, diversa y de calidad, en un espacio pensado para tal fin, con una infraestructura a la altura de los
           principales centros culturales del mundo, y dotado de la última tecnología. Sin dudas, el Centro Cultural Kirchner no sólo será relevante para las generaciones presentes, también será un legado invaluable para las generaciones futuras.
         </p>
+
+
+
       </article>
     </div>
 
@@ -83,9 +86,29 @@
 
     <div id="secondary" class="right">
       <div class="sidebar-historia">
-        <p>
-          El 24 de mayo de 2010 se presentó la primera parte de la remodelación arquitectónica, en el marco de los festejos por el Bicentenario de la Patria.
-        </p>
+
+
+        <div class="gallery-grid gallery-grid-columns-2">
+          <div class="gallery-item">
+          <a href="https://placeholdit.imgix.net/~text?txtsize=800&txt=4:3&w=1024&h=600" title="Gallery Item"><img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=640&h=480" alt="Gallery Item"/></a>
+          </div>
+          <div class="gallery-item">
+            <a href="https://placeholdit.imgix.net/~text?txtsize=800&txt=4:3&w=1024&h=600" title="Gallery Item"><img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=640&h=480" alt="Gallery Item"/></a>
+          </div>
+          <div class="gallery-item">
+            <a href="https://placeholdit.imgix.net/~text?txtsize=800&txt=4:3&w=1024&h=600" title="Gallery Item"><img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=640&h=480" alt="Gallery Item"/></a>
+          </div>
+          <div class="gallery-item">
+            <a href="https://placeholdit.imgix.net/~text?txtsize=800&txt=4:3&w=1024&h=600" title="Gallery Item"><img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=640&h=480" alt="Gallery Item"/></a>
+          </div>
+          <div class="gallery-item">
+            <a href="https://placeholdit.imgix.net/~text?txtsize=800&txt=4:3&w=1024&h=600" title="Gallery Item"><img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=640&h=480" alt="Gallery Item"/></a>
+          </div>
+          <div class="gallery-item">
+            <a href="https://placeholdit.imgix.net/~text?txtsize=800&txt=4:3&w=1024&h=600" title="Gallery Item"><img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=640&h=480" alt="Gallery Item"/></a>
+          </div>
+        </div>
+
       </div>
     </div>
     <!--Fin Barra Lateral-->

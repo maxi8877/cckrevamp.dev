@@ -195,6 +195,18 @@
       margin: 0 10px;
     }
   }
+  .agenda-in-sidebar,
+  .agenda-sidebar{
+    .currentday{
+    background:$cyan;
+    color:#fff;
+    }
+    .active{
+      background:$cyan;
+      color:#fff;
+    }
+  }
+
   @include breakpoint($medium-screens) {
 
   }
@@ -237,7 +249,7 @@
     .sidebar-menu {
       display: block;
       li {
-        min-width: 100%!important;
+        min-width: 85%!important;
         padding: 3px 0!important;
       }
       a {

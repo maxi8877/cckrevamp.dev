@@ -99,6 +99,104 @@ $susy: (gutters: 0);
   }
 }
 
+$susy: (gutters: .1);
+
+.gallery-grid{
+  @include container(100% center fluid);
+  &.gallery-grid-columns-2{
+    .gallery-item{
+      @include gallery(1 of 2);
+
+    }
+  }
+  &.gallery-grid-columns-3{
+    .gallery-item{
+      @include gallery(1 of 2);
+
+    }
+  }
+  &.gallery-grid-columns-4{
+    .gallery-item{
+      @include gallery(1 of 2);
+
+    }
+  }
+  &.gallery-grid-columns-5{
+    .gallery-item{
+      @include gallery(1 of 2);
+
+    }
+  }
+  &.gallery-grid-columns-6{
+    .gallery-item{
+      @include gallery(1 of 2);
+
+    }
+  }
+
+  @include breakpoint($medium-screens) {
+    &.gallery-grid-columns-2{
+      .gallery-item{
+        @include gallery(1 of 2);
+
+      }
+    }
+    &.gallery-grid-columns-3{
+      .gallery-item{
+        @include gallery(1 of 3);
+
+      }
+    }
+    &.gallery-grid-columns-4{
+      .gallery-item{
+        @include gallery(1 of 4);
+
+      }
+    }
+    &.gallery-grid-columns-5{
+      .gallery-item{
+        @include gallery(1 of 5);
+
+      }
+    }
+    &.gallery-grid-columns-6{
+      .gallery-item{
+        @include gallery(1 of 6);
+
+      }
+    }
+
+
+  }
+
+
+}
+$susy: (gutters: 0);
+
+#calendar-2{
+
+  .calendar-2{
+    @include container($gridSizeDefault center fluid);
+
+
+    ul{
+      @include span(24 of 24);
+
+      @include container(100% center fluid);
+
+      >li{
+        @include span(1 of 37);
+
+      }
+    }
+
+  }
+  .calendar-header{
+  //  @include span(3 of 24);
+
+  }
+
+}
 //_________________________________
 //Main Structure
 //_________________________________
@@ -378,14 +476,17 @@ $susy: (gutters: .05);
       @include gallery(1 of 2);
     }
 
+
   }
   @include breakpoint($smallmax-screens) {
 
   >ul {
     @include container(100% center fluid);
+
     >li {
       @include gallery(1 of 3);
     }
+
 
   }
 }
@@ -393,10 +494,10 @@ $susy: (gutters: .05);
     >ul {
       @include container(100% center fluid);
       >li {
-        @include gallery(1 of 6);
+        @include gallery(1 of 7);
       }
-      >li:nth-child(6) {
-        @include span(1 of 6 last);
+      >li:nth-child(7) {
+        @include span(1 of 7 last);
       }
     }
   }

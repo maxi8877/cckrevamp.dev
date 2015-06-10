@@ -1,3 +1,4 @@
+
 body {
   background-color: #eaebec;
 
@@ -201,7 +202,7 @@ section#content {
           }
           .over-image {
             position: absolute;
-            bottom: 40px;
+            bottom: 55px;
             h3 {
               color: #fff;
               font-size: 25px;
@@ -365,6 +366,7 @@ section#content {
   animation-name: fadeInLeft;
 }
 .calendar {
+  padding-bottom:30px;
   .calendar-header {
 
   }
@@ -574,6 +576,78 @@ section#content {
     color: #fff;
   }
 }
+
+$todascolor:#333;
+.cat-todas {
+  header {
+    h4 {
+      background-color: transparent!important;
+      strong {
+
+        //background-color: #ea148c!important;
+        text-transform: uppercase;
+        background: $todascolor;
+        background-position: 0 0 !important;
+        background-size: cover!important;
+        padding: 1px 5px 0 20px!important;
+        a {
+          text-decoration: none;
+          color: #fff!important;
+        }
+      }
+      strong:hover {
+
+        //background-color: #ea148c!important;
+        color: $todascolor!important;
+        text-transform: uppercase;
+        background: transparent!important;
+        background-position: 0 0 !important;
+        background-size: cover!important;
+        padding: 1px 5px 0 20px!important;
+        a {
+          color: $todascolor!important;
+        }
+      }
+    }
+  }
+}
+.menu-todas {
+
+  //  background-color: #ea148c!important;
+  background: $todascolor;
+  background-position: 0 0;
+  background-size: cover;
+  a {
+    color: #fff!important;
+    margin-left: 15%;
+    text-transform: uppercase;
+  }
+}
+.menu-todas:hover {
+  color: #6c5437!important;
+  background: $todascolor;
+  background-position: 0 0;
+  background-size: cover;
+  a {
+    color: #6c5437!important;
+    text-decoration: none;
+  }
+}
+.tag-todas {
+  background:$todascolor;
+  a {
+
+  }
+}
+.tag-todas:hover {
+  background: transparent;
+  color: #6c5437!important;
+  a {
+    color: #6c5437!important;
+  }
+}
+
+
 .cat-escenicas {
   header {
     h4 {
@@ -614,7 +688,7 @@ section#content {
   background-position: 0 0;
   background-size: cover;
   a {
-    color: #fff;
+    color: #fff!important;
     margin-left: 15%;
     text-transform: uppercase;
   }
@@ -689,7 +763,7 @@ section#content {
   background-position: 0 0;
   background-size: cover;
   a {
-    color: #fff;
+    color: #fff!important;
     margin-left: 15%;
     text-transform: uppercase;
   }
@@ -763,7 +837,7 @@ section#content {
   background-position: 0 0;
   background-size: cover;
   a {
-    color: #fff;
+    color: #fff!important;
     margin-left: 15%;
     text-transform: uppercase;
   }
@@ -978,7 +1052,7 @@ section#content {
   background-position: 0 0;
   background-size: cover;
   a {
-    color: #fff;
+    color: #fff!important;
     text-transform: uppercase;
     margin-left: 15%;
   }

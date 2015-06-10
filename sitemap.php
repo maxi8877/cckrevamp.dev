@@ -32,6 +32,24 @@
           <li>
             <ul>
               <li class="header-sitemap">
+                <a href="#">CENTRO CULTURAL</a>
+              </li>
+              <li>
+                <ul>
+                  <li><a href="historia.php">Historia</a></li>
+                  <li><a href="salas.php">Salas</a></li>
+                  <li><a href="contacto.php">Contacto</a></li>
+                  <li><a href="gacetillas.php">Prensa</a></li>
+                  <!-- <li><a href="noticias.php">Noticias</a></li> -->
+                  <li><a href="social.php">Redes</a></li>
+                  <li><a href="sitemap.php">Mapa del Sitio</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li class="header-sitemap">
                 <a href="#">VISITAR</a>
               </li>
               <li>
@@ -66,28 +84,12 @@
                 <ul>
                   <li><a href="envivo.php">En Vivo</a></li>
                   <li><a href="verescuchar.php">Video</a></li>
-                  <li><a href="fotos.php">Fotos</a></li>
+                  <li><a href="fotos.php">Im&aacute;genes</a></li>
                 </ul>
               </li>
             </ul>
           </li>
-          <li>
-            <ul>
-              <li class="header-sitemap">
-                <a href="#">CENTRO CULTURAL</a>
-              </li>
-              <li>
-                <ul>
-                  <li><a href="historia.php">Historia</a></li>
-                  <li><a href="salas.php">Salas</a></li>
-                  <li><a href="contacto.php">Contacto</a></li>
-                  <li><a href="gacetillas.php">Prensa</a></li>
-                  <li><a href="social.php">Redes</a></li>
-                  <li><a href="sitemap.php">Mapa del Sitio</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
+
         </ul>
       </article>
     </div>

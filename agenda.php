@@ -26,33 +26,9 @@
 
     <!--Inicio Contenido Dinámico-->
 
-    <div class="inner-content template-sidebar-full section-agenda">
+    <div class="inner-content template-sidebar-right section-agenda">
 
-      <!--Inicio Barra de Categorias -->
 
-      <div class="category-listings">
-        <ul>
-          <li class="tag-artesvisuales">
-            <a href="#">ARTES VISUALES</a>
-          </li>
-          <li class="tag-escenicas">
-            <a href="#">ARTES ESCÉNICAS</a>
-          </li>
-          <li class="tag-musica">
-            <a href="#">MÚSICA</a>
-          </li>
-          <li class="tag-educacion">
-            <a href="#">EDUCACIÓN</a>
-          </li>
-          <li class="tag-muestraspermanentes">
-            <a href="#">PERMANENTES</a>
-          </li>
-          <li class="tag-tuvoz">
-            <a href="#">TU VOZ</a>
-          </li>
-        </ul>
-      </div>
-      <!--Fin Barra de Categorias -->
 
       <!--Inicio Contenedor Masonry -->
 
@@ -62,14 +38,10 @@
 
         <!--Inicio Articulo Calendario -->
 
-        <article class="item masonry-calendar calendar">
-          <div class="agenda-sidebar">
-            <div id="calendar"></div>
-          </div>
-        </article>
+
         <!--Fin Articulo Calendario -->
 
-        <article class="item article-agenda masonry-third">
+        <article class="item article-agenda masonry-half">
           <a href="agenda-in.php">
             <header>
               <h4>
@@ -95,7 +67,7 @@
           </a>
         </article>
 
-        <article class="item article-agenda masonry-third">
+        <article class="item article-agenda masonry-half">
           <a href="agenda-in.php">
             <header>
               <h4>
@@ -118,7 +90,7 @@
             </footer>
           </a>
         </article>
-        <article class="item article-agenda masonry-third">
+        <article class="item article-agenda masonry-half">
           <a href="agenda-in.php">
             <header>
               <h4>
@@ -147,6 +119,43 @@
       <!--Fin Contenedor Masonry -->
 
     </div>
+
+    <!--Inicio Barra Lateral-->
+
+    <div id="secondary" class="right">
+      <div class="agenda-sidebar">
+        <div id="calendar"></div>
+      </div>
+
+      <ul class="sidebar-menu">
+        <li class="menu-todas">
+          <a href="#">Todas las Categor&iacute;as</a>
+        </li>
+        <li class="menu-artesvisuales">
+          <a href="#">ARTES VISUALES</a>
+        </li>
+
+        <li class="menu-escenicas">
+          <a href="#">Artes ESC&Eacute;NICAS</a>
+        </li>
+        <li class="menu-musica">
+          <a href="#">M&Uacute;SICA</a>
+        </li>
+        <li class="menu-educacion">
+          <a href="#">EDUCACIÓN</a>
+        </li>
+        <li class="menu-muestraspermanentes">
+          <a href="#">MUESTRAS PERMANENTES  </a>
+        </li>
+        <li class="menu-tuvoz">
+          <a href="#">TU VOZ </a>
+        </li>
+      </ul>
+    </div>
+
+    <!--Fin Barra Lateral-->
+
+
 
     <!--Fin Contenido Dinámico-->
 

@@ -37,10 +37,13 @@
     .inner-content .muestraspermanentes
     .inner-content .tuvoz
     -->
-    
+
     <div class="inner-content  section-ver-escuchar root ">
       <div class="category-listings">
         <ul>
+          <li class="tag-todas">
+            <a href="verescuchar.php">TODAS</a>
+          </li>
           <li class="tag-artesvisuales">
             <a href="4-c-artesvisuales.php">ARTES VISUALES</a>
           </li>
@@ -124,7 +127,7 @@
               <span>Sueña que duerme en e fondo del mar</span>
               <h4 class="tag-musica">música</h4>
             </header>
-            <img src="assets/img/online-inside/4.jpg" />
+            <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" />
             <i class="fa fa-youtube-play"></i>
             <a href="verescuchar-in.php"></a>
           </li>
@@ -133,7 +136,7 @@
               <span>Todo lo que esta mi lado</span>
               <h4 class="tag-escenicas">artes escénicas</h4>
             </header>
-            <img src="assets/img/online-inside/first.jpg" />
+            <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" />
             <i class="fa fa-youtube-play"></i>
             <a href="verescuchar-in.php"></a>
           </li>
@@ -143,7 +146,7 @@
               <h4 class="tag-escenicas">artes escenicas</h4>
             </header>
 
-            <img src="assets/img/online-inside/tango.jpg" />
+            <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" />
             <i class="fa fa-youtube-play"></i>
             <a href="verescuchar-in.php"></a>
           </li>

@@ -2,6 +2,18 @@
   <div class="in-frame">
     <ul>
       <li>
+        <h3>CENTRO CULTURAL</h3>
+        <ul>
+          <li><a href="historia.php">Historia</a></li>
+          <li><a href="salas.php">Salas</a></li>
+          <li><a href="contacto.php">Contacto</a></li>
+          <li><a href="gacetillas.php">Prensa</a></li>
+          <!-- <li><a href="noticias.php">Noticias</a></li> -->
+          <li><a href="social.php">Redes</a></li>
+          <li><a href="sitemap.php">Mapa del Sitio</a></li>
+        </ul>
+      </li>
+      <li>
         <h3>VISITAR</h3>
         <ul>
           <li><a href="como-llegar.php">Como llegar</a></li>
@@ -26,19 +38,7 @@
         <ul>
           <li><a href="envivo.php">En Vivo</a></li>
           <li><a href="verescuchar.php">Video</a></li>
-          <li><a href="fotos.php">Fotos</a></li>
-        </ul>
-      </li>
-
-      <li>
-        <h3>CENTRO CULTURAL</h3>
-        <ul>
-          <li><a href="historia.php">Historia</a></li>
-          <li><a href="salas.php">Salas</a></li>
-          <li><a href="contacto.php">Contacto</a></li>
-          <li><a href="gacetillas.php">Prensa</a></li>
-          <li><a href="social.php">Redes</a></li>
-          <li><a href="sitemap.php">Mapa del Sitio</a></li>
+          <li><a href="fotos.php">Imágenes</a></li>
         </ul>
       </li>
     </ul>

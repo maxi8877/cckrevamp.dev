@@ -126,11 +126,11 @@
           <li>
             <a href="gacetillas.php">Gacetillas</a>
           </li>
-          <li>
+          <!-- <li>
             <a href="prensa.php">Notas</a>
-          </li>
+          </li> -->
           <li>
-            <a href="#">Contacto</a>
+            <a href="contacto.php">Contacto</a>
           </li>
         </ul>
       </div>

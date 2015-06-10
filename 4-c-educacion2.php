@@ -9,7 +9,7 @@
         <li>
           <div class="header-title-container">
             <h1>
-              <a href="4.html">Ver / Escuchar</a> / <a class="br-subsection" href="#">Video</a> / <a class="br-category br-educacion" href="#">Educaci&oacute;n</a>
+              <a href=verescuchar.php">Ver / Escuchar</a> / <a class="br-subsection" href="#">Video</a> / <a class="br-category br-educacion" href="#">Educaci&oacute;n</a>
             </h1>
           </div>
         </li>
@@ -32,6 +32,9 @@
     <div class="inner-content educacion section-ver-escuchar">
       <div class="category-listings">
         <ul>
+          <li class="tag-todas">
+            <a href="verescuchar.php">TODAS</a>
+          </li>
           <li class="tag-artesvisuales">
             <a href="4-c-artesvisuales.php">ARTES VISUALES</a>
           </li>
@@ -116,7 +119,7 @@
               <span>Sueña que duerme en e fondo del mar</span>
             </header>
 
-            <img src="assets/img/online-inside/4.jpg" />
+            <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" />
             <i class="fa fa-youtube-play"></i>
             <a href="verescuchar-in.php"></a>
           </li>
@@ -124,7 +127,7 @@
             <header>
               <span>Todo lo que esta mi lado</span>
             </header>
-            <img src="assets/img/online-inside/first.jpg" />
+            <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" />
             <i class="fa fa-youtube-play"></i>
             <a href="verescuchar-in.php"></a>
           </li>
@@ -132,7 +135,7 @@
             <header>
               <span>Así se baila el Tango</span>
             </header>
-            <img src="assets/img/online-inside/tango.jpg" />
+            <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" />
             <i class="fa fa-youtube-play"></i>
             <a href="verescuchar-in.php"></a>
           </li>
