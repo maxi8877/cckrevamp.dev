@@ -36,18 +36,18 @@
         <h3 class="acc-trigger button">Pisos</h3>
         <div class="acc-content">
           <ul>
-            <li class="inactive"><a href="#">SUBSUELO</a></li>
-            <li><a href="planos-piso-0.php">PLANTA BAJA</a></li>
-            <li class="inactive"><a href="#">PISO 1</a></li>
+            <li class=""><a href="planos-piso-sub.php">SUBSUELO</a></li>
+            <li class=""><a href="planos-piso-0.php">PLANTA BAJA</a></li>
+            <li class=""><a href="planos-piso-1.php">PISO 1</a></li>
             <li class="active"><a href="planos-piso-2.php">PISO 2</a></li>
-            <li class="inactive"><a href="#">PISO 3</a></li>
-            <li><a href="planos-piso-4.php">PISO 4</a></li>
-            <li class="inactive"><a href="#">PISO 5</a></li>
-            <li><a href="planos-piso-6.php">PISO 6</a></li>
-            <li class="inactive"><a href="#">PISO 7</a></li>
-            <li class="inactive"><a href="#">PISO 8</a></li>
-            <li><a href="planos-piso-9.php">PISO 9</a></li>
-            <li><a href="planos-vista-lateral.php">Corte longitudinal del CCK</a></li>
+            <li class=""><a href="planos-piso-3.php">PISO 3</a></li>
+            <li class=""><a href="planos-piso-4.php">PISO 4</a></li>
+            <li class=""><a href="planos-piso-5.php">PISO 5</a></li>
+            <li class=""><a href="planos-piso-6.php">PISO 6</a></li>
+            <li class=""><a href="planos-piso-7.php">PISO 7</a></li>
+            <li class="inactive"><a href="planos-piso-8.php">PISO 8</a></li>
+            <li class=""><a href="planos-piso-9.php">PISO 9</a></li>
+            <li class=""><a href="planos-vista-lateral.php">Corte longitudinal del CCK</a></li>
           </ul>
         </div>
       </div>

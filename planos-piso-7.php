@@ -3,7 +3,7 @@
 
 <section id="inside-header">
 </section>
-<section id="content-inside">
+<section id="content-inside" class="static">
   <div class="in-frame">
     <div class="content-header">
       <ul>
@@ -13,11 +13,12 @@
               <!-- Inicio BreadCrumbs-->
 
               <a href="#">Visitar / </a>
-              <span class="light"><a href="planos-piso-0.php">Plano</a> / Piso 6</span>
+              <span class="light"><a href="planos-piso-0.php">Plano</a> / Planta Baja</span>
 
               <!-- Fin BreadCrumbs-->
 
             </h1>
+
           </div>
         </li>
         <li class="right-corner">
@@ -25,10 +26,10 @@
       </ul>
     </div>
 
-
     <!--Inicio Contenido Dinámico-->
 
     <!--Inicio Barra Lateral-->
+
     <div id="secondary" class="right">
       <div class="sidebar-widget-planos plano-sidebar">
         <h3 class="acc-trigger button">Pisos</h3>
@@ -41,14 +42,15 @@
             <li class=""><a href="planos-piso-3.php">PISO 3</a></li>
             <li class=""><a href="planos-piso-4.php">PISO 4</a></li>
             <li class=""><a href="planos-piso-5.php">PISO 5</a></li>
-            <li class="active"><a href="planos-piso-6.php">PISO 6</a></li>
-            <li class=""><a href="planos-piso-7.php">PISO 7</a></li>
+            <li class=""><a href="planos-piso-6.php">PISO 6</a></li>
+            <li class="active"><a href="planos-piso-7.php">PISO 7</a></li>
             <li class="inactive"><a href="planos-piso-8.php">PISO 8</a></li>
             <li class=""><a href="planos-piso-9.php">PISO 9</a></li>
             <li class=""><a href="planos-vista-lateral.php">Corte longitudinal del CCK</a></li>
           </ul>
         </div>
       </div>
+
       <div class="sidebar-widget-plano-details plano-sidebar-details">
         <h3 class="acc-trigger button">Información del Plano</h3>
         <div class="acc-content">
@@ -95,6 +97,7 @@
               <span class="icon-plano">
                 <img src="assets/img/planos/iconos/toilette-acc.png" />
               </span>Toilette Accesible</li>
+
           </ul>
         </div>
       </div>
@@ -103,41 +106,28 @@
       </div>
     </div>
 
+
     <!--Fin Barra Lateral-->
 
     <div class="inner-content template-sidebar-right section-planos">
       <article>
         <header>
-          <h1>6</h1>
-          <h2 class="cyan">LA GRAN LÁMPARA</h2>
+          <h1>7</h1>
+          <h2 class="">LA GRAN LÁMPARA</h2>
           <h2>SALAS</h2>
-          <h2>AUDITORIOS</h2>
+          <h2>Acceso a La Cúpula por ascensores</h2>
         </header>
         <div class="plano">
           <span class="zoom-panel">
             <i class="fa fa-search-plus"></i>
           </span>
-          <img src="assets/img/planos/6.jpg" />
+          <img src="assets/img/planos/5.jpg" />
         </div>
         <div class="plano-info">
-          <h2>
-            EXPOSICIONES
-          </H2>
-          <ul>
-            <li>
-              <h3 class="expo-title color-artesvisuales">Interfaces</h3>
-              <span class="expo-description">Salas 603, 604, 605, 606 y 607</span>
-            </li>
-            <li>
 
-              <h3 class="expo-title color-muestraspermanentes">Una obra y dos modelos</h3>
-              <span class="expo-description">La Gran Lámpara</span>
-            </li>
-          </ul>
         </div>
       </article>
     </div>
-
 
     <!--Fin Contenido Dinámico-->
 

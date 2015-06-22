@@ -6,6 +6,7 @@ window.REMODAL_GLOBALS = {
 };
 
 $(document).ready(function() {
+
   var sizes = ['small', 'smallmax', 'medium', 'almost', 'large'];
   $.each(sizes, function(s) {
     if (!$('#debug').length) {
@@ -619,34 +620,34 @@ function stickySidebarOptions() {
 
 //Section Fotos Popup
 // Define data for the popup
-var data = [{
-    entrada: "Titulo", // Key "entrada" means that Magnific Popup will look for an element with class "mfp-entrada" in markup and will replace its inner HTML with the value.
-
-    fecha: 'El 1 de Julio ', // Key "fecha" means that Magnific Popup will look for an element with class "mfp-fecha"
-
-    bajada: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes',
-
-    imagen_img: 'http://lorempixel.com/800/600/abstract', // Prefix "_img" is special. With it Magnific Popup finds an  element "imagen" and replaces it completely with image tag.
-
-    categoria: 'artes visuales'
-  }, {
-    entrada: "Titulo",
-
-    fecha: 'El 1 de Julio ',
-
-    bajada: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes',
-
-    imagen_img: 'http://lorempixel.com/800/600/abstract/2',
-
-    categoria: 'Muestras permanentes'
-  },
-
-];
+// var data = [{
+//     entrada: "Titulo", // Key "entrada" means that Magnific Popup will look for an element with class "mfp-entrada" in markup and will replace its inner HTML with the value.
+//
+//     fecha: 'El 1 de Julio ', // Key "fecha" means that Magnific Popup will look for an element with class "mfp-fecha"
+//
+//     bajada: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes',
+//
+//     imagen_img: 'http://lorempixel.com/800/600/abstract', // Prefix "_img" is special. With it Magnific Popup finds an  element "imagen" and replaces it completely with image tag.
+//
+//     categoria: 'artes visuales'
+//   }, {
+//     entrada: "Titulo",
+//
+//     fecha: 'El 1 de Julio ',
+//
+//     bajada: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes',
+//
+//     imagen_img: 'http://lorempixel.com/800/600/abstract/2',
+//
+//     categoria: 'Muestras permanentes'
+//   },
+//
+// ];
 
 // initalize popup
 $('.fotos-container a,.fotos-container-2 a').magnificPopup({
   key: 'fotos-popup',
-  items: data,
+  items: getJsonProvisoria(),
   type: 'inline',
   mainClass: 'mfp-fade',
   inline: {
@@ -667,7 +668,7 @@ $('.fotos-container a,.fotos-container-2 a').magnificPopup({
   callbacks: {
     markupParse: function(template, values, item) {
       // optionally apply your own logic - modify "template" element based on data in "values"
-      // console.log('Parsing:', template, values, item);
+       console.log('Parsing:',  values);
       setTimeout(function() {
 
         var cat = item.data.categoria.replace(/\s+/g, '').toLowerCase();;
@@ -717,4 +718,28 @@ if ($('.gallery-grid').length) {
       },
     });
   });
+}
+
+
+//Request al Servidor
+//Reemplazar por la funcion real con método Post. estoy usando "async: false", asi que no se debería
+//usar en produccion ya que esta deprecada.
+//esta funcion es llamada desde la inicialización del plugin Magnifix Popup (actualmente linea 650)
+// los items del objeto devuelto se deben reemplazar por los valores correctos en el SErver de minplan
+// que actualmente desconozco. categoria,bajada,etc
+// o mapear el  objeto que devuleve a las propiedades actuales.
+// si se cambian los valores del objeto tambien deben ser reemplazados en la opcion markup, por ejemplo ,si
+// se cambia bajada por subtitulo quedaria <div class="mfp-subtitulo"></div> en la opcion markup
+
+
+function getJsonProvisoria() {
+ var result="";
+    $.ajax({
+      url:"http://cckrevamp.dev/api.php/hello",
+      async: false,
+      success:function(data) {
+         result = data;
+      }
+   });
+   return  JSON.parse(result);
 }
