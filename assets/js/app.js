@@ -60,7 +60,7 @@ $(document).ready(function() {
   if ($('.home').length) {
     var mySwiper = new Swiper('.swiper-container', {
       speed: 1500,
-      autoplay: 6000,
+    //  autoplay: 6000,
       direction: 'horizontal',
       pagination: '.swiper-pagination',
       paginationClickable: true,
@@ -215,7 +215,7 @@ $(document).ready(function() {
       });
       var refreshIntervalId;
       fadeInItems($('.recent-posts-grid li'));
-      delegateOnlineClicks();
+    //  delegateOnlineClicks();
       if ($('.recent-posts-grid li').length <= 3) {
         $('#infinite-loader').remove();
       }
@@ -644,43 +644,43 @@ function stickySidebarOptions() {
 //
 // ];
 
-// initalize popup
-$('.fotos-container a,.fotos-container-2 a').magnificPopup({
-  key: 'fotos-popup',
-  items: getJsonProvisoria(),
-  type: 'inline',
-  mainClass: 'mfp-fade',
-  inline: {
-    // Define markup. Class names should match key names.
-    markup: '<div class="white-popup"><div class="mfp-close"></div>' +
-      '<div class="mfp-imagen"></div>' +
-      '<header>' +
-      '<div  class="mfp-categoria"></div>' +
-      '<div class="mfp-fecha"></div>' +
-      '</header>' +
-      '<div class="mfp-entrada"></div>' +
-      '<div class="mfp-bajada"></div>' +
-      '</div>'
-  },
-  gallery: {
-    enabled: true
-  },
-  callbacks: {
-    markupParse: function(template, values, item) {
-      // optionally apply your own logic - modify "template" element based on data in "values"
-       console.log('Parsing:',  values);
-      setTimeout(function() {
-
-        var cat = item.data.categoria.replace(/\s+/g, '').toLowerCase();;
-        $('.mfp-categoria').removeClass(function(index, css) {
-          return (css.match(/(^|\s)tag-\S+/g) || []).join(' ');
-        });
-        $('.mfp-categoria').addClass('tag-' + cat);
-
-      }, 0);
-    }
-  }
-});
+// // initalize popup
+// $('.fotos-container a,.fotos-container-2 a').magnificPopup({
+//   key: 'fotos-popup',
+//   items: getJsonProvisoria(),
+//   type: 'inline',
+//   mainClass: 'mfp-fade',
+//   inline: {
+//     // Define markup. Class names should match key names.
+//     markup: '<div class="white-popup"><div class="mfp-close"></div>' +
+//       '<div class="mfp-imagen"></div>' +
+//       '<header>' +
+//       '<div  class="mfp-categoria"></div>' +
+//       '<div class="mfp-fecha"></div>' +
+//       '</header>' +
+//       '<div class="mfp-entrada"></div>' +
+//       '<div class="mfp-bajada"></div>' +
+//       '</div>'
+//   },
+//   gallery: {
+//     enabled: true
+//   },
+//   callbacks: {
+//     markupParse: function(template, values, item) {
+//       // optionally apply your own logic - modify "template" element based on data in "values"
+//        console.log('Parsing:',  values);
+//       setTimeout(function() {
+//
+//         var cat = item.data.categoria.replace(/\s+/g, '').toLowerCase();;
+//         $('.mfp-categoria').removeClass(function(index, css) {
+//           return (css.match(/(^|\s)tag-\S+/g) || []).join(' ');
+//         });
+//         $('.mfp-categoria').addClass('tag-' + cat);
+//
+//       }, 0);
+//     }
+//   }
+// });
 
 
 

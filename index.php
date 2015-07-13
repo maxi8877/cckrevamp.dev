@@ -4,12 +4,12 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <img src="https://placeholdit.imgix.net/~text?txtsize=200&txt=16:9&w=1600&h=900" />
-        
+
         <div class="caption">
           <div class="in-frame">
             <h1>Unipersonales de Cristina Banegas: </h1>
             <p>Molly Bloom de James Joyce </p>
-            <div class="tag-artesvisuales">artes visuales </div>
+            <div class="tag-festival">1° Festival de Arte para niños La ballena Azul</div>
             <span class="caption-bg"></span>
             <a href="#"></a>
           </div>
@@ -58,13 +58,13 @@
 <section id="content" class="home">
   <div class="in-frame">
     <ul id="masonry-container">
-      <li class="item article-item masonry-half">
+      <li class="item article-item masonry-quarter">
         <div class="separator"></div>
-        <article id="1" class="article-evento cat-escenicas">
+        <article id="" class="article-evento cat-festival">
           <header>
             <h4>
-              <strong>artes escénicas</strong>
-              <small>del 27 al 31 de Mayo</small>
+              <strong>1° Festival de Arte para niños <br /><span>La ballena Azul</span></strong>
+              <small>el 31 de Agosto</small>
             </h4>
             <h1>
               <a href="#"><strong>Fernando Rubio:</strong>Todo lo que esta a mi lado</a>
@@ -84,7 +84,7 @@
           </footer>
         </article>
       </li>
-      <li class="item article-item masonry-half">
+      <li class="item article-item masonry-quarter">
         <div class="separator"></div>
         <article class="article-evento cat-artesvisuales">
           <header>
@@ -154,7 +154,7 @@
           <header>
             <h3><i class="fa fa-twitter"></i> @cckirchner</h3>
             <h4>
-              <small>27 Jun</small>
+
             </h4>
           </header>
           <p>Ya abrimos nuestras puertas para que vengan a disfrutar, conocer y aprender sobre nuestra cultura. #gratis</p>

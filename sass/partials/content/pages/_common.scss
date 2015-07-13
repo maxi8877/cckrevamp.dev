@@ -1,6 +1,6 @@
 #inside-header {
   overflow: hidden;
-  background: url("../img/header-interno-1.jpg");
+  //background: url("../img/header-interno-1.jpg");
   background-size: cover;
   width: 100%;
   height: 80px;
@@ -163,6 +163,7 @@
         display: inline-block;
         margin: 5px 0;
         font-weight: 300;
+        vertical-align: top;
 
         //  font-family: 'Dosis', sans-serif;
         strong {

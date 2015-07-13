@@ -45,7 +45,7 @@
           <a href="agenda-in.php">
             <header>
               <h4>
-                <strong class='tag-artesvisuales'>ARTES VISUALES</strong> Del 15 de Junio al 1 de Julio</h4>
+                <strong class='tag-festival'>1° Festival de Arte para niños <br /><span>La ballena Azul</span></strong> 15 de Junio al 1 de Julio</h4>
               <h1>
                 <strong>Sophie Calle,</strong> Cuídese mucho
               </h1>
@@ -149,6 +149,9 @@
         </li>
         <li class="menu-tuvoz">
           <a href="#">TU VOZ </a>
+        </li>
+        <li class="menu-festival">
+          <a href="#">1° Festival de Arte para niños <br /><span>La ballena Azul</span> </a>
         </li>
       </ul>
     </div>
