@@ -1347,7 +1347,7 @@ iframe {
         text-transform: uppercase;
         background: transparent url("../img/tag-festival-hover.png") no-repeat!important;
         background-position: 0 0 !important;
-        background-size: contain!important;
+        background-size: cover!important;
         padding: 1px 0px 0 20px!important;
         span {
           background-color: #fff!important;
@@ -1387,7 +1387,7 @@ iframe {
 .menu-festival:hover {
   background: url("../img/tag-festival-hover.png") no-repeat;
   background-position: 0 0;
-  background-size: contain;
+  background-size: cover;
   a {
     color: #170cec!important;
     margin-left: 15%;
@@ -1407,7 +1407,7 @@ iframe {
   font-size:11px;
   padding-left: 28px!important;
 
-  height: 36px;
+  height: 37px;
   span{
     font-size: 14px!important;
     line-height: 11px!important;

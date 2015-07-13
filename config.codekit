@@ -101,6 +101,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/css\/style.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/css\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/assets\/fonts\/bebas\/bebasneue-demo.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -831,6 +840,17 @@
 		"initialSize": 165134,
 		"inputAbbreviatedPath": "\/assets\/img\/centro\/salas-ver-2\/2.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/centro\/salas-ver-2\/2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/clipboard_vectorized copia.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15996,
+		"inputAbbreviatedPath": "\/assets\/img\/clipboard_vectorized copia.png",
+		"outputAbbreviatedPath": "\/assets\/img\/clipboard_vectorized copia.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
