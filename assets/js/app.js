@@ -60,7 +60,7 @@ $(document).ready(function() {
   if ($('.home').length) {
     var mySwiper = new Swiper('.swiper-container', {
       speed: 1500,
-    //  autoplay: 6000,
+      autoplay: 6000,
       direction: 'horizontal',
       pagination: '.swiper-pagination',
       paginationClickable: true,
