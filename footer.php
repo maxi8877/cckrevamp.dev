@@ -1,4 +1,4 @@
-<section id="footer" class="columnas-footer-4">
+<section id="footer" class="columnas-footer-6">
   <div class="in-frame">
     <ul>
       <li>
@@ -41,6 +41,12 @@
           <li><a href="fotos.php">Imágenes</a></li>
         </ul>
       </li>
+      <li>
+       <h3><a href="">Entradas</a></h3>
+       </li>
+       <li>
+          <h3><a href="contacto.php">Contacto</a></h3>
+       </li>
     </ul>
   </div>
 </section>
