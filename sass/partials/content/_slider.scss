@@ -152,7 +152,6 @@
         font-size: 34px;
         /* top: 340px; */
         color: #fff;
-
         //background-color: #3d8dd4;
         padding: 2px 0;
         width: 40px;
@@ -234,10 +233,10 @@
         background: url("../img/fondocaption.png") no-repeat;
         background-position: -9% top;
         background-size: contain;
-        height: 550px;
-        width: 690px;
-        top: -100px;
-        left: -200px;
+        height: 550px!important;
+        width: 690px!important;
+        top: -100px!important;
+        left: -200px!important;
       }
       a {
         position: absolute;
@@ -283,8 +282,15 @@
         font-weight: 200;
         line-height: 22px;
       }
-      span {
 
+      span {
+        background: url("../img/fondocaption.png") no-repeat;
+        background-position: -9% top;
+        background-size: contain;
+        height: 550px;
+        width: 690px;
+        top: -100px;
+        left: -200px;
       }
       a {
         position: absolute;
