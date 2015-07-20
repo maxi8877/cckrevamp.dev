@@ -18,6 +18,7 @@
     }
   }
   .swiper-container {
+
     //padding-top:200px;
     z-index: 0;
     width: 100%;
@@ -29,10 +30,12 @@
         max-width: 100%;
         min-width: 100%;
         position: relative;
+
         //  top: -100px;
       }
       .caption {
-        display: none;
+
+        //  display: none;
         position: absolute;
         bottom: 30px;
         margin: 0 auto;
@@ -44,12 +47,13 @@
         }
         h1 {
           color: #fff;
-          margin: 0 0 15px;
+          margin: 0;
           font-size: 16px;
           font-family: 'geogrotesque';
           font-weight: 400;
           z-index: 2;
           position: relative;
+          line-height: 17px;
           strong {
             font-weight: 400!important;
           }
@@ -75,28 +79,30 @@
         .tag-tuvoz,
         .tag-muestraspermanentes,
         .tag-escenicas,
-
         .tag-festival,
         .tag-musica {
           position: relative;
           z-index: 2;
-          padding: 3px 3px 3px 22px!important;
-        //  padding-left:17px!important;
-        }
-        .tag-festival{
-          padding: 7px 10px 5px 26px!important;
-          height:30px;font-size: 15px;
-        }
+          padding-left:20px!important;
 
+          //padding-left:17px!important;
+          font-size: 12px;
+        }
+        .tag-festival {
+          padding-left: 30px!important;
+          height: 30px;
+          margin-right: 40px;
+          font-size: 12px!important;
+        }
         span {
           background: url("../img/fondocaption.png") no-repeat;
           background-position: -9% top;
           background-size: contain;
           position: absolute;
-          height: 550px;
-          width: 690px;
-          top: -100px;
-          left: -200px;
+          height: 200px;
+          width: 300px;
+          top: -20px;
+          left: 0px;
           z-index: 1;
         }
         a {
@@ -146,6 +152,7 @@
         font-size: 34px;
         /* top: 340px; */
         color: #fff;
+
         //background-color: #3d8dd4;
         padding: 2px 0;
         width: 40px;
@@ -161,6 +168,7 @@
       }
     }
     .downarrow:hover {
+
       //background-color: #ddd;
       cursor: pointer;
       i {
@@ -180,12 +188,33 @@
       .in-frame {
         padding: 10px;
       }
+      .tag-artesvisuales,
+      .tag-educacion,
+      .tag-tuvoz,
+      .tag-muestraspermanentes,
+      .tag-escenicas,
+      .tag-festival,
+      .tag-musica {
+        position: relative;
+        z-index: 2;
+        padding: 3px 3px 3px 22px!important;
+
+        //  padding-left:17px!important;
+        font-size: 14px;
+      }
+      .tag-festival {
+        padding: 7px 10px 5px 26px!important;
+        height: 30px;
+        font-size: 15px!important;
+        //margin:0;
+      }
       h1 {
         color: #fff;
         margin: 0 0 10px;
         font-size: 30px!important;
         font-family: 'geogrotesque';
         font-weight: 400;
+        line-height: 40px!important;
         strong {
           font-weight: 400!important;
         }
@@ -204,6 +233,10 @@
         background: url("../img/fondocaption.png") no-repeat;
         background-position: -9% top;
         background-size: contain;
+        height: 550px;
+        width: 690px;
+        top: -100px;
+        left: -200px;
       }
       a {
         position: absolute;

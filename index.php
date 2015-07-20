@@ -19,7 +19,7 @@
         <img src="https://placeholdit.imgix.net/~text?txtsize=200&txt=16:9&w=1600&h=900" />
         <div class="caption">
           <div class="in-frame">
-            <h1>Fernando Rubio</h1>
+            <h1>Fernando Rubio Fernando Rubio Fernando Rubio</h1>
             <p>Todo lo que está a mi lado</p>
             <div class="tag-artesvisuales">artes visuales </div>
             <span class="caption-bg"></span>
