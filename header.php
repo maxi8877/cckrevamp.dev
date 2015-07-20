@@ -64,6 +64,9 @@
             </ul>
           </li>
           <li>
+            <a href="//google.com.ar">Entradas</a>
+          </li>
+          <li>
             <a href="#">VER/ESCUCHAR</a>
             <ul class="dropdown">
               <li><a href="envivo.php">En Vivo</a></li>

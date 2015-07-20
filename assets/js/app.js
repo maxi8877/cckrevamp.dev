@@ -281,19 +281,25 @@ $(document).ready(function() {
     if (!$(".modal-container #primary-menu").length) {
       $(".modal-container ").html($('#primary-menu ').first().clone());
     }
+
     $('.modal-container >#primary-menu >li a').css({
       'margin-left': '-1000px',
-    }).parent().append('<span class="fa fa-caret-down"></span>');
+    });
+      $('.modal-container >#primary-menu >li>ul').parent().append('<span class="fa fa-caret-down"></span>');
     setTimeout(function() {
       slideToMenuItems();
     }, 0);
     $('.modal-container >#primary-menu >li > a').click(function(e) {
-      e.preventDefault();
-      $('.modal-container').find('.dropdown').not($(this).next()).slideUp();
-      if ($(this).next().css('display').toLowerCase() == 'block') {
-        $(this).next().slideUp('fast');
-      } else {
-        $(this).next().slideDown('fast');
+      console.log(this);
+      if($(this).parent().children(".dropdown").length){
+        e.preventDefault();
+
+        $('.modal-container').find('.dropdown').not($(this).next()).slideUp();
+        if ($(this).next().css('display').toLowerCase() == 'block') {
+          $(this).next().slideUp('fast');
+        } else {
+          $(this).next().slideDown('fast');
+        }
       }
     });
   });
