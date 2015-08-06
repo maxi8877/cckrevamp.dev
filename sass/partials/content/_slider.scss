@@ -18,7 +18,6 @@
     }
   }
   .swiper-container {
-
     //padding-top:200px;
     z-index: 0;
     width: 100%;
@@ -30,11 +29,9 @@
         max-width: 100%;
         min-width: 100%;
         position: relative;
-
         //  top: -100px;
       }
       .caption {
-
         //  display: none;
         position: absolute;
         bottom: 30px;
@@ -78,6 +75,8 @@
         .tag-educacion,
         .tag-tuvoz,
         .tag-muestraspermanentes,
+        .tag-informacion-general,
+        .tag-infancia,
         .tag-escenicas,
         .tag-festival,
         .tag-musica {
@@ -191,6 +190,8 @@
       .tag-educacion,
       .tag-tuvoz,
       .tag-muestraspermanentes,
+      .tag-informacion-general,
+      .tag-infancia,
       .tag-escenicas,
       .tag-festival,
       .tag-musica {

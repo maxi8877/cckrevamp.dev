@@ -17,9 +17,9 @@ section#header {
       .logo {
         display: block;
         position: relative;
-       background: url("../img/logo-c.png") no-repeat;
-        background-size: 230px ;
-        background-position:center 0px;
+      //  background: url("../img/logo-c.png") no-repeat;
+      //   background-size: 230px ;
+      //   background-position:center 0px;
         height:150px;
         a {
           width: 100%;
@@ -27,7 +27,7 @@ section#header {
           position: absolute;
           top: 0;
           left: 0;
-          text-indent:-99999px;
+          //text-indent:-99999px;
         }
 
       }
@@ -60,9 +60,9 @@ section#header {
           //show
         }
         .logo {
-          background: url("../img/logo-inline.jpg") no-repeat;
-          background-size: 230px ;
-          background-position:10px 10px!important;
+          // background: url("../img/logo-inline.jpg") no-repeat;
+          // background-size: 230px ;
+          // background-position:10px 10px!important;
           height:45px;
 
         a{

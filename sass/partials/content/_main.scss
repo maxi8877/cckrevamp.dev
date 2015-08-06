@@ -1144,6 +1144,8 @@ h1.tag-trama {
 .tag-educacion,
 .tag-tuvoz,
 .tag-muestraspermanentes,
+.tag-informacion-general,
+.tag-infancia,
 .tag-escenicas,
 .tag-festival,
 .tag-musica {
@@ -1166,6 +1168,8 @@ h1.tag-trama {
 .tag-educacion:hover,
 .tag-tuvoz:hover,
 .tag-muestraspermanentes:hover,
+.tag-informacion-general:hover,
+.tag-infancia:hover,
 .tag-escenicas:hover,
 .tag-festival,
 
@@ -1181,6 +1185,8 @@ h1.tag-trama {
   .tag-tuvoz:hover,
   .tag-muestraspermanentes:hover,
   .tag-escenicas:hover,
+  .tag-informacion-general:hover,
+  .tag-infancia:hover,
   .tag-festival:hover,
   .tag-musica:hover {
     background-position: 0 0;
@@ -1430,5 +1436,157 @@ iframe {
     color: #170cec!important;
 
   background-color: #fff;
+  }
+}
+
+
+
+//infancia 5
+.cat-infancia {
+  header {
+    h4 {
+      background-color: transparent!important;
+      strong {
+        text-transform: uppercase;
+        background: transparent url("../img/tag-infancia.png") no-repeat!important;
+        background-position: 0 0 !important;
+        background-size: cover!important;
+        padding: 1px 5px 0 20px!important;
+
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+.cat-infancia {
+  header {
+    h4 {
+      background-color: transparent!important;
+      strong:hover {
+        background-color: transparent;
+        color: #170cec!important;
+        text-transform: uppercase;
+        background: transparent url("../img/tag-infancia-hover.png") no-repeat!important;
+        background-position: 0 0 !important;
+        background-size: cover!important;
+        padding: 1px 5px 0 20px!important;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.menu-infancia {
+  background: url("../img/tag-infancia.png") no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  a {
+    color: #fff!important;
+    text-transform: uppercase;
+    margin-left: 15%;
+  }
+}
+.menu-infancia:hover {
+  background: url("../img/tag-infancia-hover.png") no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  a {
+    color: #170cec!important;
+    margin-left: 15%;
+  }
+}
+.tag-infancia {
+  background-size: cover!important;
+
+  background: transparent url("../img/tag-infancia.png") no-repeat;
+  a {
+    color: #fff;
+  }
+}
+.tag-infancia:hover {
+  background: transparent url("../img/tag-infancia-hover.png") no-repeat;
+  color: #170cec!important;
+  a {
+    color: #170cec!important;
+  }
+}
+
+
+
+
+//muestras permananentes 4
+.cat-informacion-general {
+  header {
+    h4 {
+      background-color: transparent!important;
+      strong {
+
+        //background-color: #ea148c!important;
+        text-transform: uppercase;
+        background: transparent url("../img/tag-informacion-general.png") no-repeat!important;
+        background-position: 0 0 !important;
+        background-size: cover!important;
+        padding: 1px 5px 0 20px!important;
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+.cat-informacion-general {
+  header {
+    h4 {
+      background-color: transparent!important;
+      strong:hover {
+        color: #00b0f6!important;
+        text-transform: uppercase;
+        background: transparent url("../img/tag-informacion-general-hover.png") no-repeat!important;
+        background-position: 0 0 !important;
+        background-size: cover!important;
+        padding: 1px 5px 0 20px!important;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.menu-informacion-general {
+  background: url("../img/tag-informacion-general.png") no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  a {
+    color: #fff!important;
+    margin-left: 15%;
+    text-transform: uppercase;
+  }
+}
+.menu-informacion-general:hover {
+  background: url("../img/tag-informacion-general-hover.png") no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  a {
+    color: #00b0f6!important;
+    margin-left: 15%;
+  }
+}
+.tag-informacion-general {
+  background-size: cover!important;
+  background: transparent url("../img/tag-informacion-general.png") no-repeat;
+  a {
+
+  }
+}
+.tag-informacion-general:hover {
+  background: transparent url("../img/tag-informacion-general-hover.png") no-repeat;
+  color: #00b0f6!important;
+  a {
+    color: #00b0f6!important;
   }
 }

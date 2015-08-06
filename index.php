@@ -9,7 +9,7 @@
           <div class="in-frame">
             <h1>Unipersonales de Cristina Banegas: </h1>
             <p>Molly Bloom de James Joyce </p>
-            <div class="tag-festival">1° Festival de Arte para niños La ballena Azul</div>
+            <div class="tag-infancia">Infancia</div>
             <span class="caption-bg"></span>
             <a href="#"></a>
           </div>
@@ -21,7 +21,7 @@
           <div class="in-frame">
             <h1>Fernando Rubio Fernando Rubio Fernando Rubio</h1>
             <p>Todo lo que está a mi lado</p>
-            <div class="tag-artesvisuales">artes visuales </div>
+            <div class="tag-informacion-general">Informacion General </div>
             <span class="caption-bg"></span>
             <a href="#"></a>
           </div>
@@ -60,10 +60,10 @@
     <ul id="masonry-container">
       <li class="item article-item masonry-quarter">
         <div class="separator"></div>
-        <article id="" class="article-evento cat-festival">
+        <article id="" class="article-evento cat-infancia">
           <header>
             <h4>
-              <strong>1° Festival de Arte para niños <br /><span>La ballena Azul</span></strong>
+              <strong>iinfancia</strong>
               <small>el 31 de Agosto</small>
             </h4>
             <h1>
@@ -86,10 +86,10 @@
       </li>
       <li class="item article-item masonry-quarter">
         <div class="separator"></div>
-        <article class="article-evento cat-artesvisuales">
+        <article class="article-evento cat-informacion-general">
           <header>
             <h4>
-              <strong>ARTES VISUALES</strong>
+              <strong>Información General</strong>
             </h4>
           </header>
           <div class="flex-video">

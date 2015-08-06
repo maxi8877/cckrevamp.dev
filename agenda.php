@@ -71,7 +71,7 @@
           <a href="agenda-in.php">
             <header>
               <h4>
-                <strong class='tag-escenicas'>artes escénicas</strong> Del 15 de Junio al 1 de Julio</h4>
+                <strong class='tag-infancia'>Infancia</strong> Del 15 de Junio al 1 de Julio</h4>
               <h1>
                 Así se baila el tango
               </h1>
@@ -94,7 +94,30 @@
           <a href="agenda-in.php">
             <header>
               <h4>
-                <strong class='tag-musica'>Música</strong> Del 15 de Junio al 1 de Julio</h4>
+                <strong class='tag-informacion-general'>Informaciòn General</strong> Del 15 de Junio al 1 de Julio</h4>
+              <h1>
+                Sueña que duerme en el fondo del mar
+              </h1>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+              pretium quis</p>
+            <figure>
+              <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" alt=""/>
+              <div class="share-icons-inside">
+                <a href="#"><i class="fa fa-calendar-o"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </div>
+            </figure>
+            <footer>
+            </footer>
+          </a>
+        </article>
+        <article class="item article-agenda masonry-half">
+          <a href="agenda-in.php">
+            <header>
+              <h4>
+                <strong class='tag-informacion-general'>Informaciòn General</strong> Del 15 de Junio al 1 de Julio</h4>
               <h1>
                 Sueña que duerme en el fondo del mar
               </h1>
@@ -152,6 +175,12 @@
         </li>
         <li class="menu-festival">
           <a href="#">1° Festival de Arte para niños <br /><span>La ballena Azul</span> </a>
+        </li>
+        <li class="menu-infancia">
+          <a href="#">Infancia</span> </a>
+        </li>
+        <li class="menu-informacion-general">
+          <a href="#">Información General</span> </a>
         </li>
       </ul>
     </div>

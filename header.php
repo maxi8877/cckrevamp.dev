@@ -20,7 +20,9 @@
     <div class="in-frame">
       <ul>
         <li class="logo">
-          <a href="index.php">logo</a>
+          <a href="index.php">
+            <!-- <img src="assets/img/logo-d.png"> -->
+          </a>
         </li>
         <li class="logos-container">
           <img src="assets/img/logos.png" alt="logos"/>

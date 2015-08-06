@@ -1152,6 +1152,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/logo-d.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 159548,
+		"inputAbbreviatedPath": "\/assets\/img\/logo-d.png",
+		"outputAbbreviatedPath": "\/assets\/img\/logo-d.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/logo-inline.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2017,6 +2028,50 @@
 		"initialSize": 16059,
 		"inputAbbreviatedPath": "\/assets\/img\/tag-festival.png",
 		"outputAbbreviatedPath": "\/assets\/img\/tag-festival.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/tag-infancia-hover.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15717,
+		"inputAbbreviatedPath": "\/assets\/img\/tag-infancia-hover.png",
+		"outputAbbreviatedPath": "\/assets\/img\/tag-infancia-hover.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/tag-infancia.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15804,
+		"inputAbbreviatedPath": "\/assets\/img\/tag-infancia.png",
+		"outputAbbreviatedPath": "\/assets\/img\/tag-infancia.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/tag-informacion-general-hover.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16388,
+		"inputAbbreviatedPath": "\/assets\/img\/tag-informacion-general-hover.png",
+		"outputAbbreviatedPath": "\/assets\/img\/tag-informacion-general-hover.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/tag-informacion-general.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16567,
+		"inputAbbreviatedPath": "\/assets\/img\/tag-informacion-general.png",
+		"outputAbbreviatedPath": "\/assets\/img\/tag-informacion-general.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
