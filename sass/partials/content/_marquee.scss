@@ -1,0 +1,31 @@
+.marquee-container,.marque {
+
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease-out;
+  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+  transition: all 0.3s ease-out;
+  padding: 3px 0;
+  background-color: $cyan;
+  font-family: 'geogrotesque';
+  color: #fff;
+  max-height: 30px;
+  white-space: nowrap;
+  strong{
+        font-weight: 500;
+  }
+
+  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+  &:hover {
+
+    //  height:200px;
+    font-size: 16px;
+    padding: 3px 0;
+    max-height: 30px;
+
+
+    //background-color: #f00;
+  }
+}
+.marquee-container{
+  opacity:0;
+}

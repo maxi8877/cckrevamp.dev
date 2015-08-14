@@ -291,6 +291,32 @@ $susy: (gutters: .25);
   }
 }
 
+
+//
+
+//_________________________________
+//Footer Info
+//_________________________________
+
+section#footer-info{
+  @include container(100% center fluid);
+
+  .footer-info-col{
+    @include span(12 of 12 last);
+
+
+  }
+  @include breakpoint($medium-screens) {
+    .footer-info-col{
+      @include span(4 of 12);
+    }
+    .footer-info-col:nth-child(3){
+      @include span(4 of 12 last);
+
+    }
+  }
+
+}
 //_________________________________
 //Header
 //_________________________________

@@ -25,7 +25,7 @@
           </a>
         </li>
         <li class="logos-container">
-          <img src="assets/img/logos.png" alt="logos"/>
+          <img src="assets/img/logos.png" alt="logos" />
         </li>
       </ul>
     </div>
@@ -65,9 +65,7 @@
 
             </ul>
           </li>
-          <li>
-            <a href="//google.com.ar">Entradas</a>
-          </li>
+
           <li>
             <a href="#">VER/ESCUCHAR</a>
             <ul class="dropdown">
@@ -75,6 +73,12 @@
               <li><a href="verescuchar.php">Video</a></li>
               <li><a href="fotos.php">Imágenes</a></li>
             </ul>
+          </li>
+          <li>
+            <a href="#">CONTACTO</a>
+          </li>
+          <li>
+            <a href="#">Entradas</a>
           </li>
 
 
@@ -90,3 +94,14 @@
       </ul>
     </div>
   </section>
+  <div class="marquee-container">
+
+    <div class="marquee">
+      <strong>RESERVA DE ENTRADAS</strong> Para los espectáculos en
+      <strong>La Cúpula, La Ballena Azul, La Sala Argentina y La Sala Federal</strong>: lunes y martes previos al espectáculo de 10 a 18 horas por teléfono
+      <strong>(011) 68416400</strong> o a través de la web en la sección
+      <strong>Entradas</strong>.
+      <strong>ABIERTO AL PÚBLICO</strong> Los días
+      <strong>jueves, viernes, sábados y domingos de 14:00 a 20:00</strong> horas. Los días lunes, martes y miércoles permanecerá cerrado.
+    </div>
+    </div>

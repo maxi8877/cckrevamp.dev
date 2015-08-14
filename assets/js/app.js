@@ -4,8 +4,12 @@ window.REMODAL_GLOBALS = {
     hashTracking: false
   }
 };
+window.onload = function () {
 
+}
 $(document).ready(function() {
+  var element = $('#slider-video');
+  element.muted = true;
 
   var sizes = ['small', 'smallmax', 'medium', 'almost', 'large'];
   $.each(sizes, function(s) {
@@ -249,6 +253,8 @@ $(document).ready(function() {
   //   }
   // }
 
+
+
   // stycky Navigation
   if (!$('.hidden-menu').length) {
     $('body').append('<div class="hidden-menu" style="display:none;" ></div>');
@@ -404,6 +410,20 @@ function start() {
   if ($('#hero .swiper-container').length) {
     sliderHeight();
   }
+
+
+  //marquee
+  if ($('.marquee').length) {
+    setTimeout(function(){
+      $('.marquee-container').css({'opacity':1});
+    },2000);
+    $('.marquee').marquee().mouseover(function () {
+            $(this).trigger('stop');
+        }).mouseout(function () {
+            $(this).trigger('start');
+        });
+  }
+
 }
 
 //fadeIn pogressive

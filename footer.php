@@ -42,14 +42,44 @@
         </ul>
       </li>
       <li>
-       <h3><a href="">Entradas</a></h3>
-       </li>
-       <li>
-          <h3><a href="contacto.php">Contacto</a></h3>
-       </li>
+        <h3><a href="">Entradas</a></h3>
+      </li>
+      <li>
+        <h3><a href="contacto.php">Contacto</a></h3>
+      </li>
     </ul>
   </div>
+  <section id="footer-info">
+    <div class="in-frame">
+
+      <div class="footer-info-col">
+        <h2>
+          Abierto al público
+        </h2>
+        <p>
+          Los días jueves, viernes, sábados y domingos de 14:00 a 20:00 horas. Los días lunes, martes y miércoles permanecerá cerrado.
+        </p>
+      </div>
+
+      <div class="footer-info-col">
+        <h2>
+          Dirección
+        </h2>
+        <p>
+          Sarmiento 151,
+          <br/> C1041AAC
+          <br/> Ciudad Autónoma de Buenos Aires
+        </p>
+      </div>
+
+      <div class="footer-info-col">
+
+      </div>
+    </div>
+  </section>
+
 </section>
+
 <div class="social-float">
   <ul>
     <li><a href="#"><i class="fa fa-twitter"></i></a></li>

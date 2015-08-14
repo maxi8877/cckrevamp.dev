@@ -773,13 +773,15 @@ section#infinite-loader {
         bottom: 7%;
         left: 7%;
         h1 {
-          font-family: 'bebas_neueregular';
-          font-size: 4em;
-          line-height: 45px;
+        //  font-family: 'bebas_neueregular';
+        font-family: 'geogrotesque';
+
+          font-size: 3em;
+          line-height: 48px;
           color: #fff;
           margin: 0;
-          text-transform: uppercase;
-          font-weight: bold;
+          // text-transform: uppercase;
+          // font-weight: bold;
           margin-bottom: 5px;
           .bajada {
             font-size: 0.7em;
@@ -811,7 +813,9 @@ section#infinite-loader {
         position: absolute;
         margin: 0;
         bottom: 25px;
-        font-family: 'bebas_neueregular';
+        //font-family: 'bebas_neueregular';
+        font-family: 'geogrotesque';
+
         left: 50%;
       }
     }
@@ -1496,12 +1500,16 @@ section#infinite-loader {
   &.tag-tuvoz,
   &.tag-muestraspermanentes,
   &.tag-escenicas,
+  &.tag-infancia,
+  &.tag-informacion-general,
   &.tag-musica {
     padding: 0 5px 0 27px!important;
     font-size: 0.4em;
     margin: 0!important;
     line-height: 30px;
-    font-family: 'bebas_neueregular'!important;
+    font-family: 'geogrotesque';
+
+  //  font-family: 'bebas_neueregular'!important;
     text-transform: uppercase;
   }
 }

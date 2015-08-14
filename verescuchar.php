@@ -84,7 +84,6 @@
                       <span class="bajada">Sueña que duerme en el fondo del mar</span>
                       <h1>
                         <span class="tag1 tag-artesvisuales">artes visuales</span>
-                        <span class="tag2">internacional</span>
                   </div>
                 </div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/xLC_pVhLYek" frameborder="0" allowfullscreen></iframe>

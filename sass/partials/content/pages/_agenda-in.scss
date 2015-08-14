@@ -2,9 +2,9 @@
 //agenda
 //_________________________________
 .section-agenda-in {
-  td.currentday{
+  td.currentday {
     background-color: #00b0f6;
-    color:#fff;
+    color: #fff;
   }
   article {
     header {
@@ -19,6 +19,7 @@
         text-transform: uppercase;
         margin: 5px 0;
         font-weight: 300;
+
         //  font-family: 'Dosis', sans-serif;
       }
       h1 {
@@ -26,6 +27,7 @@
         color: #504f51;
         margin: 5px 0;
         font-size: 30px;
+
         //font-family: 'Dosis', sans-serif;
         strong {
           font-weight: 400;
@@ -56,8 +58,7 @@
     }
     figure {
       margin: 0;
-      position:relative;
-
+      position: relative;
       img {
         min-width: 100%;
       }
@@ -79,7 +80,6 @@
       }
     }
   }
-
   @include breakpoint($smallmax-screens) {
 
   }
@@ -89,4 +89,30 @@
   @include breakpoint($medium-screens) {
 
   }
+}
+.share-agenda {
+  display:none;
+  @include breakpoint($almost-screens) {
+display:block;
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  .share-icons {
+    a {
+      color: $cyan!important;
+//
+  //    font-size: 40px;
+      i {
+        color: $cyan!important;
+        font-size: 25px;
+        margin-left:5px;
+      }
+      &:hover{
+        i{
+          color:#ddd!important;
+        }
+      }
+    }
+  }
+}
 }

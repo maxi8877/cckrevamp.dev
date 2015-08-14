@@ -36,6 +36,13 @@
           </h1>
           <h3 class="sala">Sala SUM</h3>
           <h3 class=horarios>VIE 21 Hs .Sab 22 Hs Dom 22 Hs</h3>
+          <div class="share-agenda">
+            <div class="share-icons">
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+          </div>
+
         </header>
         <img src="https://placeholdit.imgix.net/~text?txtsize=100&txt=4:3&w=800&h=600" />
         <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor. Lorem Ipsum es simplemente el texto de relleno de las
